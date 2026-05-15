@@ -1,0 +1,25 @@
+{
+  "id": "hume_enquiry",
+  "title": "An Enquiry Concerning Human Understanding",
+  "author": "David Hume",
+  "translator": null,
+  "tradition": "humean",
+  "category": "non_contemplative",
+  "era": "18c",
+  "source": {
+    "type": "gutenberg",
+    "id": "9662",
+    "url": "https://www.gutenberg.org/cache/epub/9662/pg9662.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/9662/pg9662.txt",
+    "size_bytes": 373360,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 57808,
+    "char_count": 343388,
+    "token_estimate": 77077
+  }
+}

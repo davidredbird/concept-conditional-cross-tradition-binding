@@ -1,0 +1,21 @@
+{
+  "id": "zhuangzi_legge",
+  "title": "The Writings of Chuang Tzu",
+  "author": "Zhuangzi",
+  "translator": "James Legge",
+  "tradition": "daoism",
+  "category": "nondual",
+  "era": "4c BCE",
+  "source": {
+    "type": "gutenberg",
+    "id": "59709",
+    "url": "https://www.gutenberg.org/cache/epub/59709/pg59709.txt"
+  },
+  "license": "pd",
+  "notes": "Giles translation: Chuang Tzu, Mystic, Moralist, and Social Reformer.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/59709/pg59709.txt",
+    "size_bytes": 685171,
+    "format": "txt"
+  }
+}

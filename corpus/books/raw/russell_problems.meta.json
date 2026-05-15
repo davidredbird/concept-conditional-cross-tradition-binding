@@ -1,0 +1,20 @@
+{
+  "id": "russell_problems",
+  "title": "The Problems of Philosophy",
+  "author": "Bertrand Russell",
+  "translator": null,
+  "tradition": "analytic",
+  "category": "non_contemplative",
+  "era": "20c",
+  "source": {
+    "type": "gutenberg",
+    "id": "5827",
+    "url": "https://www.gutenberg.org/cache/epub/5827/pg5827.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/5827/pg5827.txt",
+    "size_bytes": 269539,
+    "format": "txt"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "aquinas_summa_part1",
+  "title": "Summa Theologica, Part I",
+  "author": "Thomas Aquinas",
+  "translator": "Fathers of the English Dominican Province",
+  "tradition": "catholic_scholastic",
+  "category": "dualistic",
+  "era": "13c",
+  "source": {
+    "type": "gutenberg",
+    "id": "17611",
+    "url": "https://www.gutenberg.org/cache/epub/17611/pg17611.txt"
+  },
+  "license": "pd",
+  "notes": "Massive text; we'll sample sections rather than embed all of it.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/17611/pg17611.txt",
+    "size_bytes": 2911944,
+    "format": "txt"
+  }
+}

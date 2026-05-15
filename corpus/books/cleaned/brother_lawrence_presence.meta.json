@@ -1,0 +1,26 @@
+{
+  "id": "brother_lawrence_presence",
+  "title": "The Practice of the Presence of God",
+  "author": "Brother Lawrence",
+  "translator": "(anonymous)",
+  "tradition": "christian_mystical",
+  "category": "nondual",
+  "era": "17c",
+  "source": {
+    "type": "gutenberg",
+    "id": "5657",
+    "url": "https://www.gutenberg.org/cache/epub/5657/pg5657.txt"
+  },
+  "license": "pd",
+  "notes": "Short, accessible Christian contemplative text.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/5657/pg5657.txt",
+    "size_bytes": 80394,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 11007,
+    "char_count": 58948,
+    "token_estimate": 14676
+  }
+}

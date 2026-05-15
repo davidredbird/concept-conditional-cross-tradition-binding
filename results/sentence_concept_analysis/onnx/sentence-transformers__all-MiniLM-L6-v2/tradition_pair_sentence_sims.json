@@ -1,0 +1,1187 @@
+{
+  "AWARENESS": {
+    "dzogchen|theravada": {
+      "mean": 0.3598347140683068,
+      "n": 9,
+      "max": 0.4958851635456085
+    },
+    "dzogchen|simulation_theory": {
+      "mean": 0.2703661968310674,
+      "n": 6,
+      "max": 0.3356204032897949
+    },
+    "analytic_idealism|dzogchen": {
+      "mean": 0.35735361526409787,
+      "n": 12,
+      "max": 0.5217105150222778
+    },
+    "dzogchen|interface_theory": {
+      "mean": 0.37499391039212543,
+      "n": 3,
+      "max": 0.5006750226020813
+    },
+    "dzogchen|implicate_order": {
+      "mean": 0.3445226202408473,
+      "n": 3,
+      "max": 0.39781808853149414
+    },
+    "dzogchen|iit": {
+      "mean": 0.34902560114860537,
+      "n": 15,
+      "max": 0.4914916157722473
+    },
+    "dzogchen|mahayana": {
+      "mean": 0.3867886612812678,
+      "n": 6,
+      "max": 0.5099794864654541
+    },
+    "simulation_theory|theravada": {
+      "mean": 0.4638130118449529,
+      "n": 6,
+      "max": 0.5997319221496582
+    },
+    "analytic_idealism|theravada": {
+      "mean": 0.521083782116572,
+      "n": 12,
+      "max": 0.7153146266937256
+    },
+    "interface_theory|theravada": {
+      "mean": 0.49611790974934894,
+      "n": 3,
+      "max": 0.5773419141769409
+    },
+    "implicate_order|theravada": {
+      "mean": 0.5679834286371866,
+      "n": 3,
+      "max": 0.640775203704834
+    },
+    "iit|theravada": {
+      "mean": 0.48170081377029417,
+      "n": 15,
+      "max": 0.7353004217147827
+    },
+    "mahayana|theravada": {
+      "mean": 0.5125696957111359,
+      "n": 6,
+      "max": 0.6082574129104614
+    },
+    "analytic_idealism|simulation_theory": {
+      "mean": 0.4570813477039337,
+      "n": 8,
+      "max": 0.5887417793273926
+    },
+    "interface_theory|simulation_theory": {
+      "mean": 0.3884439170360565,
+      "n": 2,
+      "max": 0.39106738567352295
+    },
+    "implicate_order|simulation_theory": {
+      "mean": 0.49675917625427246,
+      "n": 2,
+      "max": 0.542507529258728
+    },
+    "iit|simulation_theory": {
+      "mean": 0.5266320422291756,
+      "n": 10,
+      "max": 0.7818537950515747
+    },
+    "mahayana|simulation_theory": {
+      "mean": 0.40900711715221405,
+      "n": 4,
+      "max": 0.5056719779968262
+    },
+    "analytic_idealism|interface_theory": {
+      "mean": 0.45895135402679443,
+      "n": 4,
+      "max": 0.5348412990570068
+    },
+    "analytic_idealism|implicate_order": {
+      "mean": 0.5990839302539825,
+      "n": 4,
+      "max": 0.7893810272216797
+    },
+    "analytic_idealism|iit": {
+      "mean": 0.4642109848558903,
+      "n": 20,
+      "max": 0.7312055826187134
+    },
+    "analytic_idealism|mahayana": {
+      "mean": 0.48022234812378883,
+      "n": 8,
+      "max": 0.6383669376373291
+    },
+    "implicate_order|interface_theory": {
+      "mean": 0.46228718757629395,
+      "n": 1,
+      "max": 0.46228718757629395
+    },
+    "iit|interface_theory": {
+      "mean": 0.429007887840271,
+      "n": 5,
+      "max": 0.548147439956665
+    },
+    "interface_theory|mahayana": {
+      "mean": 0.4604765772819519,
+      "n": 2,
+      "max": 0.47548890113830566
+    },
+    "iit|implicate_order": {
+      "mean": 0.5000827074050903,
+      "n": 5,
+      "max": 0.6224076151847839
+    },
+    "implicate_order|mahayana": {
+      "mean": 0.5120037943124771,
+      "n": 2,
+      "max": 0.5268651247024536
+    },
+    "iit|mahayana": {
+      "mean": 0.4504888832569122,
+      "n": 10,
+      "max": 0.6092121601104736
+    }
+  },
+  "ULTIMATE": {
+    "advaita|christian_mystical": {
+      "mean": 0.27937731327432574,
+      "n": 33,
+      "max": 0.43172207474708557
+    },
+    "advaita|sufi": {
+      "mean": 0.31235490100724356,
+      "n": 21,
+      "max": 0.42737939953804016
+    },
+    "advaita|neoplatonism": {
+      "mean": 0.24278993705908458,
+      "n": 15,
+      "max": 0.4150032699108124
+    },
+    "advaita|kabbalah": {
+      "mean": 0.2729175463318825,
+      "n": 30,
+      "max": 0.43324291706085205
+    },
+    "advaita|daoism": {
+      "mean": 0.25301159421602887,
+      "n": 3,
+      "max": 0.2693570852279663
+    },
+    "advaita|catholic_scholastic": {
+      "mean": 0.2863443455210439,
+      "n": 27,
+      "max": 0.42551860213279724
+    },
+    "advaita|kantian": {
+      "mean": 0.14046619832515717,
+      "n": 3,
+      "max": 0.17764443159103394
+    },
+    "advaita|simulation_theory": {
+      "mean": 0.0826886569460233,
+      "n": 3,
+      "max": 0.11129364371299744
+    },
+    "advaita|mathematical_universe": {
+      "mean": 0.20693954908185536,
+      "n": 9,
+      "max": 0.368595153093338
+    },
+    "christian_mystical|sufi": {
+      "mean": 0.3066004697088297,
+      "n": 77,
+      "max": 0.5207961797714233
+    },
+    "christian_mystical|neoplatonism": {
+      "mean": 0.29270567948167975,
+      "n": 55,
+      "max": 0.5737171769142151
+    },
+    "christian_mystical|kabbalah": {
+      "mean": 0.335024367408319,
+      "n": 110,
+      "max": 0.6269400119781494
+    },
+    "christian_mystical|daoism": {
+      "mean": 0.23516300862485712,
+      "n": 11,
+      "max": 0.30254870653152466
+    },
+    "catholic_scholastic|christian_mystical": {
+      "mean": 0.3596720120521507,
+      "n": 99,
+      "max": 0.5798768997192383
+    },
+    "christian_mystical|kantian": {
+      "mean": 0.21343129195950247,
+      "n": 11,
+      "max": 0.2828212380409241
+    },
+    "christian_mystical|simulation_theory": {
+      "mean": 0.07142947952855717,
+      "n": 11,
+      "max": 0.10659313946962357
+    },
+    "christian_mystical|mathematical_universe": {
+      "mean": 0.18270715992107536,
+      "n": 33,
+      "max": 0.27696216106414795
+    },
+    "neoplatonism|sufi": {
+      "mean": 0.22576896079948972,
+      "n": 35,
+      "max": 0.4111053943634033
+    },
+    "kabbalah|sufi": {
+      "mean": 0.2681541496621711,
+      "n": 70,
+      "max": 0.6139211654663086
+    },
+    "daoism|sufi": {
+      "mean": 0.17499210366180964,
+      "n": 7,
+      "max": 0.27056556940078735
+    },
+    "catholic_scholastic|sufi": {
+      "mean": 0.31358834521638024,
+      "n": 63,
+      "max": 0.6710989475250244
+    },
+    "kantian|sufi": {
+      "mean": 0.24581633721079146,
+      "n": 7,
+      "max": 0.4255295693874359
+    },
+    "simulation_theory|sufi": {
+      "mean": 0.10512349089341504,
+      "n": 7,
+      "max": 0.16430389881134033
+    },
+    "mathematical_universe|sufi": {
+      "mean": 0.20736677944660187,
+      "n": 21,
+      "max": 0.4035295248031616
+    },
+    "kabbalah|neoplatonism": {
+      "mean": 0.23923443347215653,
+      "n": 50,
+      "max": 0.4755967855453491
+    },
+    "daoism|neoplatonism": {
+      "mean": 0.18300490975379943,
+      "n": 5,
+      "max": 0.26823657751083374
+    },
+    "catholic_scholastic|neoplatonism": {
+      "mean": 0.2652018429504501,
+      "n": 45,
+      "max": 0.4710121154785156
+    },
+    "kantian|neoplatonism": {
+      "mean": 0.12995829060673714,
+      "n": 5,
+      "max": 0.19548016786575317
+    },
+    "neoplatonism|simulation_theory": {
+      "mean": 0.025668854266405104,
+      "n": 5,
+      "max": 0.12727214395999908
+    },
+    "mathematical_universe|neoplatonism": {
+      "mean": 0.10997000833352406,
+      "n": 15,
+      "max": 0.30711060762405396
+    },
+    "daoism|kabbalah": {
+      "mean": 0.23756956309080124,
+      "n": 10,
+      "max": 0.3002173900604248
+    },
+    "catholic_scholastic|kabbalah": {
+      "mean": 0.3370048395461506,
+      "n": 90,
+      "max": 0.5975406169891357
+    },
+    "kabbalah|kantian": {
+      "mean": 0.21119287610054016,
+      "n": 10,
+      "max": 0.31790870428085327
+    },
+    "kabbalah|simulation_theory": {
+      "mean": 0.07083448302000761,
+      "n": 10,
+      "max": 0.18406787514686584
+    },
+    "kabbalah|mathematical_universe": {
+      "mean": 0.2061220888669292,
+      "n": 30,
+      "max": 0.35689541697502136
+    },
+    "catholic_scholastic|daoism": {
+      "mean": 0.24386341869831085,
+      "n": 9,
+      "max": 0.29746973514556885
+    },
+    "daoism|kantian": {
+      "mean": 0.1726941019296646,
+      "n": 1,
+      "max": 0.1726941019296646
+    },
+    "daoism|simulation_theory": {
+      "mean": 0.07659285515546799,
+      "n": 1,
+      "max": 0.07659285515546799
+    },
+    "daoism|mathematical_universe": {
+      "mean": 0.07118615570167701,
+      "n": 3,
+      "max": 0.09762275218963623
+    },
+    "catholic_scholastic|kantian": {
+      "mean": 0.3278017540772756,
+      "n": 9,
+      "max": 0.6310684084892273
+    },
+    "catholic_scholastic|simulation_theory": {
+      "mean": 0.0872851154870457,
+      "n": 9,
+      "max": 0.15225937962532043
+    },
+    "catholic_scholastic|mathematical_universe": {
+      "mean": 0.19539338653838192,
+      "n": 27,
+      "max": 0.3589422404766083
+    },
+    "kantian|simulation_theory": {
+      "mean": 0.11390392482280731,
+      "n": 1,
+      "max": 0.11390392482280731
+    },
+    "kantian|mathematical_universe": {
+      "mean": 0.16521106660366058,
+      "n": 3,
+      "max": 0.20253437757492065
+    },
+    "mathematical_universe|simulation_theory": {
+      "mean": 0.3685691257317861,
+      "n": 3,
+      "max": 0.4058496654033661
+    }
+  },
+  "WORLD": {
+    "advaita|dzogchen": {
+      "mean": 0.3269997537136078,
+      "n": 2,
+      "max": 0.35476624965667725
+    },
+    "advaita|sufi": {
+      "mean": 0.3323694169521332,
+      "n": 2,
+      "max": 0.3323694169521332
+    },
+    "advaita|kabbalah": {
+      "mean": 0.29348069429397583,
+      "n": 1,
+      "max": 0.29348069429397583
+    },
+    "advaita|daoism": {
+      "mean": 0.17280620336532593,
+      "n": 2,
+      "max": 0.20954346656799316
+    },
+    "advaita|catholic_scholastic": {
+      "mean": 0.42551860213279724,
+      "n": 1,
+      "max": 0.42551860213279724
+    },
+    "advaita|kantian": {
+      "mean": 0.21469822525978088,
+      "n": 1,
+      "max": 0.21469822525978088
+    },
+    "advaita|humean": {
+      "mean": 0.2434459924697876,
+      "n": 1,
+      "max": 0.2434459924697876
+    },
+    "advaita|simulation_theory": {
+      "mean": 0.2395731285214424,
+      "n": 8,
+      "max": 0.3247425854206085
+    },
+    "advaita|information_physics": {
+      "mean": 0.17080431431531906,
+      "n": 6,
+      "max": 0.23231001198291779
+    },
+    "advaita|mathematical_universe": {
+      "mean": 0.29890723526477814,
+      "n": 2,
+      "max": 0.368595153093338
+    },
+    "advaita|analytic_idealism": {
+      "mean": 0.31175342202186584,
+      "n": 2,
+      "max": 0.37120044231414795
+    },
+    "advaita|interface_theory": {
+      "mean": 0.22383799403905869,
+      "n": 2,
+      "max": 0.23911355435848236
+    },
+    "advaita|implicate_order": {
+      "mean": 0.2474365234375,
+      "n": 1,
+      "max": 0.2474365234375
+    },
+    "advaita|process_philosophy": {
+      "mean": 0.343859538435936,
+      "n": 2,
+      "max": 0.3593643605709076
+    },
+    "advaita|relational_qm": {
+      "mean": 0.3364824205636978,
+      "n": 2,
+      "max": 0.4681246876716614
+    },
+    "dzogchen|sufi": {
+      "mean": 0.25122497975826263,
+      "n": 4,
+      "max": 0.30550050735473633
+    },
+    "dzogchen|kabbalah": {
+      "mean": 0.17574451118707657,
+      "n": 2,
+      "max": 0.2080697864294052
+    },
+    "daoism|dzogchen": {
+      "mean": 0.21399611234664917,
+      "n": 4,
+      "max": 0.26166754961013794
+    },
+    "catholic_scholastic|dzogchen": {
+      "mean": 0.3211701065301895,
+      "n": 2,
+      "max": 0.38146814703941345
+    },
+    "dzogchen|kantian": {
+      "mean": 0.3226493000984192,
+      "n": 2,
+      "max": 0.42754894495010376
+    },
+    "dzogchen|humean": {
+      "mean": 0.38414546847343445,
+      "n": 2,
+      "max": 0.5487134456634521
+    },
+    "dzogchen|simulation_theory": {
+      "mean": 0.18976507242769003,
+      "n": 16,
+      "max": 0.49574166536331177
+    },
+    "dzogchen|information_physics": {
+      "mean": 0.1718601775355637,
+      "n": 12,
+      "max": 0.3308377265930176
+    },
+    "dzogchen|mathematical_universe": {
+      "mean": 0.22194247879087925,
+      "n": 4,
+      "max": 0.3475956916809082
+    },
+    "analytic_idealism|dzogchen": {
+      "mean": 0.31515295803546906,
+      "n": 4,
+      "max": 0.454276978969574
+    },
+    "dzogchen|interface_theory": {
+      "mean": 0.32796362414956093,
+      "n": 4,
+      "max": 0.4181656539440155
+    },
+    "dzogchen|implicate_order": {
+      "mean": 0.302200086414814,
+      "n": 2,
+      "max": 0.3690221905708313
+    },
+    "dzogchen|process_philosophy": {
+      "mean": 0.25373560190200806,
+      "n": 4,
+      "max": 0.2847079634666443
+    },
+    "dzogchen|relational_qm": {
+      "mean": 0.24985769018530846,
+      "n": 4,
+      "max": 0.42525359988212585
+    },
+    "kabbalah|sufi": {
+      "mean": 0.39376431703567505,
+      "n": 2,
+      "max": 0.39376431703567505
+    },
+    "daoism|sufi": {
+      "mean": 0.23043666779994965,
+      "n": 4,
+      "max": 0.28019285202026367
+    },
+    "catholic_scholastic|sufi": {
+      "mean": 0.3143366575241089,
+      "n": 2,
+      "max": 0.3143366575241089
+    },
+    "kantian|sufi": {
+      "mean": 0.32765281200408936,
+      "n": 2,
+      "max": 0.32765281200408936
+    },
+    "humean|sufi": {
+      "mean": 0.2570231854915619,
+      "n": 2,
+      "max": 0.2570231854915619
+    },
+    "simulation_theory|sufi": {
+      "mean": 0.16741821775212884,
+      "n": 16,
+      "max": 0.29032862186431885
+    },
+    "information_physics|sufi": {
+      "mean": 0.2802504375576973,
+      "n": 12,
+      "max": 0.37465667724609375
+    },
+    "mathematical_universe|sufi": {
+      "mean": 0.28429390862584114,
+      "n": 4,
+      "max": 0.3571665287017822
+    },
+    "analytic_idealism|sufi": {
+      "mean": 0.39346829056739807,
+      "n": 4,
+      "max": 0.44746607542037964
+    },
+    "interface_theory|sufi": {
+      "mean": 0.3039267510175705,
+      "n": 4,
+      "max": 0.34127137064933777
+    },
+    "implicate_order|sufi": {
+      "mean": 0.32954633235931396,
+      "n": 2,
+      "max": 0.32954633235931396
+    },
+    "process_philosophy|sufi": {
+      "mean": 0.3833865076303482,
+      "n": 4,
+      "max": 0.49366915225982666
+    },
+    "relational_qm|sufi": {
+      "mean": 0.30865567922592163,
+      "n": 4,
+      "max": 0.34794896841049194
+    },
+    "daoism|kabbalah": {
+      "mean": 0.3249354138970375,
+      "n": 2,
+      "max": 0.40491431951522827
+    },
+    "catholic_scholastic|kabbalah": {
+      "mean": 0.4405457377433777,
+      "n": 1,
+      "max": 0.4405457377433777
+    },
+    "kabbalah|kantian": {
+      "mean": 0.3336924612522125,
+      "n": 1,
+      "max": 0.3336924612522125
+    },
+    "humean|kabbalah": {
+      "mean": 0.22333237528800964,
+      "n": 1,
+      "max": 0.22333237528800964
+    },
+    "kabbalah|simulation_theory": {
+      "mean": 0.25277555361390114,
+      "n": 8,
+      "max": 0.3410491645336151
+    },
+    "information_physics|kabbalah": {
+      "mean": 0.355688398083051,
+      "n": 6,
+      "max": 0.39235758781433105
+    },
+    "kabbalah|mathematical_universe": {
+      "mean": 0.22837212309241295,
+      "n": 2,
+      "max": 0.35478270053863525
+    },
+    "analytic_idealism|kabbalah": {
+      "mean": 0.31880058348178864,
+      "n": 2,
+      "max": 0.3269975781440735
+    },
+    "interface_theory|kabbalah": {
+      "mean": 0.2633788585662842,
+      "n": 2,
+      "max": 0.2907991111278534
+    },
+    "implicate_order|kabbalah": {
+      "mean": 0.3910628855228424,
+      "n": 1,
+      "max": 0.3910628855228424
+    },
+    "kabbalah|process_philosophy": {
+      "mean": 0.4468074440956116,
+      "n": 2,
+      "max": 0.4666987657546997
+    },
+    "kabbalah|relational_qm": {
+      "mean": 0.3022713363170624,
+      "n": 2,
+      "max": 0.31699591875076294
+    },
+    "catholic_scholastic|daoism": {
+      "mean": 0.2801591008901596,
+      "n": 2,
+      "max": 0.3485122621059418
+    },
+    "daoism|kantian": {
+      "mean": 0.2931106835603714,
+      "n": 2,
+      "max": 0.3195651173591614
+    },
+    "daoism|humean": {
+      "mean": 0.15775655955076218,
+      "n": 2,
+      "max": 0.1913798451423645
+    },
+    "daoism|simulation_theory": {
+      "mean": 0.1294854935258627,
+      "n": 16,
+      "max": 0.20882166922092438
+    },
+    "daoism|information_physics": {
+      "mean": 0.23193019876877466,
+      "n": 12,
+      "max": 0.31181252002716064
+    },
+    "daoism|mathematical_universe": {
+      "mean": 0.1796274669468403,
+      "n": 4,
+      "max": 0.23156195878982544
+    },
+    "analytic_idealism|daoism": {
+      "mean": 0.2907958850264549,
+      "n": 4,
+      "max": 0.3508836030960083
+    },
+    "daoism|interface_theory": {
+      "mean": 0.20449688658118248,
+      "n": 4,
+      "max": 0.24276761710643768
+    },
+    "daoism|implicate_order": {
+      "mean": 0.32296328246593475,
+      "n": 2,
+      "max": 0.3264923691749573
+    },
+    "daoism|process_philosophy": {
+      "mean": 0.23862363770604134,
+      "n": 4,
+      "max": 0.3194184899330139
+    },
+    "daoism|relational_qm": {
+      "mean": 0.2487856037914753,
+      "n": 4,
+      "max": 0.3022916913032532
+    },
+    "catholic_scholastic|kantian": {
+      "mean": 0.22928088903427124,
+      "n": 1,
+      "max": 0.22928088903427124
+    },
+    "catholic_scholastic|humean": {
+      "mean": 0.164711132645607,
+      "n": 1,
+      "max": 0.164711132645607
+    },
+    "catholic_scholastic|simulation_theory": {
+      "mean": 0.21454977989196777,
+      "n": 8,
+      "max": 0.32357168197631836
+    },
+    "catholic_scholastic|information_physics": {
+      "mean": 0.25669340540965396,
+      "n": 6,
+      "max": 0.31466227769851685
+    },
+    "catholic_scholastic|mathematical_universe": {
+      "mean": 0.22050735354423523,
+      "n": 2,
+      "max": 0.23057976365089417
+    },
+    "analytic_idealism|catholic_scholastic": {
+      "mean": 0.2894381582736969,
+      "n": 2,
+      "max": 0.3528904318809509
+    },
+    "catholic_scholastic|interface_theory": {
+      "mean": 0.39275939762592316,
+      "n": 2,
+      "max": 0.42589443922042847
+    },
+    "catholic_scholastic|implicate_order": {
+      "mean": 0.3738579750061035,
+      "n": 1,
+      "max": 0.3738579750061035
+    },
+    "catholic_scholastic|process_philosophy": {
+      "mean": 0.3434312045574188,
+      "n": 2,
+      "max": 0.38000237941741943
+    },
+    "catholic_scholastic|relational_qm": {
+      "mean": 0.2817748486995697,
+      "n": 2,
+      "max": 0.2904255986213684
+    },
+    "humean|kantian": {
+      "mean": 0.3956940770149231,
+      "n": 1,
+      "max": 0.3956940770149231
+    },
+    "kantian|simulation_theory": {
+      "mean": 0.2596769444644451,
+      "n": 8,
+      "max": 0.3654606342315674
+    },
+    "information_physics|kantian": {
+      "mean": 0.2980196376641591,
+      "n": 6,
+      "max": 0.4144335985183716
+    },
+    "kantian|mathematical_universe": {
+      "mean": 0.29669566452503204,
+      "n": 2,
+      "max": 0.31790778040885925
+    },
+    "analytic_idealism|kantian": {
+      "mean": 0.4641367942094803,
+      "n": 2,
+      "max": 0.4926499128341675
+    },
+    "interface_theory|kantian": {
+      "mean": 0.4185740053653717,
+      "n": 2,
+      "max": 0.4625905156135559
+    },
+    "implicate_order|kantian": {
+      "mean": 0.3306567668914795,
+      "n": 1,
+      "max": 0.3306567668914795
+    },
+    "kantian|process_philosophy": {
+      "mean": 0.31382469832897186,
+      "n": 2,
+      "max": 0.32759904861450195
+    },
+    "kantian|relational_qm": {
+      "mean": 0.331981897354126,
+      "n": 2,
+      "max": 0.42559027671813965
+    },
+    "humean|simulation_theory": {
+      "mean": 0.22194669675081968,
+      "n": 8,
+      "max": 0.43482518196105957
+    },
+    "humean|information_physics": {
+      "mean": 0.17326366156339645,
+      "n": 6,
+      "max": 0.2717474699020386
+    },
+    "humean|mathematical_universe": {
+      "mean": 0.27607403695583344,
+      "n": 2,
+      "max": 0.3141781687736511
+    },
+    "analytic_idealism|humean": {
+      "mean": 0.36144329607486725,
+      "n": 2,
+      "max": 0.41058066487312317
+    },
+    "humean|interface_theory": {
+      "mean": 0.33277156949043274,
+      "n": 2,
+      "max": 0.3354488015174866
+    },
+    "humean|implicate_order": {
+      "mean": 0.1807628720998764,
+      "n": 1,
+      "max": 0.1807628720998764
+    },
+    "humean|process_philosophy": {
+      "mean": 0.18714355677366257,
+      "n": 2,
+      "max": 0.19488033652305603
+    },
+    "humean|relational_qm": {
+      "mean": 0.3502570390701294,
+      "n": 2,
+      "max": 0.4279787540435791
+    },
+    "information_physics|simulation_theory": {
+      "mean": 0.30131633471076685,
+      "n": 48,
+      "max": 0.5999060869216919
+    },
+    "mathematical_universe|simulation_theory": {
+      "mean": 0.30326100514503196,
+      "n": 16,
+      "max": 0.5950692892074585
+    },
+    "analytic_idealism|simulation_theory": {
+      "mean": 0.285833990201354,
+      "n": 16,
+      "max": 0.44025617837905884
+    },
+    "interface_theory|simulation_theory": {
+      "mean": 0.323103541508317,
+      "n": 16,
+      "max": 0.5181233882904053
+    },
+    "implicate_order|simulation_theory": {
+      "mean": 0.25310739502310753,
+      "n": 8,
+      "max": 0.3513602614402771
+    },
+    "process_philosophy|simulation_theory": {
+      "mean": 0.25045326445251703,
+      "n": 16,
+      "max": 0.32920968532562256
+    },
+    "relational_qm|simulation_theory": {
+      "mean": 0.25300895189866424,
+      "n": 16,
+      "max": 0.39745259284973145
+    },
+    "information_physics|mathematical_universe": {
+      "mean": 0.32997628301382065,
+      "n": 12,
+      "max": 0.5942981243133545
+    },
+    "analytic_idealism|information_physics": {
+      "mean": 0.38113686939080554,
+      "n": 12,
+      "max": 0.5146681666374207
+    },
+    "information_physics|interface_theory": {
+      "mean": 0.34922972073157627,
+      "n": 12,
+      "max": 0.5172574520111084
+    },
+    "implicate_order|information_physics": {
+      "mean": 0.40738211075464886,
+      "n": 6,
+      "max": 0.5691447257995605
+    },
+    "information_physics|process_philosophy": {
+      "mean": 0.40148824577530223,
+      "n": 12,
+      "max": 0.5599534511566162
+    },
+    "information_physics|relational_qm": {
+      "mean": 0.32513058309753734,
+      "n": 12,
+      "max": 0.44302526116371155
+    },
+    "analytic_idealism|mathematical_universe": {
+      "mean": 0.39464083313941956,
+      "n": 4,
+      "max": 0.45392024517059326
+    },
+    "interface_theory|mathematical_universe": {
+      "mean": 0.34711264073848724,
+      "n": 4,
+      "max": 0.44992873072624207
+    },
+    "implicate_order|mathematical_universe": {
+      "mean": 0.3933308720588684,
+      "n": 2,
+      "max": 0.4030972123146057
+    },
+    "mathematical_universe|process_philosophy": {
+      "mean": 0.32309503108263016,
+      "n": 4,
+      "max": 0.45215609669685364
+    },
+    "mathematical_universe|relational_qm": {
+      "mean": 0.3823607452213764,
+      "n": 4,
+      "max": 0.5781962275505066
+    },
+    "analytic_idealism|interface_theory": {
+      "mean": 0.35391366481781006,
+      "n": 4,
+      "max": 0.4101642966270447
+    },
+    "analytic_idealism|implicate_order": {
+      "mean": 0.4354197084903717,
+      "n": 2,
+      "max": 0.5152822136878967
+    },
+    "analytic_idealism|process_philosophy": {
+      "mean": 0.3767537847161293,
+      "n": 4,
+      "max": 0.409356951713562
+    },
+    "analytic_idealism|relational_qm": {
+      "mean": 0.38984255492687225,
+      "n": 4,
+      "max": 0.5096489191055298
+    },
+    "implicate_order|interface_theory": {
+      "mean": 0.3279789984226227,
+      "n": 2,
+      "max": 0.35015928745269775
+    },
+    "interface_theory|process_philosophy": {
+      "mean": 0.33633502572774887,
+      "n": 4,
+      "max": 0.3747619092464447
+    },
+    "interface_theory|relational_qm": {
+      "mean": 0.3607742115855217,
+      "n": 4,
+      "max": 0.4384578466415405
+    },
+    "implicate_order|process_philosophy": {
+      "mean": 0.5000662803649902,
+      "n": 2,
+      "max": 0.576819896697998
+    },
+    "implicate_order|relational_qm": {
+      "mean": 0.35765618085861206,
+      "n": 2,
+      "max": 0.38641613721847534
+    },
+    "process_philosophy|relational_qm": {
+      "mean": 0.36814744025468826,
+      "n": 4,
+      "max": 0.5155982971191406
+    }
+  },
+  "RECOGNITION": {
+    "dzogchen|neoplatonism": {
+      "mean": 0.2985205054283142,
+      "n": 2,
+      "max": 0.3919726312160492
+    },
+    "daoism|dzogchen": {
+      "mean": 0.17729264497756958,
+      "n": 4,
+      "max": 0.2439820021390915
+    },
+    "catholic_scholastic|dzogchen": {
+      "mean": 0.2851247191429138,
+      "n": 2,
+      "max": 0.2952772378921509
+    },
+    "dzogchen|theravada": {
+      "mean": 0.2975254679719607,
+      "n": 6,
+      "max": 0.4370478689670563
+    },
+    "advaita|dzogchen": {
+      "mean": 0.5247828960418701,
+      "n": 2,
+      "max": 0.7156599760055542
+    },
+    "dzogchen|sufi": {
+      "mean": 0.16253678500652313,
+      "n": 2,
+      "max": 0.1689542531967163
+    },
+    "daoism|neoplatonism": {
+      "mean": 0.16821905970573425,
+      "n": 2,
+      "max": 0.18412500619888306
+    },
+    "catholic_scholastic|neoplatonism": {
+      "mean": 0.31548988819122314,
+      "n": 1,
+      "max": 0.31548988819122314
+    },
+    "neoplatonism|theravada": {
+      "mean": 0.3864393929640452,
+      "n": 3,
+      "max": 0.40392178297042847
+    },
+    "advaita|neoplatonism": {
+      "mean": 0.44620323181152344,
+      "n": 1,
+      "max": 0.44620323181152344
+    },
+    "neoplatonism|sufi": {
+      "mean": 0.19327251613140106,
+      "n": 1,
+      "max": 0.19327251613140106
+    },
+    "catholic_scholastic|daoism": {
+      "mean": 0.15333450585603714,
+      "n": 2,
+      "max": 0.15400680899620056
+    },
+    "daoism|theravada": {
+      "mean": 0.20992834369341531,
+      "n": 6,
+      "max": 0.24234682321548462
+    },
+    "advaita|daoism": {
+      "mean": 0.1780216246843338,
+      "n": 2,
+      "max": 0.18887260556221008
+    },
+    "daoism|sufi": {
+      "mean": 0.1088946983218193,
+      "n": 2,
+      "max": 0.15040570497512817
+    },
+    "catholic_scholastic|theravada": {
+      "mean": 0.32062169909477234,
+      "n": 3,
+      "max": 0.3774215281009674
+    },
+    "advaita|catholic_scholastic": {
+      "mean": 0.2731497585773468,
+      "n": 1,
+      "max": 0.2731497585773468
+    },
+    "catholic_scholastic|sufi": {
+      "mean": 0.2248252034187317,
+      "n": 1,
+      "max": 0.2248252034187317
+    },
+    "advaita|theravada": {
+      "mean": 0.31264814734458923,
+      "n": 3,
+      "max": 0.3737262189388275
+    },
+    "sufi|theravada": {
+      "mean": 0.25277550518512726,
+      "n": 3,
+      "max": 0.2915530800819397
+    },
+    "advaita|sufi": {
+      "mean": 0.07220326364040375,
+      "n": 1,
+      "max": 0.07220326364040375
+    }
+  },
+  "SUBSTRATE": {
+    "dzogchen|kantian": {
+      "mean": 0.4554067552089691,
+      "n": 2,
+      "max": 0.5261896252632141
+    },
+    "dzogchen|information_physics": {
+      "mean": 0.4226006865501404,
+      "n": 1,
+      "max": 0.4226006865501404
+    },
+    "dzogchen|implicate_order": {
+      "mean": 0.338609904050827,
+      "n": 3,
+      "max": 0.42994290590286255
+    },
+    "dzogchen|iit": {
+      "mean": 0.3779878616333008,
+      "n": 2,
+      "max": 0.4770951271057129
+    },
+    "dzogchen|relational_qm": {
+      "mean": 0.3796725869178772,
+      "n": 1,
+      "max": 0.3796725869178772
+    },
+    "dzogchen|mahayana": {
+      "mean": 0.2845239080488682,
+      "n": 4,
+      "max": 0.3323495388031006
+    },
+    "information_physics|kantian": {
+      "mean": 0.29919514060020447,
+      "n": 2,
+      "max": 0.3276035785675049
+    },
+    "implicate_order|kantian": {
+      "mean": 0.2387855499982834,
+      "n": 6,
+      "max": 0.32278281450271606
+    },
+    "iit|kantian": {
+      "mean": 0.30710700154304504,
+      "n": 4,
+      "max": 0.3850727379322052
+    },
+    "kantian|relational_qm": {
+      "mean": 0.3217089995741844,
+      "n": 2,
+      "max": 0.40062445402145386
+    },
+    "kantian|mahayana": {
+      "mean": 0.24303813464939594,
+      "n": 8,
+      "max": 0.3240053653717041
+    },
+    "implicate_order|information_physics": {
+      "mean": 0.21759496132532755,
+      "n": 3,
+      "max": 0.25724488496780396
+    },
+    "iit|information_physics": {
+      "mean": 0.40587665140628815,
+      "n": 2,
+      "max": 0.46324020624160767
+    },
+    "information_physics|relational_qm": {
+      "mean": 0.23953253030776978,
+      "n": 1,
+      "max": 0.23953253030776978
+    },
+    "information_physics|mahayana": {
+      "mean": 0.18451448529958725,
+      "n": 4,
+      "max": 0.20609897375106812
+    },
+    "iit|implicate_order": {
+      "mean": 0.2812156950434049,
+      "n": 6,
+      "max": 0.40086600184440613
+    },
+    "implicate_order|relational_qm": {
+      "mean": 0.27394069731235504,
+      "n": 3,
+      "max": 0.3103119134902954
+    },
+    "implicate_order|mahayana": {
+      "mean": 0.2797935741643111,
+      "n": 12,
+      "max": 0.35344699025154114
+    },
+    "iit|relational_qm": {
+      "mean": 0.2756151854991913,
+      "n": 2,
+      "max": 0.31844860315322876
+    },
+    "iit|mahayana": {
+      "mean": 0.18133839964866638,
+      "n": 8,
+      "max": 0.2417345494031906
+    },
+    "mahayana|relational_qm": {
+      "mean": 0.3549935668706894,
+      "n": 4,
+      "max": 0.42687565088272095
+    }
+  }
+}

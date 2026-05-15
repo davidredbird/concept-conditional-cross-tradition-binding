@@ -1,0 +1,20 @@
+{
+  "id": "russell_mysticism_logic",
+  "title": "Mysticism and Logic, and Other Essays",
+  "author": "Bertrand Russell",
+  "translator": null,
+  "tradition": "analytic",
+  "category": "non_contemplative",
+  "era": "20c",
+  "source": {
+    "type": "gutenberg",
+    "id": "25447",
+    "url": "https://www.gutenberg.org/cache/epub/25447/pg25447.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/25447/pg25447.txt",
+    "size_bytes": 452479,
+    "format": "txt"
+  }
+}

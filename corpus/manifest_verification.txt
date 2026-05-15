@@ -1,0 +1,40 @@
+plotinus_enneads_mackenna                MISMATCH     0.0    A Ribband of Blue, and Other Bible Studies by James Hudson T
+taote_legge                              ok           0.67   The Tao Teh King, or the Tao and its Characteristics by Laoz
+zhuangzi_legge                           MISMATCH     0.0    The Song My Paddle Sings by E. Pauline Johnson
+upanishads_mueller                       MISMATCH     0.0    Fruitfulness by Émile Zola
+upanishads_mueller2                      MISMATCH     0.0    Qvo vadis: Kertomus Neron ajoilta by Henryk Sienkiewicz
+bhagavad_gita_arnold                     ok           0.5    The Song Celestial; Or, Bhagavad-Gîtâ (from the Mahâbhârata)
+rumi_masnavi_book1_redhouse              error               __ERROR__: URLError: <urlopen error _ssl.c:1063: The handsha
+cloud_of_unknowing_underhill             MISMATCH     0.0    Book Repair and Restoration: A Manual of Practical Suggestio
+john_of_the_cross_ascent                 MISMATCH     0.2    Beacon Lights of History, Volume 11: American Founders by Jo
+john_of_the_cross_dark_night             MISMATCH     0.0    The Imitation of Christ by à Kempis Thomas
+teresa_interior_castle                   MISMATCH     0.0    Sir Walter Scott as a Critic of Literature by Margaret Ball
+brother_lawrence_presence                ok           1.0    The Practice of the Presence of God by Brother of the Resurr
+kant_critique_pure_reason                ok           1.0    The Critique of Pure Reason by Immanuel Kant
+kant_critique_practical_reason           ok           1.0    The Critique of Practical Reason by Immanuel Kant
+hume_treatise                            ok           1.0    A Treatise of Human Nature by David Hume
+hume_enquiry                             ok           1.0    An Enquiry Concerning Human Understanding by David Hume
+russell_problems                         ok           1.0    The Problems of Philosophy by Bertrand Russell
+russell_external_world                   ok           0.67   Our Knowledge of the External World as a Field for Scientifi
+russell_mysticism_logic                  ok           1.0    Mysticism and Logic and Other Essays by Bertrand Russell
+wittgenstein_tractatus_ogden             ok           1.0    Tractatus Logico-Philosophicus by Ludwig Wittgenstein
+augustine_confessions                    ok           1.0    The Confessions of St. Augustine by Saint of Hippo Augustine
+aquinas_summa_part1                      ok           1.0    Summa Theologica, Part I (Prima Pars) by Saint Aquinas Thoma
+calvin_institutes_book1                  ok           0.67   Institutes of the Christian Religion (Vol. 1 of 2) by Jean C
+spinoza_ethics                           ok           0.67   Ethics by Benedictus de Spinoza
+tibetan_book_of_the_dead_evanswentz      MISMATCH     0.0    More Science from an Easy Chair by Sir E. Ray Lankester
+dhammapada_radhakrishnan                 error               __ERROR__: URLError: <urlopen error _ssl.c:1063: The handsha
+questions_of_milinda_rhys_davids         MISMATCH     0.0    Bartholomew Sastrow: Being the Memoirs of a German Burgomast
+buddhist_suttas_rhys_davids              error               __ERROR__: URLError: <urlopen error _ssl.c:1063: The handsha
+zohar_sperling_simon                     skipped (non-gutenberg)        
+sefer_yetzirah_kalisch                   MISMATCH     0.0    A Spirit of Avarice by W. W. Jacobs
+diamond_sutra_gemmell                    MISMATCH     0.0    People of Destiny: Americans as I saw them at Home and Abroa
+bostrom_simulation_argument              skipped (non-gutenberg)        
+wheeler_it_from_bit                      skipped (non-gutenberg)        
+tegmark_mathematical_universe_paper      skipped (non-gutenberg)        
+kastrup_world_is_qualitative_paper       skipped (non-gutenberg)        
+hoffman_interface_theory_paper           skipped (non-gutenberg)        
+rovelli_relational_qm_paper              skipped (non-gutenberg)        
+friston_free_energy_principle            skipped (non-gutenberg)        
+tononi_iit_paper                         skipped (non-gutenberg)        
+Summary:  ok=15  mismatched=12  errors=3  skipped=9  total=39

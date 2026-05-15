@@ -1,0 +1,25 @@
+{
+  "id": "kant_critique_practical_reason",
+  "title": "The Critique of Practical Reason",
+  "author": "Immanuel Kant",
+  "translator": "Thomas Kingsmill Abbott",
+  "tradition": "kantian",
+  "category": "dualistic",
+  "era": "18c",
+  "source": {
+    "type": "gutenberg",
+    "id": "5683",
+    "url": "https://www.gutenberg.org/cache/epub/5683/pg5683.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/5683/pg5683.txt",
+    "size_bytes": 397587,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 62838,
+    "char_count": 366545,
+    "token_estimate": 83784
+  }
+}

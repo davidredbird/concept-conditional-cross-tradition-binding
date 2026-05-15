@@ -1,0 +1,21 @@
+{
+  "id": "spinoza_ethics",
+  "title": "Ethics",
+  "author": "Baruch Spinoza",
+  "translator": "R.H.M. Elwes",
+  "tradition": "spinozist",
+  "category": "nondual",
+  "era": "17c",
+  "source": {
+    "type": "gutenberg",
+    "id": "3800",
+    "url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt"
+  },
+  "license": "pd",
+  "notes": "Substance monism \u2014 God-or-Nature. Structurally nondual. New tradition tag.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt",
+    "size_bytes": 531670,
+    "format": "txt"
+  }
+}

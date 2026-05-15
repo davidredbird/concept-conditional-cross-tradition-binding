@@ -1,0 +1,26 @@
+{
+  "id": "calvin_institutes_book1",
+  "title": "Institutes of the Christian Religion, Book 1",
+  "author": "John Calvin",
+  "translator": "Henry Beveridge",
+  "tradition": "reformed_theology",
+  "category": "dualistic",
+  "era": "16c",
+  "source": {
+    "type": "gutenberg",
+    "id": "45001",
+    "url": "https://www.gutenberg.org/cache/epub/45001/pg45001.txt"
+  },
+  "license": "pd",
+  "notes": "Strict Creator-creature distinction. New tradition tag in this corpus.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/45001/pg45001.txt",
+    "size_bytes": 1925337,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 325072,
+    "char_count": 1861894,
+    "token_estimate": 433429
+  }
+}

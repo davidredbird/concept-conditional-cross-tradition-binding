@@ -1,0 +1,26 @@
+{
+  "id": "upanishads_collected",
+  "title": "The Upanishads",
+  "author": "Various (Vedic)",
+  "translator": "Swami Paramananda",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "7c BCE",
+  "source": {
+    "type": "gutenberg",
+    "id": "3283",
+    "url": "https://www.gutenberg.org/cache/epub/3283/pg3283.txt"
+  },
+  "license": "pd",
+  "notes": "Includes Isa, Katha, Kena, Mundaka, Svetasvatara, Prasna, selected Brihadaranyaka and Chandogya.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/3283/pg3283.txt",
+    "size_bytes": 125464,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 17648,
+    "char_count": 101724,
+    "token_estimate": 23530
+  }
+}

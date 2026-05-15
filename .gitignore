@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# Project outputs — exclude large binaries, keep human-readable summaries
+*.npy
+results/**/embeddings.npy
+results/**/similarity.npy
+# (PNG plots, summary.txt, CSVs in results/ are committed)
+
+# Secrets / local config
+.openai_key
+.env
+.env.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

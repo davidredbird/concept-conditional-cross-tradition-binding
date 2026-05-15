@@ -1,0 +1,25 @@
+{
+  "id": "rumi_persian_mystics",
+  "title": "The Persian Mystics: Jalalu'd-din Rumi",
+  "author": "Rumi",
+  "translator": "F. Hadland Davis",
+  "tradition": "sufi",
+  "category": "nondual",
+  "era": "13c",
+  "source": {
+    "type": "gutenberg",
+    "id": "45159",
+    "url": "https://www.gutenberg.org/cache/epub/45159/pg45159.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/45159/pg45159.txt",
+    "size_bytes": 126862,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 17623,
+    "char_count": 99274,
+    "token_estimate": 23497
+  }
+}

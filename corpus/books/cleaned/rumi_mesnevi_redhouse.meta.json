@@ -1,0 +1,26 @@
+{
+  "id": "rumi_mesnevi_redhouse",
+  "title": "The Mesnevi",
+  "author": "Rumi",
+  "translator": "James W. Redhouse",
+  "tradition": "sufi",
+  "category": "nondual",
+  "era": "13c",
+  "source": {
+    "type": "gutenberg",
+    "id": "61724",
+    "url": "https://www.gutenberg.org/cache/epub/61724/pg61724.txt"
+  },
+  "license": "pd",
+  "notes": "Redhouse translation of Rumi's Mesnevi.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/61724/pg61724.txt",
+    "size_bytes": 824134,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 127046,
+    "char_count": 731155,
+    "token_estimate": 169394
+  }
+}

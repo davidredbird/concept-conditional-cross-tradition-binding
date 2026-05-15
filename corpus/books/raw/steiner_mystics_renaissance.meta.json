@@ -1,0 +1,21 @@
+{
+  "id": "steiner_mystics_renaissance",
+  "title": "Mystics of the Renaissance (Eckhart, Tauler, Boehme et al.)",
+  "author": "Rudolf Steiner (analysis); excerpts from Eckhart, Tauler, Boehme, Bruno",
+  "translator": "Bertram Keightley",
+  "tradition": "christian_mystical",
+  "category": "nondual",
+  "era": "early 20c (commentary on 13-17c mystics)",
+  "source": {
+    "type": "gutenberg",
+    "id": "75994",
+    "url": "https://www.gutenberg.org/cache/epub/75994/pg75994.txt"
+  },
+  "license": "pd",
+  "notes": "Steiner's analysis with excerpts from Eckhart, Tauler, Boehme, Bruno, Paracelsus. Best PG source for Christian mystical material.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/75994/pg75994.txt",
+    "size_bytes": 257239,
+    "format": "txt"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "taote_legge",
+  "title": "Tao Te Ching",
+  "author": "Laozi",
+  "translator": "James Legge",
+  "tradition": "daoism",
+  "category": "nondual",
+  "era": "6c BCE",
+  "source": {
+    "type": "gutenberg",
+    "id": "216",
+    "url": "https://www.gutenberg.org/cache/epub/216/pg216.txt"
+  },
+  "license": "pd",
+  "notes": "Sacred Books of the East vol. 39; part 1 of Legge's two-volume Daoist canon translation.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/216/pg216.txt",
+    "size_bytes": 80555,
+    "format": "txt"
+  }
+}

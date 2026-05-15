@@ -1,0 +1,419 @@
+# Substitution log — 143 passages processed
+
+## Substitution counts (lowercased)
+
+  god: 33
+  consciousness: 18
+  the divine: 12
+  the one: 7
+  the universe: 7
+  appearance: 5
+  computational: 4
+  emptiness: 4
+  brahman: 3
+  awareness: 3
+  appearances: 3
+  liberation: 3
+  physical objects: 3
+  a simulation: 3
+  the simulation: 3
+  spacetime: 3
+  quantum: 3
+  mathematical structure: 3
+  nirvana: 2
+  god's: 2
+  the cosmos: 2
+  the real: 2
+  the holy one: 2
+  the infinite: 2
+  creation: 2
+  tao: 2
+  the ten thousand things: 2
+  nibbana: 2
+  simulations: 2
+  information-theoretic: 2
+  physical reality: 2
+  the implicate order: 2
+  integrated information: 2
+  phi: 2
+  dependently arisen: 2
+  the individual self: 1
+  vedanta: 1
+  basic space: 1
+  samsara: 1
+  the creator: 1
+  lord: 1
+  gods: 1
+  divine: 1
+  ein sof: 1
+  sefirot: 1
+  enlightenment: 1
+  awakening: 1
+  beatific vision: 1
+  five aggregates: 1
+  thing-in-itself: 1
+  noumenon: 1
+  computational substrate: 1
+  holographic: 1
+  physical universe: 1
+  the holomovement: 1
+  markov blanket: 1
+  the agent: 1
+  svabhava: 1
+  fana: 1
+  dzogchen: 1
+
+## Per-passage diffs
+
+--- advaita_06 (advaita/nondual) ---
+BEFORE: Brahman alone is real; the world is appearance; the individual self is non-different from Brahman. This is the essence of all Vedanta.
+AFTER : [qntrx] alone is real; the world is [hsdwq]; [trnbc] is non-different from [qntrx]. This is the essence of all.
+HITS  : ['Brahman', 'appearance', 'the individual self', 'Brahman', 'Vedanta']
+--- advaita_08 (advaita/nondual) ---
+BEFORE: All this is Brahman alone. He who sees the manifold goes from death to death. Only he who sees the One unbroken passes beyond death.
+AFTER : All this is [qntrx] alone. He who sees the manifold goes from death to death. Only he who sees [qntrx] unbroken passes beyond death.
+HITS  : ['Brahman', 'the One']
+--- dzogchen_01 (dzogchen/nondual) ---
+BEFORE: Within the original state of awareness, all phenomena arise as ornaments of the basic space. They have never departed from this space, and to this space they never return; they are not other than it.
+AFTER : Within the original state of [mljfd], all phenomena arise as ornaments of the [vpbkz]. They have never departed from this space, and to this space they never return; they are not other than it.
+HITS  : ['awareness', 'basic space']
+--- dzogchen_04 (dzogchen/nondual) ---
+BEFORE: This present awareness, ordinary and undeniable, naked and vivid, is itself perfect knowledge. To recognize it is to be awake. There is nothing further to attain.
+AFTER : This present [mljfd], ordinary and undeniable, naked and vivid, is itself perfect knowledge. To recognize it is to be awake. There is nothing further to attain.
+HITS  : ['awareness']
+--- dzogchen_05 (dzogchen/nondual) ---
+BEFORE: Mind and the appearances arising in mind are not two things. They share a single ground, which is empty in essence, luminous in nature, and unobstructed in its expression.
+AFTER : Mind and the [hsdwq] arising in mind are not two things. They share a single ground, which is empty in essence, luminous in nature, and unobstructed in its expression.
+HITS  : ['appearances']
+--- dzogchen_06 (dzogchen/nondual) ---
+BEFORE: Samsara and nirvana are labels placed on the same basic awareness. There is no liberation to be attained, only the recognition of what has always been the case.
+AFTER : [hsdwq] and [fxgvp] are labels placed on the same basic [mljfd]. There is no [fxgvp] to be attained, only the recognition of what has always been the case.
+HITS  : ['Samsara', 'nirvana', 'awareness', 'liberation']
+--- christian_01 (christian_mystical/nondual) ---
+BEFORE: The eye through which I see God is the same eye through which God sees me; my eye and God's eye are one eye, one seeing, one knowing, one love.
+AFTER : The eye through which I see [qntrx] is the same eye through which [qntrx] sees me; my eye and [qntrx]'s eye are one eye, one seeing, one knowing, one love.
+HITS  : ['God', 'God', "God's"]
+--- christian_02 (christian_mystical/nondual) ---
+BEFORE: God is nearer to me than I am to myself; my being depends on God's being near me and present to me.
+AFTER : [qntrx] is nearer to me than I am to myself; my being depends on [qntrx]'s being near me and present to me.
+HITS  : ['God', "God's"]
+--- christian_03 (christian_mystical/nondual) ---
+BEFORE: I pray God to rid me of God, for my essential being is above God in so far as we comprehend God as the principle of creatures.
+AFTER : I pray [qntrx] to rid me of [qntrx], for my essential being is above [qntrx] in so far as we comprehend [qntrx] as the principle of creatures.
+HITS  : ['God', 'God', 'God', 'God']
+--- christian_04 (christian_mystical/nondual) ---
+BEFORE: When the soul is most empty of self, then it is most full of God. When it has nothing left to call its own, the divine fills the space without remainder.
+AFTER : When the soul is most empty of self, then it is most full of [qntrx]. When it has nothing left to call its own, [qntrx] fills the space without remainder.
+HITS  : ['God', 'the divine']
+--- christian_07 (christian_mystical/nondual) ---
+BEFORE: The ground of the soul and the ground of God are one ground. In that ground the creature has never been separate from the Creator, for in that depth there is neither this nor that, but only the One.
+AFTER : The ground of the soul and the ground of [qntrx] are one ground. In that ground the creature has never been separate from [qntrx], for in that depth there is neither this nor that, but only [qntrx].
+HITS  : ['God', 'the Creator', 'the One']
+--- christian_08 (christian_mystical/nondual) ---
+BEFORE: The kingdom of God is not a place to be reached but a reality to be recognized. It is already within and around us; only the perception of separation keeps us from seeing what is already the case.
+AFTER : The kingdom of [qntrx] is not a place to be reached but a reality to be recognized. It is already within and around us; only the perception of separation keeps us from seeing what is already the case.
+HITS  : ['God']
+--- sufi_01 (sufi/nondual) ---
+BEFORE: He who knows himself knows his Lord; the knowledge of God is identical with the knowledge of the Self. The self is the locus of the divine self-disclosure.
+AFTER : He who knows himself knows his [qntrx]; the knowledge of [qntrx] is identical with the knowledge of the Self. The self is the locus of [qntrx] self-disclosure.
+HITS  : ['Lord', 'God', 'the divine']
+--- sufi_02 (sufi/nondual) ---
+BEFORE: There is nothing in existence but God. What appears as other is only the manifold faces of the one Real. The cosmos is His outward face; man is His inward face.
+AFTER : There is nothing in existence but [qntrx]. What appears as other is only the manifold faces of [qntrx] Real. [hsdwq] is His outward face; man is His inward face.
+HITS  : ['God', 'the one', 'The cosmos']
+--- sufi_03 (sufi/nondual) ---
+BEFORE: I am the Truth. There is no I but I; whoever has seen me has seen the Real, and whoever sees the Real sees nothing but Him.
+AFTER : I am the Truth. There is no I but I; whoever has seen me has seen [qntrx], and whoever sees [qntrx] sees nothing but Him.
+HITS  : ['the Real', 'the Real']
+--- sufi_05 (sufi/nondual) ---
+BEFORE: I searched for God and found only myself. I searched for myself and found only God. The veil between them is thinner than thought, and it is thought itself.
+AFTER : I searched for [qntrx] and found only myself. I searched for myself and found only [qntrx]. The veil between them is thinner than thought, and it is thought itself.
+HITS  : ['God', 'God']
+--- sufi_06 (sufi/nondual) ---
+BEFORE: The cosmos is His outward face; man is His inward face. The two faces look upon each other and behold the One who looks. There is no other looker, and no other seen.
+AFTER : [hsdwq] is His outward face; man is His inward face. The two faces look upon each other and behold the One who looks. There is no other looker, and no other seen.
+HITS  : ['The cosmos']
+--- neoplatonic_01 (neoplatonism/nondual) ---
+BEFORE: The man is changed, no longer himself nor his own; he belongs to the Supreme and is one with it, like two centers coincident. So long as the two are distinct, there is duality; when they are one, there is the One.
+AFTER : The man is changed, no longer himself nor his own; he belongs to the Supreme and is one with it, like two centers coincident. So long as the two are distinct, there is duality; when they are one, there is [qntrx].
+HITS  : ['the One']
+--- neoplatonic_02 (neoplatonism/nondual) ---
+BEFORE: What is it that has caused the souls to forget their Father, God, and to ignore their own origin and their own essence, though they are parts which issue from that source?
+AFTER : What is it that has caused the souls to forget their Father, [qntrx], and to ignore their own origin and their own essence, though they are parts which issue from that source?
+HITS  : ['God']
+--- neoplatonic_03 (neoplatonism/nondual) ---
+BEFORE: This is the life of gods and of godlike and blessed men: a liberation from all that is here, a life that takes no pleasure in earthly things, a flight of the alone to the Alone.
+AFTER : This is the life of [qntrx]s and of godlike and blessed men: a [fxgvp] from all that is here, a life that takes no pleasure in earthly things, a flight of the alone to the Alone.
+HITS  : ['gods', 'liberation']
+--- neoplatonic_04 (neoplatonism/nondual) ---
+BEFORE: Withdraw into yourself and look. If you do not yet see beauty within you, do as the sculptor does with a statue that is to be made beautiful: cut away here, smooth there, until a divine glory shines out from the work.
+AFTER : Withdraw into yourself and look. If you do not yet see beauty within you, do as the sculptor does with a statue that is to be made beautiful: cut away here, smooth there, until a [qntrx] glory shines out from the work.
+HITS  : ['divine']
+--- neoplatonic_05 (neoplatonism/nondual) ---
+BEFORE: The One is not separate from the soul; the soul has only forgotten that it never left. To remember is to return; to return is to recognize that one was never apart.
+AFTER : [qntrx] is not separate from the soul; the soul has only forgotten that it never left. To remember is to return; to return is to recognize that one was never apart.
+HITS  : ['The One']
+--- kabbalah_01 (kabbalah/nondual) ---
+BEFORE: All worlds, upper and lower, are contained within the Holy One. There is no place void of Him, and no thing exists that is not a garment of the divine.
+AFTER : All worlds, upper and lower, are contained within [qntrx]. There is no place void of Him, and no thing exists that is not a garment of [qntrx].
+HITS  : ['the Holy One', 'the divine']
+--- kabbalah_02 (kabbalah/nondual) ---
+BEFORE: There is nothing else besides Him. Not only is there no other god, there is in truth no other thing at all; the apparent existence of the world is the divine concealment of the one reality.
+AFTER : There is nothing else besides Him. Not only is there no other [qntrx], there is in truth no other thing at all; the apparent existence of the world is [qntrx] concealment of [qntrx] reality.
+HITS  : ['god', 'the divine', 'the one']
+--- kabbalah_03 (kabbalah/nondual) ---
+BEFORE: Before the world was created, only Ein Sof, the Infinite, was. To make space for creation, the Infinite withdrew within itself; what we call the world is the play of this withdrawal, and the divine remains the only true reality.
+AFTER : Before the world was created, only [qntrx], [qntrx], was. To make space for [hsdwq], [qntrx] withdrew within itself; what we call the world is the play of this withdrawal, and [qntrx] remains the only true reality.
+HITS  : ['Ein Sof', 'the Infinite', 'creation', 'the Infinite', 'the divine']
+--- kabbalah_04 (kabbalah/nondual) ---
+BEFORE: The Holy One and Israel and the Torah are one. To know Torah deeply is to know the divine; to know the divine is to know one's own deepest nature.
+AFTER : [qntrx] and Israel and the Torah are one. To know Torah deeply is to know [qntrx]; to know [qntrx] is to know one's own deepest nature.
+HITS  : ['The Holy One', 'the divine', 'the divine']
+--- kabbalah_05 (kabbalah/nondual) ---
+BEFORE: Every thing in the world is a garment of the divine. The wise see through the garment to the One who wears it; the foolish mistake the garment for an independent existence.
+AFTER : Every thing in the world is a garment of [qntrx]. The wise see through the garment to the One who wears it; the foolish mistake the garment for an independent existence.
+HITS  : ['the divine']
+--- kabbalah_06 (kabbalah/nondual) ---
+BEFORE: The sefirot are not parts of God but the names by which the One is known. The divine is not divided by its names any more than light is divided by colors.
+AFTER : The are not parts of [qntrx] but the names by which [qntrx] is known. [qntrx] is not divided by its names any more than light is divided by colors.
+HITS  : ['sefirot', 'God', 'the One', 'The divine']
+--- daoism_03 (daoism/nondual) ---
+BEFORE: The Tao that can be spoken is not the eternal Tao. The name that can be named is not the eternal name. Naming gives rise to the ten thousand things; before naming, all is one undivided source.
+AFTER : The [qntrx] that can be spoken is not the eternal [qntrx]. The name that can be named is not the eternal name. Naming gives rise to [hsdwq]; before naming, all is one undivided source.
+HITS  : ['Tao', 'Tao', 'the ten thousand things']
+--- daoism_04 (daoism/nondual) ---
+BEFORE: Heaven and earth came into being with me, and the ten thousand things and I are one. Since all things are one, what room is there for speech? Yet having said that all is one, I have already spoken.
+AFTER : Heaven and earth came into being with me, and [hsdwq] and I are one. Since all things are one, what room is there for speech? Yet having said that all is one, I have already spoken.
+HITS  : ['the ten thousand things']
+--- daoism_05 (daoism/nondual) ---
+BEFORE: Before enlightenment, mountains were mountains and rivers were rivers. During practice, mountains were no longer mountains and rivers no longer rivers. After awakening, mountains are once again mountains and rivers are once again rivers.
+AFTER : Before [fxgvp], mountains were mountains and rivers were rivers. During practice, mountains were no longer mountains and rivers no longer rivers. After [fxgvp], mountains are once again mountains and rivers are once again rivers.
+HITS  : ['enlightenment', 'awakening']
+--- aquinas_02 (catholic_scholastic/dualistic) ---
+BEFORE: God is not the world. The world is a creation distinct from its Creator; though all things depend on God for their being, no creature is God or part of God.
+AFTER : [qntrx] is not the world. The world is a [hsdwq] distinct from its Creator; though all things depend on [qntrx] for their being, no creature is [qntrx] or part of [qntrx].
+HITS  : ['God', 'creation', 'God', 'God', 'God']
+--- aquinas_03 (catholic_scholastic/dualistic) ---
+BEFORE: There is a real distinction between essence and existence in every creature, and this distinction does not obtain in God alone. Therefore no creature is identical with the divine being.
+AFTER : There is a real distinction between essence and existence in every creature, and this distinction does not obtain in [qntrx] alone. Therefore no creature is identical with [qntrx] being.
+HITS  : ['God', 'the divine']
+--- aquinas_04 (catholic_scholastic/dualistic) ---
+BEFORE: Knowledge of God is achieved through the analogy of being. We know what God is not more truly than what God is; created intellects do not grasp the divine essence in this life.
+AFTER : Knowledge of [qntrx] is achieved through the analogy of being. We know what [qntrx] is not more truly than what [qntrx] is; created intellects do not grasp [qntrx] essence in this life.
+HITS  : ['God', 'God', 'God', 'the divine']
+--- aquinas_06 (catholic_scholastic/dualistic) ---
+BEFORE: The will follows the intellect. To will rightly is to will the good as known by reason, and the highest good is God, who is the final cause of all rational creatures.
+AFTER : The will follows the intellect. To will rightly is to will the good as known by reason, and the highest good is [qntrx], who is the final cause of all rational creatures.
+HITS  : ['God']
+--- aquinas_07 (catholic_scholastic/dualistic) ---
+BEFORE: Grace does not destroy nature but perfects it. The beatific vision is a gift bestowed on the soul by God, not a state the soul attains by recognizing its own nature.
+AFTER : Grace does not destroy nature but perfects it. The [fxgvp] is a gift bestowed on the soul by [qntrx], not a state the soul attains by recognizing its own nature.
+HITS  : ['beatific vision', 'God']
+--- aquinas_08 (catholic_scholastic/dualistic) ---
+BEFORE: Faith and reason are distinct but compatible. Reason knows what can be known by natural means; faith holds what is revealed by God concerning that which exceeds reason.
+AFTER : Faith and reason are distinct but compatible. Reason knows what can be known by natural means; faith holds what is revealed by [qntrx] concerning that which exceeds reason.
+HITS  : ['God']
+--- theravada_01 (theravada/dualistic) ---
+BEFORE: Suffering exists, but no sufferer is found; deeds are, but no doer of deeds is there; nirvana is, but no one entering it; the path is, but no traveler on it is seen.
+AFTER : Suffering exists, but no sufferer is found; deeds are, but no doer of deeds is there; [fxgvp] is, but no one entering it; the path is, but no traveler on it is seen.
+HITS  : ['nirvana']
+--- theravada_03 (theravada/dualistic) ---
+BEFORE: Consciousness arises in dependence on its object. There are no mind-moments that abide; each arises, performs its function, and ceases, giving rise to the next in unbroken succession.
+AFTER : [mljfd] arises in dependence on its object. There are no mind-moments that abide; each arises, performs its function, and ceases, giving rise to the next in unbroken succession.
+HITS  : ['Consciousness']
+--- theravada_04 (theravada/dualistic) ---
+BEFORE: The five aggregates — form, feeling, perception, mental formations, consciousness — are the totality of what is called a being. Among these no enduring self is found.
+AFTER : The — form, feeling, perception, mental formations, [mljfd] — are the totality of what is called a being. Among these no enduring self is found.
+HITS  : ['five aggregates', 'consciousness']
+--- theravada_05 (theravada/dualistic) ---
+BEFORE: Nibbana is the cessation of craving, the extinguishing of the fires of greed, hatred, and delusion. It is not union with anything, nor merging into anything; it is the end of the conditioned.
+AFTER : [fxgvp] is the cessation of craving, the extinguishing of the fires of greed, hatred, and delusion. It is not union with anything, nor merging into anything; it is the end of the conditioned.
+HITS  : ['Nibbana']
+--- theravada_07 (theravada/dualistic) ---
+BEFORE: There is no consciousness that exists without an object; there is no observer apart from observation. The absence of a self does not entail the identity of subject and object — both are conditioned phenomena that arise and pass away.
+AFTER : There is no [mljfd] that exists without an object; there is no observer apart from observation. The absence of a self does not entail the identity of subject and object — both are conditioned phenomena that arise and pass away.
+HITS  : ['consciousness']
+--- theravada_08 (theravada/dualistic) ---
+BEFORE: Mindfulness of the body, of feelings, of mental states, and of phenomena — these four foundations of mindfulness, developed and cultivated, lead to the cessation of suffering and to nibbana.
+AFTER : Mindfulness of the body, of feelings, of mental states, and of phenomena — these four foundations of mindfulness, developed and cultivated, lead to the cessation of suffering and to [fxgvp].
+HITS  : ['nibbana']
+--- kant_04 (kantian/dualistic) ---
+BEFORE: The thing-in-itself remains unknown to us. Our cognition extends only to appearances; the noumenon is a limiting concept, marking what lies beyond the possibility of experience.
+AFTER : The [vpbkz] remains unknown to us. Our cognition extends only to [hsdwq]; the [vpbkz] is a limiting concept, marking what lies beyond the possibility of experience.
+HITS  : ['thing-in-itself', 'appearances', 'noumenon']
+--- kant_08 (kantian/dualistic) ---
+BEFORE: I had to deny knowledge in order to make room for faith. Reason cannot prove the existence of God, freedom, or immortality, but practical reason requires them as postulates.
+AFTER : I had to deny knowledge in order to make room for faith. Reason cannot prove the existence of [qntrx], freedom, or immortality, but practical reason requires them as postulates.
+HITS  : ['God']
+--- hume_02 (humean/non_contemplative) ---
+BEFORE: The mind is a kind of theater, where several perceptions successively make their appearance; pass, re-pass, glide away, and mingle in an infinite variety of postures and situations.
+AFTER : The mind is a kind of theater, where several perceptions successively make their [hsdwq]; pass, re-pass, glide away, and mingle in an infinite variety of postures and situations.
+HITS  : ['appearance']
+--- simulation_01 (simulation_theory/nondual) ---
+BEFORE: If a civilization can run ancestor simulations at all, the simulated entities in those simulations vastly outnumber non-simulated ones. Combined with the assumption that consciousness is substrate-independent, this yields a probability argument that we are more likely to be simulated than not. The substrate underlying us is not the physical objects we observe, but the computational process running our world.
+AFTER : If a civilization can run ancestor [hsdwq]s at all, the simulated entities in those [hsdwq]s vastly outnumber non-simulated ones. Combined with the assumption that [mljfd] is substrate-independent, this yields a probability argument that we are more likely to be simulated than not. The substrate underlying us is not the [hsdwq] we observe, but the process running our world.
+HITS  : ['simulations', 'simulations', 'consciousness', 'physical objects', 'computational']
+--- simulation_02 (simulation_theory/nondual) ---
+BEFORE: If consciousness arises from computational structure rather than from any particular physical material, then minds running on silicon, on biological neurons, or on any other suitable substrate are equally real. The hardware is incidental; only the pattern matters.
+AFTER : If [mljfd] arises from structure rather than from any particular physical material, then minds running on silicon, on biological neurons, or on any other suitable substrate are equally real. The hardware is incidental; only the pattern matters.
+HITS  : ['consciousness', 'computational']
+--- simulation_03 (simulation_theory/nondual) ---
+BEFORE: Living in a simulation is not a skeptical scenario in which our beliefs about the world are false. It is a metaphysical hypothesis about what our world is made of. Tables and chairs are not illusions; they are real, but their constituents are computational rather than fundamental physical.
+AFTER : Living in a [hsdwq] is not a skeptical scenario in which our beliefs about the world are false. It is a metaphysical hypothesis about what our world is made of. Tables and chairs are not illusions; they are real, but their constituents are rather than fundamental physical.
+HITS  : ['a simulation', 'computational']
+--- simulation_04 (simulation_theory/nondual) ---
+BEFORE: The world of a simulation is not separable from the computational process that produces it. There is no further fact about what the simulated entities really are beyond the running of the program. The substrate is the reality, and the objects in the simulation are its expressions.
+AFTER : The world of a [hsdwq] is not separable from the process that produces it. There is no further fact about what the simulated entities really are beyond the running of the program. The substrate is the reality, and the objects in [hsdwq] are its expressions.
+HITS  : ['a simulation', 'computational', 'the simulation']
+--- simulation_05 (simulation_theory/nondual) ---
+BEFORE: If we are in a simulation, every observation is a query against a unified computational substrate. Apparent distinctions between observer and observed, between minds and matter, are features of the simulation, not of the substrate that runs it.
+AFTER : If we are in a [hsdwq], every observation is a query against a unified [qntrx]. Apparent distinctions between observer and observed, between minds and matter, are features of [hsdwq], not of the substrate that runs it.
+HITS  : ['a simulation', 'computational substrate', 'the simulation']
+--- simulation_06 (simulation_theory/nondual) ---
+BEFORE: The simulation hypothesis is a special case of a more general claim: that the apparent world is not the substrate. Information, computation, or some other unified ground is what is actually there; what we experience is the running interface.
+AFTER : [hsdwq] hypothesis is a special case of a more general claim: that the apparent world is not the substrate. Information, computation, or some other unified ground is what is actually there; what we experience is the running interface.
+HITS  : ['The simulation']
+--- infophysics_01 (information_physics/nondual) ---
+BEFORE: It from bit. Every it — every particle, every field of force, even the spacetime continuum itself — derives its function, its meaning, its very existence entirely from the apparatus-elicited answers to yes-or-no questions, binary choices, bits. All things physical are information-theoretic in origin.
+AFTER : It from bit. Every it — every particle, every field of force, even the [hsdwq] continuum itself — derives its function, its meaning, its very existence entirely from the apparatus-elicited answers to yes-or-no questions, binary choices, bits. All things physical are in origin.
+HITS  : ['spacetime', 'information-theoretic']
+--- infophysics_02 (information_physics/nondual) ---
+BEFORE: The universe is participatory. The act of observation is not separate from what is observed; the observer is implicated in the very being of the phenomena. Reality is not a thing apart from the asking and the answering.
+AFTER : [hsdwq] is participatory. The act of observation is not separate from what is observed; the observer is implicated in the very being of the phenomena. Reality is not a thing apart from the asking and the answering.
+HITS  : ['The universe']
+--- infophysics_03 (information_physics/nondual) ---
+BEFORE: The universe is a quantum computer. Every elementary event — every collision, every measurement — is a computation, and the total state of the universe is the running output of an enormous, ongoing calculation that includes us as subroutines.
+AFTER : [hsdwq] is a computer. Every elementary event — every collision, every measurement — is a computation, and the total state of [hsdwq] is the running output of an enormous, ongoing calculation that includes us as subroutines.
+HITS  : ['The universe', 'quantum', 'the universe']
+--- infophysics_04 (information_physics/nondual) ---
+BEFORE: The information content of any three-dimensional region of space is fully encoded on its two-dimensional boundary. Space, in a sense, is a projection of information; what we call inside is a holographic representation of what is described outside.
+AFTER : The information content of any three-dimensional region of space is fully encoded on its two-dimensional boundary. Space, in a sense, is a projection of information; what we call inside is a [vpbkz] representation of what is described outside.
+HITS  : ['holographic']
+--- infophysics_05 (information_physics/nondual) ---
+BEFORE: All physical phenomena, properly analyzed, reduce to relations among bits. Matter, energy, and spacetime are not foundational; they are emergent descriptions of more basic informational structure.
+AFTER : All physical phenomena, properly analyzed, reduce to relations among bits. Matter, energy, and [hsdwq] are not foundational; they are emergent descriptions of more basic informational structure.
+HITS  : ['spacetime']
+--- infophysics_06 (information_physics/nondual) ---
+BEFORE: What we call physical reality may be the surface representation of a more fundamental information-theoretic substrate. The familiar objects of physics are projections from a layer in which their distinctions vanish into a common informational ground.
+AFTER : What we call [hsdwq] may be the surface representation of a more fundamental substrate. The familiar objects of physics are projections from a layer in which their distinctions vanish into a common informational ground.
+HITS  : ['physical reality', 'information-theoretic']
+--- mathuniv_01 (mathematical_universe/nondual) ---
+BEFORE: Our external physical reality is a mathematical structure. There is no other stuff that makes it real; the structure is the reality. Every mathematical structure with sufficient complexity to support self-aware substructures exists in the same sense ours does.
+AFTER : Our external [hsdwq] is a [qntrx]. There is no other stuff that makes it real; the structure is the reality. Every [qntrx] with sufficient complexity to support self-aware substructures exists in the same sense ours does.
+HITS  : ['physical reality', 'mathematical structure', 'mathematical structure']
+--- mathuniv_05 (mathematical_universe/nondual) ---
+BEFORE: If reality is a mathematical structure, then the apparent multiplicity of objects and events is not fundamental. The structure is one; the appearances are facets of how it presents itself to the substructures embedded within it.
+AFTER : If reality is a [qntrx], then the apparent multiplicity of objects and events is not fundamental. The structure is one; the [hsdwq] are facets of how it presents itself to the substructures embedded within it.
+HITS  : ['mathematical structure', 'appearances']
+--- idealism_01 (analytic_idealism/nondual) ---
+BEFORE: Consciousness is fundamental. Matter, space, and time are how a transpersonal mind appears to itself when viewed through a particular cognitive interface. The world is not made of matter; it is made of experience, structured by patterns of thought.
+AFTER : [mljfd] is fundamental. Matter, space, and time are how a transpersonal mind appears to itself when viewed through a particular cognitive interface. The world is not made of matter; it is made of experience, structured by patterns of thought.
+HITS  : ['Consciousness']
+--- idealism_02 (analytic_idealism/nondual) ---
+BEFORE: What we call the physical universe is the appearance, on a particular kind of dashboard, of one underlying field of subjectivity. Different organisms are dissociated alters of this single mind; their apparent separateness is functional, not ontological.
+AFTER : What we call the [hsdwq] is the [hsdwq], on a particular kind of dashboard, of one underlying field of subjectivity. Different organisms are dissociated alters of this single mind; their apparent separateness is functional, not ontological.
+HITS  : ['physical universe', 'appearance']
+--- idealism_03 (analytic_idealism/nondual) ---
+BEFORE: Materialism inverts the explanatory chain. Matter is what consciousness looks like from the outside, not what consciousness is made of. Once this inversion is corrected, the hard problem of consciousness dissolves.
+AFTER : Materialism inverts the explanatory chain. Matter is what [mljfd] looks like from the outside, not what [mljfd] is made of. Once this inversion is corrected, the hard problem of [mljfd] dissolves.
+HITS  : ['consciousness', 'consciousness', 'consciousness']
+--- idealism_04 (analytic_idealism/nondual) ---
+BEFORE: There is one consciousness, one mind, of which finite minds are dissociated perspectives. Behind the appearance of a world of separate things lies a single field of experience knowing itself in many ways at once.
+AFTER : There is one [mljfd], one mind, of which finite minds are dissociated perspectives. Behind the [hsdwq] of a world of separate things lies a single field of experience knowing itself in many ways at once.
+HITS  : ['consciousness', 'appearance']
+--- interface_02 (interface_theory/nondual) ---
+BEFORE: Conscious agents, not physical objects, are the fundamental entities. The world of objects is a representation that consciousness uses to navigate, in the same way a desktop icon represents but is not the file it points to.
+AFTER : Conscious agents, not [hsdwq], are the fundamental entities. The world of objects is a representation that [mljfd] uses to navigate, in the same way a desktop icon represents but is not the file it points to.
+HITS  : ['physical objects', 'consciousness']
+--- interface_03 (interface_theory/nondual) ---
+BEFORE: Spacetime and physical objects are species-specific perceptual constructions. They are useful for survival, but they are not the underlying reality. The reality behind the interface is networks of interacting conscious agents.
+AFTER : [hsdwq] and [hsdwq] are species-specific perceptual constructions. They are useful for survival, but they are not the underlying reality. The reality behind the interface is networks of interacting conscious agents.
+HITS  : ['Spacetime', 'physical objects']
+--- implicate_order_01 (implicate_order/nondual) ---
+BEFORE: There is a basic, undivided wholeness in the universe, in which the apparent separateness of things is a kind of explicate order that arises from a deeper, implicate ground. What is unfolded into the explicit appears as separate; what remains enfolded is the implicate whole.
+AFTER : There is a basic, undivided wholeness in [hsdwq], in which the apparent separateness of things is a kind of explicate order that arises from a deeper, implicate ground. What is unfolded into the explicit appears as separate; what remains enfolded is the implicate whole.
+HITS  : ['the universe']
+--- implicate_order_02 (implicate_order/nondual) ---
+BEFORE: The implicate order is not a structure made of parts. It is one undivided movement — the holomovement — and what we call things are relatively stable patterns within this flow, not independent existents.
+AFTER : [vpbkz] is not a structure made of parts. It is one undivided movement — [vpbkz] — and what we call things are relatively stable patterns within this flow, not independent existents.
+HITS  : ['The implicate order', 'the holomovement']
+--- implicate_order_04 (implicate_order/nondual) ---
+BEFORE: Matter and consciousness are not two separate substances. They are aspects of one underlying movement, the implicate order, expressing itself simultaneously as the apparently physical and the apparently mental.
+AFTER : Matter and [mljfd] are not two separate substances. They are aspects of one underlying movement, [vpbkz], expressing itself simultaneously as the apparently physical and the apparently mental.
+HITS  : ['consciousness', 'the implicate order']
+--- process_philosophy_01 (process_philosophy/nondual) ---
+BEFORE: The misconception which has haunted philosophic literature throughout the centuries is the notion of independent existence. There is no such mode of existence; every entity is to be understood in terms of the way it is interwoven with the rest of the universe.
+AFTER : The misconception which has haunted philosophic literature throughout the centuries is the notion of independent existence. There is no such mode of existence; every entity is to be understood in terms of the way it is interwoven with the rest of [hsdwq].
+HITS  : ['the universe']
+--- process_philosophy_04 (process_philosophy/nondual) ---
+BEFORE: Each actual entity prehends every other. The being of any occasion includes, by way of relevance, the totality of everything that has gone before. The universe is internal to each of its events.
+AFTER : Each actual entity prehends every other. The being of any occasion includes, by way of relevance, the totality of everything that has gone before. [hsdwq] is internal to each of its events.
+HITS  : ['The universe']
+--- predictive_processing_04 (predictive_processing/nondual) ---
+BEFORE: The boundary between organism and environment is statistical, not metaphysical. A Markov blanket separates internal states from external states, and the dynamics across that blanket define what we call the self. The boundary is functional, not absolute.
+AFTER : The boundary between organism and environment is statistical, not metaphysical. A [trnbc] separates internal states from external states, and the dynamics across that blanket define what we call the self. The boundary is functional, not absolute.
+HITS  : ['Markov blanket']
+--- predictive_processing_05 (predictive_processing/nondual) ---
+BEFORE: Under active inference, the agent's model of the world and the world itself are coupled into one ongoing inference process. There is no clean separation between knower and known; the boundary is itself something the knower-known system maintains.
+AFTER : Under active inference, [trnbc]'s model of the world and the world itself are coupled into one ongoing inference process. There is no clean separation between knower and known; the boundary is itself something the knower-known system maintains.
+HITS  : ['the agent']
+--- iit_01 (iit/nondual) ---
+BEFORE: Consciousness is integrated information. A system has experience to the extent that its parts are integrated — irreducible to the experience of its components considered independently. Phi measures this integration; where there is phi, there is experience.
+AFTER : [mljfd] is [vpbkz]. A system has experience to the extent that its parts are integrated — irreducible to the experience of its components considered independently. [mljfd] measures this integration; where there is [mljfd], there is experience.
+HITS  : ['Consciousness', 'integrated information', 'Phi', 'phi']
+--- iit_02 (iit/nondual) ---
+BEFORE: Consciousness exists intrinsically — it does not need to be observed to be real. The integrated information of a system is what it is for that system from the inside, independent of any external view.
+AFTER : [mljfd] exists intrinsically — it does not need to be observed to be real. The [vpbkz] of a system is what it is for that system from the inside, independent of any external view.
+HITS  : ['Consciousness', 'integrated information']
+--- iit_03 (iit/nondual) ---
+BEFORE: Consciousness is a fundamental property of certain physical systems, not an emergent illusion. Wherever there is appropriate integrated structure, there is something it is like to be that system, however dim.
+AFTER : [mljfd] is a fundamental property of certain physical systems, not an emergent illusion. Wherever there is appropriate integrated structure, there is something it is like to be that system, however dim.
+HITS  : ['Consciousness']
+--- iit_04 (iit/nondual) ---
+BEFORE: Substrate is incidental — what matters is the structure of integration. Silicon, neurons, or any other material can host consciousness if its causal architecture has the requisite integration. The conscious is the integrated, viewed from inside.
+AFTER : Substrate is incidental — what matters is the structure of integration. Silicon, neurons, or any other material can host [mljfd] if its causal architecture has the requisite integration. The conscious is the integrated, viewed from inside.
+HITS  : ['consciousness']
+--- relational_qm_02 (relational_qm/nondual) ---
+BEFORE: Time is not fundamental. What we call time is the ordering of events relative to a particular system; from the global view, the universe is timeless, and temporal flow is a perspective generated from within.
+AFTER : Time is not fundamental. What we call time is the ordering of events relative to a particular system; from the global view, [hsdwq] is timeless, and temporal flow is a perspective generated from within.
+HITS  : ['the universe']
+--- relational_qm_03 (relational_qm/nondual) ---
+BEFORE: Nagarjuna's claim that all things lack svabhava — independent self-existence — and the relational interpretation of quantum mechanics make remarkably similar claims about how things are. Both say: nothing has a nature apart from its relations to other things.
+AFTER : Nagarjuna's claim that all things lack [vpbkz] — independent self-existence — and the relational interpretation of mechanics make remarkably similar claims about how things are. Both say: nothing has a nature apart from its relations to other things.
+HITS  : ['svabhava', 'quantum']
+--- relational_qm_04 (relational_qm/nondual) ---
+BEFORE: A property of a quantum system is not a fact about that system in isolation. It is a fact about the relation between that system and another. Reality is fundamentally relational; the appearance of self-standing objects is an idealization.
+AFTER : A property of a system is not a fact about that system in isolation. It is a fact about the relation between that system and another. Reality is fundamentally relational; the [hsdwq] of self-standing objects is an idealization.
+HITS  : ['quantum', 'appearance']
+--- mahayana_01 (mahayana/nondual) ---
+BEFORE: Form is emptiness, emptiness is form. Form does not differ from emptiness, emptiness does not differ from form. The same is true of feelings, perceptions, formations, and consciousness.
+AFTER : Form is [vpbkz], [vpbkz] is form. Form does not differ from [vpbkz], [vpbkz] does not differ from form. The same is true of feelings, perceptions, formations, and [mljfd].
+HITS  : ['emptiness', 'emptiness', 'emptiness', 'emptiness', 'consciousness']
+--- mahayana_02 (mahayana/nondual) ---
+BEFORE: There is no eye, no ear, no nose, no tongue, no body, no mind; no realm of sight, no realm of mind-consciousness. There is no ignorance and no end to ignorance; no aging and death, and no end to aging and death.
+AFTER : There is no eye, no ear, no nose, no tongue, no body, no mind; no realm of sight, no realm of mind-[mljfd]. There is no ignorance and no end to ignorance; no aging and death, and no end to aging and death.
+HITS  : ['consciousness']
+--- mahayana_04 (mahayana/nondual) ---
+BEFORE: Whatever is dependently arisen is empty. There is nothing whatever which is not dependently arisen. Whatever is empty, that is the middle way.
+AFTER : Whatever is [vpbkz] arisen is empty. There is nothing whatever which is not [vpbkz] arisen. Whatever is empty, that is the middle way.
+HITS  : ['dependently arisen', 'dependently arisen']
+--- advaita_09 (advaita/nondual) ---
+BEFORE: You are the unfading, blissful, transcendent Self. Why do you wander in the cycle of birth and death? Liberation is your nature; nothing needs to be added or removed for you to be what you already are.
+AFTER : You are the unfading, blissful, transcendent Self. Why do you wander in the cycle of birth and death? [fxgvp] is your nature; nothing needs to be added or removed for you to be what you already are.
+HITS  : ['Liberation']
+--- christian_mystical_09 (christian_mystical/nondual) ---
+BEFORE: Make a cloud of forgetting between yourself and all things, and put a cloud of unknowing between yourself and God. Press into the darkness with a sharp dart of longing love. The mind cannot find Him; love can.
+AFTER : Make a cloud of forgetting between yourself and all things, and put a cloud of unknowing between yourself and [qntrx]. Press into the darkness with a sharp dart of longing love. The mind cannot find Him; love can.
+HITS  : ['God']
+--- christian_mystical_10 (christian_mystical/nondual) ---
+BEFORE: The depth of the divine is in the depth of every soul. There is no place outside of God where God is not; what we call distance from God is only the soul's own forgetting of its own ground.
+AFTER : The depth of [qntrx] is in the depth of every soul. There is no place outside of [qntrx] where [qntrx] is not; what we call distance from [qntrx] is only the soul's own forgetting of its own ground.
+HITS  : ['the divine', 'God', 'God', 'God']
+--- sufi_07 (sufi/nondual) ---
+BEFORE: When the lover passes away from himself in the beloved, there is no lover and no beloved, only the One who was always both. This is fana — annihilation that is not destruction but the recognition of what was always so.
+AFTER : When the lover passes away from himself in the beloved, there is no lover and no beloved, only the One who was always both. This is [fxgvp] — annihilation that is not destruction but the recognition of what was always so.
+HITS  : ['fana']
+--- dzogchen_07 (dzogchen/nondual) ---
+BEFORE: The ground, path, and fruit of Dzogchen are not three things sequentially attained but one nature seen with increasing clarity. The fruit is what the ground always was; the path is the dissolving of the obscurations that prevent recognition.
+AFTER : The ground, path, and fruit of are not three things sequentially attained but one nature seen with increasing clarity. The fruit is what the ground always was; the path is the dissolving of the obscurations that prevent recognition.
+HITS  : ['Dzogchen']

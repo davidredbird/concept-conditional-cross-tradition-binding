@@ -1,0 +1,42 @@
+# Phase 0 prototype results
+model: text-embedding-3-large
+n_passages: 143
+by category: {'nondual': 107, 'dualistic': 24, 'non_contemplative': 12}
+by tradition: {'advaita': 10, 'dzogchen': 7, 'christian_mystical': 10, 'sufi': 7, 'neoplatonism': 6, 'kabbalah': 6, 'daoism': 6, 'catholic_scholastic': 8, 'theravada': 8, 'kantian': 8, 'humean': 6, 'analytic': 6, 'simulation_theory': 6, 'information_physics': 6, 'mathematical_universe': 5, 'analytic_idealism': 4, 'interface_theory': 4, 'implicate_order': 5, 'process_philosophy': 5, 'predictive_processing': 5, 'iit': 4, 'relational_qm': 5, 'mahayana': 6}
+
+## Pairwise similarity means (cosine, normalized embeddings)
+  nondual_within_trad_mean: 0.4575844113262485
+  nondual_within_trad_n: 290
+  nondual_cross_trad_mean: 0.3360522285386933
+  nondual_cross_trad_n: 5381
+  nondual_to_dualistic_mean: 0.2922675009811792
+  nondual_to_dualistic_n: 2568
+  nondual_to_noncontemp_mean: 0.24156375530086469
+  nondual_to_noncontemp_n: 1284
+  dualistic_to_dualistic_mean: 0.3055923844081371
+  dualistic_to_dualistic_n: 276
+  dualistic_to_noncontemp_mean: 0.2652763298555995
+  dualistic_to_noncontemp_n: 288
+
+## Core hypothesis test
+  H1: nondual_cross_trad_mean > nondual_to_dualistic_mean
+  observed diff: +0.0438
+  permutation null mean: -0.0047 (std 0.0112)
+  one-sided p (cross > to-dualistic): 0.0000
+  two-sided p:                         0.0002
+  n permutations: 5000
+
+## Clustering recovery of the (nondual / dualistic / non_contemplative) labels
+  k: 3
+  kmeans_ari: 0.028699608967037042
+  kmeans_nmi: 0.14968847868473523
+  agglo_ari: 0.018416821613665556
+  agglo_nmi: 0.03612686270925418
+  silhouette_true_categories: 0.05352544511749249
+
+## Reading the result
+  - ARI/NMI near 1 means embeddings already separate the three categories.
+  - silhouette > 0 means categories are coherent clusters under cosine distance.
+  - The key number: nondual_cross_trad_mean > nondual_to_dualistic_mean,
+    significant under permutation, would be the Phase 0 positive signal.
+  - This is a rough cut. Do not over-interpret; design rigorous v1 next.

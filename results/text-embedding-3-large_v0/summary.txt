@@ -1,0 +1,42 @@
+# Phase 0 prototype results
+model: text-embedding-3-large
+n_passages: 107
+by category: {'nondual': 71, 'dualistic': 24, 'non_contemplative': 12}
+by tradition: {'advaita': 8, 'dzogchen': 6, 'christian_mystical': 8, 'sufi': 6, 'neoplatonism': 6, 'kabbalah': 6, 'daoism': 6, 'catholic_scholastic': 8, 'theravada': 8, 'kantian': 8, 'humean': 6, 'analytic': 6, 'simulation_theory': 6, 'information_physics': 6, 'mathematical_universe': 5, 'analytic_idealism': 4, 'interface_theory': 4}
+
+## Pairwise similarity means (cosine, normalized embeddings)
+  nondual_within_trad_mean: 0.46277397227682676
+  nondual_within_trad_n: 183
+  nondual_cross_trad_mean: 0.31503434407731334
+  nondual_cross_trad_n: 2302
+  nondual_to_dualistic_mean: 0.26780285614696375
+  nondual_to_dualistic_n: 1704
+  nondual_to_noncontemp_mean: 0.23351245982666843
+  nondual_to_noncontemp_n: 852
+  dualistic_to_dualistic_mean: 0.29605075733747926
+  dualistic_to_dualistic_n: 276
+  dualistic_to_noncontemp_mean: 0.2627639431846754
+  dualistic_to_noncontemp_n: 288
+
+## Core hypothesis test
+  H1: nondual_cross_trad_mean > nondual_to_dualistic_mean
+  observed diff: +0.0472
+  permutation null mean: -0.0081 (std 0.0100)
+  one-sided p (cross > to-dualistic): 0.0000
+  two-sided p:                         0.0000
+  n permutations: 5000
+
+## Clustering recovery of the (nondual / dualistic / non_contemplative) labels
+  k: 3
+  kmeans_ari: 0.2695016306975627
+  kmeans_nmi: 0.3595616604409089
+  agglo_ari: 0.0796682190671304
+  agglo_nmi: 0.10143761129597267
+  silhouette_true_categories: 0.05825305135039263
+
+## Reading the result
+  - ARI/NMI near 1 means embeddings already separate the three categories.
+  - silhouette > 0 means categories are coherent clusters under cosine distance.
+  - The key number: nondual_cross_trad_mean > nondual_to_dualistic_mean,
+    significant under permutation, would be the Phase 0 positive signal.
+  - This is a rough cut. Do not over-interpret; design rigorous v1 next.

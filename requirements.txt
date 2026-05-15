@@ -1,0 +1,8 @@
+numpy>=1.26
+scikit-learn>=1.4
+sentence-transformers>=2.7
+matplotlib>=3.8
+umap-learn>=0.5
+
+# Optional: only needed if you pass --backend openai
+# openai>=1.30

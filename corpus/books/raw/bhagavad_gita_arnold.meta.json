@@ -1,0 +1,21 @@
+{
+  "id": "bhagavad_gita_arnold",
+  "title": "The Bhagavad Gita (The Song Celestial)",
+  "author": "Vyasa (attributed)",
+  "translator": "Edwin Arnold",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "2c BCE",
+  "source": {
+    "type": "gutenberg",
+    "id": "2388",
+    "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt"
+  },
+  "license": "pd",
+  "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat \u2014 it's actually a contested case between Advaita and other Vedanta schools.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt",
+    "size_bytes": 147504,
+    "format": "txt"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "hume_treatise",
+  "title": "A Treatise of Human Nature",
+  "author": "David Hume",
+  "translator": null,
+  "tradition": "humean",
+  "category": "non_contemplative",
+  "era": "18c",
+  "source": {
+    "type": "gutenberg",
+    "id": "4705",
+    "url": "https://www.gutenberg.org/cache/epub/4705/pg4705.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/4705/pg4705.txt",
+    "size_bytes": 1365605,
+    "format": "txt"
+  },
+  "_clean": {
+    "word_count": 225756,
+    "char_count": 1320670,
+    "token_estimate": 301008
+  }
+}

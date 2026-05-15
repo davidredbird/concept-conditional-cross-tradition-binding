@@ -1,0 +1,47 @@
+==============================================================================
+H1 robustness across source_status subsets (historical nondual cross-tradition)
+==============================================================================
+subset                      n    nxn    nxd   mn_nd   mn_dl     dH1       p
+all                       143   1461   1392  0.3366  0.2746 +0.0620  0.0000
+quote_only                  6  insufficient pairs
+quote_or_approximate       46    374    210  0.3136  0.2736 +0.0400  0.0138
+paraphrase_only            97    331    476  0.3710  0.2868 +0.0842  0.0000
+
+==============================================================================
+Concept-binding by subset (cross-tradition pairs only)
+==============================================================================
+
+AWARENESS:
+  subset                    n_both   n_one   binding
+  all                          154    2303   +0.1133
+  quote_only                     0       0   n/a
+  quote_or_approximate           0      84   n/a
+  paraphrase_only              120    1324   +0.1028
+
+RECOGNITION:
+  subset                    n_both   n_one   binding
+  all                           33    1153   +0.0793
+  quote_only                     0       5   n/a
+  quote_or_approximate           1      83   +0.0222
+  paraphrase_only               20     604   +0.0917
+
+WORLD:
+  subset                    n_both   n_one   binding
+  all                          468    3451   +0.0769
+  quote_only                     0       0   n/a
+  quote_or_approximate           6     156   +0.0159
+  paraphrase_only              355    1866   +0.0631
+
+ULTIMATE:
+  subset                    n_both   n_one   binding
+  all                          554    3768   +0.0571
+  quote_only                     5       8   +0.1048
+  quote_or_approximate          53     384   +0.0622
+  paraphrase_only              238    1722   +0.0506
+
+SUBSTRATE:
+  subset                    n_both   n_one   binding
+  all                           42    1290   +0.0526
+  quote_only                     0       0   n/a
+  quote_or_approximate           0      84   n/a
+  paraphrase_only               26     687   +0.0388

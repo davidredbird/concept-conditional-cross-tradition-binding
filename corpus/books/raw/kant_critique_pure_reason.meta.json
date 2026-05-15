@@ -1,0 +1,21 @@
+{
+  "id": "kant_critique_pure_reason",
+  "title": "The Critique of Pure Reason",
+  "author": "Immanuel Kant",
+  "translator": "J.M.D. Meiklejohn",
+  "tradition": "kantian",
+  "category": "dualistic",
+  "era": "18c",
+  "source": {
+    "type": "gutenberg",
+    "id": "4280",
+    "url": "https://www.gutenberg.org/cache/epub/4280/pg4280.txt"
+  },
+  "license": "pd",
+  "notes": "Meiklejohn's translation is PD.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/4280/pg4280.txt",
+    "size_bytes": 1315286,
+    "format": "txt"
+  }
+}

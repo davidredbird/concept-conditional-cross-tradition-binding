@@ -1,0 +1,643 @@
+{
+  "_about": "Source manifest for whole-book Phase 1 corpus. Each book entry has id, title, author, tradition, category, era, source info, translator, and license. See README in this dir for the schema and verification process.",
+  "_schema_version": 1,
+  "books": [
+    {
+      "id": "plotinus_enneads_mackenna",
+      "title": "The Enneads",
+      "author": "Plotinus",
+      "translator": "Stephen MacKenna",
+      "tradition": "neoplatonism",
+      "category": "nondual",
+      "era": "3c",
+      "source": {
+        "type": "gutenberg",
+        "id": "23438",
+        "url": "https://www.gutenberg.org/cache/epub/23438/pg23438.txt"
+      },
+      "license": "pd",
+      "notes": "MacKenna's complete translation; the standard PD edition.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: A Ribband of Blue, and Other Bible Studies by James Hudson Taylor"
+    },
+    {
+      "id": "taote_legge",
+      "title": "Tao Te Ching",
+      "author": "Laozi",
+      "translator": "James Legge",
+      "tradition": "daoism",
+      "category": "nondual",
+      "era": "6c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "216",
+        "url": "https://www.gutenberg.org/cache/epub/216/pg216.txt"
+      },
+      "license": "pd",
+      "notes": "Sacred Books of the East vol. 39; part 1 of Legge's two-volume Daoist canon translation."
+    },
+    {
+      "id": "zhuangzi_legge",
+      "title": "The Writings of Chuang Tzu",
+      "author": "Zhuangzi",
+      "translator": "James Legge",
+      "tradition": "daoism",
+      "category": "nondual",
+      "era": "4c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "59709",
+        "url": "https://www.gutenberg.org/cache/epub/59709/pg59709.txt"
+      },
+      "license": "pd",
+      "notes": "Giles translation: Chuang Tzu, Mystic, Moralist, and Social Reformer."
+    },
+    {
+      "id": "upanishads_collected",
+      "title": "The Upanishads",
+      "author": "Various (Vedic)",
+      "translator": "Swami Paramananda",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "7c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "3283",
+        "url": "https://www.gutenberg.org/cache/epub/3283/pg3283.txt"
+      },
+      "license": "pd",
+      "notes": "Includes Isa, Katha, Kena, Mundaka, Svetasvatara, Prasna, selected Brihadaranyaka and Chandogya."
+    },
+    {
+      "id": "bhagavad_gita_arnold",
+      "title": "The Bhagavad Gita (The Song Celestial)",
+      "author": "Vyasa (attributed)",
+      "translator": "Edwin Arnold",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "2c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "2388",
+        "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt"
+      },
+      "license": "pd",
+      "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat — it's actually a contested case between Advaita and other Vedanta schools."
+    },
+    {
+      "id": "rumi_mesnevi_redhouse",
+      "title": "The Mesnevi",
+      "author": "Rumi",
+      "translator": "James W. Redhouse",
+      "tradition": "sufi",
+      "category": "nondual",
+      "era": "13c",
+      "source": {
+        "type": "gutenberg",
+        "id": "61724",
+        "url": "https://www.gutenberg.org/cache/epub/61724/pg61724.txt"
+      },
+      "license": "pd",
+      "notes": "Redhouse translation of Rumi's Mesnevi."
+    },
+    {
+      "id": "rumi_persian_mystics",
+      "title": "The Persian Mystics: Jalalu'd-din Rumi",
+      "author": "Rumi",
+      "translator": "F. Hadland Davis",
+      "tradition": "sufi",
+      "category": "nondual",
+      "era": "13c",
+      "source": {
+        "type": "gutenberg",
+        "id": "45159",
+        "url": "https://www.gutenberg.org/cache/epub/45159/pg45159.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "steiner_mystics_renaissance",
+      "title": "Mystics of the Renaissance (Eckhart, Tauler, Boehme et al.)",
+      "author": "Rudolf Steiner (analysis); excerpts from Eckhart, Tauler, Boehme, Bruno",
+      "translator": "Bertram Keightley",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "early 20c (commentary on 13-17c mystics)",
+      "source": {
+        "type": "gutenberg",
+        "id": "75994",
+        "url": "https://www.gutenberg.org/cache/epub/75994/pg75994.txt"
+      },
+      "license": "pd",
+      "notes": "Steiner's analysis with excerpts from Eckhart, Tauler, Boehme, Bruno, Paracelsus. Best PG source for Christian mystical material."
+    },
+    {
+      "id": "cloud_of_unknowing_underhill",
+      "title": "The Cloud of Unknowing",
+      "author": "Anonymous (14c English)",
+      "translator": "Evelyn Underhill (modernized)",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "14c",
+      "source": {
+        "type": "gutenberg",
+        "id": "32074",
+        "url": "https://www.gutenberg.org/cache/epub/32074/pg32074.txt"
+      },
+      "license": "pd",
+      "notes": "Apophatic Christian classic. Underhill's modernization is PD.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: Book Repair and Restoration: A Manual of Practical Suggestions for Bibliophiles"
+    },
+    {
+      "id": "john_of_the_cross_ascent",
+      "title": "Ascent of Mount Carmel",
+      "author": "John of the Cross",
+      "translator": "David Lewis",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "16c",
+      "source": {
+        "type": "gutenberg",
+        "id": "10644",
+        "url": "https://www.gutenberg.org/cache/epub/10644/pg10644.txt"
+      },
+      "license": "pd",
+      "notes": "Lewis's translation is PD.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: Beacon Lights of History, Volume 11: American Founders by John Lord"
+    },
+    {
+      "id": "john_of_the_cross_dark_night",
+      "title": "Dark Night of the Soul",
+      "author": "John of the Cross",
+      "translator": "David Lewis",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "16c",
+      "source": {
+        "type": "gutenberg",
+        "id": "1653",
+        "url": "https://www.gutenberg.org/cache/epub/1653/pg1653.txt"
+      },
+      "license": "pd",
+      "notes": "Companion volume to Ascent.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: The Imitation of Christ by à Kempis Thomas"
+    },
+    {
+      "id": "teresa_interior_castle",
+      "title": "The Interior Castle",
+      "author": "Teresa of Avila",
+      "translator": "The Benedictines of Stanbrook",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "16c",
+      "source": {
+        "type": "gutenberg",
+        "id": "16715",
+        "url": "https://www.gutenberg.org/cache/epub/16715/pg16715.txt"
+      },
+      "license": "pd",
+      "notes": "Marks as nondual with caveat — Teresa is more devotional than strictly nondual.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: Sir Walter Scott as a Critic of Literature by Margaret Ball"
+    },
+    {
+      "id": "brother_lawrence_presence",
+      "title": "The Practice of the Presence of God",
+      "author": "Brother Lawrence",
+      "translator": "(anonymous)",
+      "tradition": "christian_mystical",
+      "category": "nondual",
+      "era": "17c",
+      "source": {
+        "type": "gutenberg",
+        "id": "5657",
+        "url": "https://www.gutenberg.org/cache/epub/5657/pg5657.txt"
+      },
+      "license": "pd",
+      "notes": "Short, accessible Christian contemplative text."
+    },
+    {
+      "id": "kant_critique_pure_reason",
+      "title": "The Critique of Pure Reason",
+      "author": "Immanuel Kant",
+      "translator": "J.M.D. Meiklejohn",
+      "tradition": "kantian",
+      "category": "dualistic",
+      "era": "18c",
+      "source": {
+        "type": "gutenberg",
+        "id": "4280",
+        "url": "https://www.gutenberg.org/cache/epub/4280/pg4280.txt"
+      },
+      "license": "pd",
+      "notes": "Meiklejohn's translation is PD."
+    },
+    {
+      "id": "kant_critique_practical_reason",
+      "title": "The Critique of Practical Reason",
+      "author": "Immanuel Kant",
+      "translator": "Thomas Kingsmill Abbott",
+      "tradition": "kantian",
+      "category": "dualistic",
+      "era": "18c",
+      "source": {
+        "type": "gutenberg",
+        "id": "5683",
+        "url": "https://www.gutenberg.org/cache/epub/5683/pg5683.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "hume_treatise",
+      "title": "A Treatise of Human Nature",
+      "author": "David Hume",
+      "translator": null,
+      "tradition": "humean",
+      "category": "non_contemplative",
+      "era": "18c",
+      "source": {
+        "type": "gutenberg",
+        "id": "4705",
+        "url": "https://www.gutenberg.org/cache/epub/4705/pg4705.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "hume_enquiry",
+      "title": "An Enquiry Concerning Human Understanding",
+      "author": "David Hume",
+      "translator": null,
+      "tradition": "humean",
+      "category": "non_contemplative",
+      "era": "18c",
+      "source": {
+        "type": "gutenberg",
+        "id": "9662",
+        "url": "https://www.gutenberg.org/cache/epub/9662/pg9662.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "russell_problems",
+      "title": "The Problems of Philosophy",
+      "author": "Bertrand Russell",
+      "translator": null,
+      "tradition": "analytic",
+      "category": "non_contemplative",
+      "era": "20c",
+      "source": {
+        "type": "gutenberg",
+        "id": "5827",
+        "url": "https://www.gutenberg.org/cache/epub/5827/pg5827.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "russell_external_world",
+      "title": "Our Knowledge of the External World",
+      "author": "Bertrand Russell",
+      "translator": null,
+      "tradition": "analytic",
+      "category": "non_contemplative",
+      "era": "20c",
+      "source": {
+        "type": "gutenberg",
+        "id": "37090",
+        "url": "https://www.gutenberg.org/cache/epub/37090/pg37090.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "russell_mysticism_logic",
+      "title": "Mysticism and Logic, and Other Essays",
+      "author": "Bertrand Russell",
+      "translator": null,
+      "tradition": "analytic",
+      "category": "non_contemplative",
+      "era": "20c",
+      "source": {
+        "type": "gutenberg",
+        "id": "25447",
+        "url": "https://www.gutenberg.org/cache/epub/25447/pg25447.txt"
+      },
+      "license": "pd"
+    },
+    {
+      "id": "wittgenstein_tractatus_ogden",
+      "title": "Tractatus Logico-Philosophicus",
+      "author": "Ludwig Wittgenstein",
+      "translator": "C.K. Ogden",
+      "tradition": "analytic",
+      "category": "non_contemplative",
+      "era": "20c",
+      "source": {
+        "type": "gutenberg",
+        "id": "5740",
+        "url": "https://www.gutenberg.org/cache/epub/5740/pg5740.txt"
+      },
+      "license": "pd",
+      "notes": "Ogden translation PD in many jurisdictions; verify locally for redistribution."
+    },
+    {
+      "id": "augustine_confessions",
+      "title": "Confessions",
+      "author": "Augustine of Hippo",
+      "translator": "E.B. Pusey",
+      "tradition": "catholic_scholastic",
+      "category": "dualistic",
+      "era": "4-5c",
+      "source": {
+        "type": "gutenberg",
+        "id": "3296",
+        "url": "https://www.gutenberg.org/cache/epub/3296/pg3296.txt"
+      },
+      "license": "pd",
+      "notes": "Christian autobiography & theology; explicitly dualistic Creator-creature theology."
+    },
+    {
+      "id": "aquinas_summa_part1",
+      "title": "Summa Theologica, Part I",
+      "author": "Thomas Aquinas",
+      "translator": "Fathers of the English Dominican Province",
+      "tradition": "catholic_scholastic",
+      "category": "dualistic",
+      "era": "13c",
+      "source": {
+        "type": "gutenberg",
+        "id": "17611",
+        "url": "https://www.gutenberg.org/cache/epub/17611/pg17611.txt"
+      },
+      "license": "pd",
+      "notes": "Massive text; we'll sample sections rather than embed all of it."
+    },
+    {
+      "id": "calvin_institutes_book1",
+      "title": "Institutes of the Christian Religion, Book 1",
+      "author": "John Calvin",
+      "translator": "Henry Beveridge",
+      "tradition": "reformed_theology",
+      "category": "dualistic",
+      "era": "16c",
+      "source": {
+        "type": "gutenberg",
+        "id": "45001",
+        "url": "https://www.gutenberg.org/cache/epub/45001/pg45001.txt"
+      },
+      "license": "pd",
+      "notes": "Strict Creator-creature distinction. New tradition tag in this corpus."
+    },
+    {
+      "id": "spinoza_ethics",
+      "title": "Ethics",
+      "author": "Baruch Spinoza",
+      "translator": "R.H.M. Elwes",
+      "tradition": "spinozist",
+      "category": "nondual",
+      "era": "17c",
+      "source": {
+        "type": "gutenberg",
+        "id": "3800",
+        "url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt"
+      },
+      "license": "pd",
+      "notes": "Substance monism — God-or-Nature. Structurally nondual. New tradition tag."
+    },
+    {
+      "id": "tibetan_book_of_the_dead_evanswentz",
+      "title": "The Tibetan Book of the Dead (Bardo Thodol)",
+      "author": "Attributed to Padmasambhava",
+      "translator": "W.Y. Evans-Wentz / Lama Kazi Dawa-Samdup",
+      "tradition": "dzogchen",
+      "category": "nondual",
+      "era": "8c (composed) / 1927 (translated)",
+      "source": {
+        "type": "gutenberg",
+        "id": "27015",
+        "url": "https://www.gutenberg.org/cache/epub/27015/pg27015.txt"
+      },
+      "license": "pd",
+      "notes": "Bardo Thodol; Evans-Wentz translation.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: More Science from an Easy Chair by Sir E. Ray Lankester"
+    },
+    {
+      "id": "dhammapada_radhakrishnan",
+      "title": "The Dhammapada",
+      "author": "Pali Canon",
+      "translator": "F. Max Müller",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "3c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "2017",
+        "url": "https://www.gutenberg.org/cache/epub/2017/pg2017.txt"
+      },
+      "license": "pd",
+      "notes": "Müller translation in SBE vol. 10."
+    },
+    {
+      "id": "questions_of_milinda_rhys_davids",
+      "title": "The Questions of King Milinda",
+      "author": "Anonymous (Pali)",
+      "translator": "T.W. Rhys Davids",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "1c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "33891",
+        "url": "https://www.gutenberg.org/cache/epub/33891/pg33891.txt"
+      },
+      "license": "pd",
+      "notes": "Theravada catechism; explicitly non-nondual aggregates doctrine.",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: Bartholomew Sastrow: Being the Memoirs of a German Burgomaster by Sastrow"
+    },
+    {
+      "id": "buddhist_suttas_rhys_davids",
+      "title": "Buddhist Suttas",
+      "author": "Pali Canon",
+      "translator": "T.W. Rhys Davids",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "3c BCE",
+      "source": {
+        "type": "gutenberg",
+        "id": "6701",
+        "url": "https://www.gutenberg.org/cache/epub/6701/pg6701.txt"
+      },
+      "license": "pd",
+      "notes": "Selections from the Pali Canon."
+    },
+    {
+      "id": "zohar_sperling_simon",
+      "title": "The Zohar (excerpts)",
+      "author": "Attributed to Moses de León (13c)",
+      "translator": "Harry Sperling and Maurice Simon",
+      "tradition": "kabbalah",
+      "category": "nondual",
+      "era": "13c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use",
+      "notes": "Sperling/Simon translation is PD (1934); we'll source from archive.org or similar. Manual fetch needed."
+    },
+    {
+      "id": "sefer_yetzirah_kalisch",
+      "title": "Sefer Yetzirah",
+      "author": "Anonymous (Hebrew)",
+      "translator": "Isidor Kalisch",
+      "tradition": "kabbalah",
+      "category": "nondual",
+      "era": "2-6c (date contested)",
+      "source": {
+        "type": "gutenberg",
+        "id": "12211",
+        "url": "https://www.gutenberg.org/cache/epub/12211/pg12211.txt"
+      },
+      "license": "pd",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: A Spirit of Avarice by W. W. Jacobs"
+    },
+    {
+      "id": "diamond_sutra_gemmell",
+      "title": "The Diamond Sutra (Vajracchedika)",
+      "author": "Anonymous (Sanskrit)",
+      "translator": "William Gemmell",
+      "tradition": "mahayana",
+      "category": "nondual",
+      "era": "4c",
+      "source": {
+        "type": "gutenberg",
+        "id": "39950",
+        "url": "https://www.gutenberg.org/cache/epub/39950/pg39950.txt"
+      },
+      "license": "pd",
+      "_broken": true,
+      "_broken_reason": "actual PG title was: People of Destiny: Americans as I saw them at Home and Abroad by Philip Gibbs"
+    },
+    {
+      "id": "bostrom_simulation_argument",
+      "title": "Are You Living in a Computer Simulation? (and follow-ups)",
+      "author": "Nick Bostrom",
+      "translator": null,
+      "tradition": "simulation_theory",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "web",
+        "url": "https://www.simulation-argument.com/simulation.html"
+      },
+      "license": "fair_use",
+      "notes": "Author's own page hosts the paper freely. Research excerpt."
+    },
+    {
+      "id": "wheeler_it_from_bit",
+      "title": "Information, Physics, Quantum: The Search for Links",
+      "author": "John Archibald Wheeler",
+      "translator": null,
+      "tradition": "information_physics",
+      "category": "nondual",
+      "era": "20c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use",
+      "notes": "Wheeler's 1989 paper. Source: needs manual acquisition from archive."
+    },
+    {
+      "id": "tegmark_mathematical_universe_paper",
+      "title": "The Mathematical Universe",
+      "author": "Max Tegmark",
+      "translator": null,
+      "tradition": "mathematical_universe",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "arxiv",
+        "url": "https://arxiv.org/abs/0704.0646"
+      },
+      "license": "fair_use"
+    },
+    {
+      "id": "kastrup_world_is_qualitative_paper",
+      "title": "The Universe in Consciousness (and selected essays)",
+      "author": "Bernardo Kastrup",
+      "translator": null,
+      "tradition": "analytic_idealism",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use",
+      "notes": "Need to source published JCS paper plus a couple of his free Scientific American / Aeon essays."
+    },
+    {
+      "id": "hoffman_interface_theory_paper",
+      "title": "The Interface Theory of Perception",
+      "author": "Donald Hoffman et al.",
+      "translator": null,
+      "tradition": "interface_theory",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use",
+      "notes": "Multiple papers on this topic; will source from cogsci.uci.edu or open repositories."
+    },
+    {
+      "id": "rovelli_relational_qm_paper",
+      "title": "Relational Quantum Mechanics",
+      "author": "Carlo Rovelli",
+      "translator": null,
+      "tradition": "relational_qm",
+      "category": "nondual",
+      "era": "20-21c",
+      "source": {
+        "type": "arxiv",
+        "url": "https://arxiv.org/abs/quant-ph/9609002"
+      },
+      "license": "fair_use"
+    },
+    {
+      "id": "friston_free_energy_principle",
+      "title": "The Free Energy Principle: A Unified Brain Theory?",
+      "author": "Karl Friston",
+      "translator": null,
+      "tradition": "predictive_processing",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use",
+      "notes": "Friston's 2010 Nat Rev Neuro paper plus more recent active-inference papers."
+    },
+    {
+      "id": "tononi_iit_paper",
+      "title": "Consciousness as Integrated Information",
+      "author": "Giulio Tononi",
+      "translator": null,
+      "tradition": "iit",
+      "category": "nondual",
+      "era": "21c",
+      "source": {
+        "type": "manual",
+        "url": null
+      },
+      "license": "fair_use"
+    }
+  ]
+}

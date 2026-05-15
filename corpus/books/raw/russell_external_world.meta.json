@@ -1,0 +1,20 @@
+{
+  "id": "russell_external_world",
+  "title": "Our Knowledge of the External World",
+  "author": "Bertrand Russell",
+  "translator": null,
+  "tradition": "analytic",
+  "category": "non_contemplative",
+  "era": "20c",
+  "source": {
+    "type": "gutenberg",
+    "id": "37090",
+    "url": "https://www.gutenberg.org/cache/epub/37090/pg37090.txt"
+  },
+  "license": "pd",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/37090/pg37090.txt",
+    "size_bytes": 447755,
+    "format": "txt"
+  }
+}

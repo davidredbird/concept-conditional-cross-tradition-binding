@@ -1,0 +1,21 @@
+{
+  "id": "augustine_confessions",
+  "title": "Confessions",
+  "author": "Augustine of Hippo",
+  "translator": "E.B. Pusey",
+  "tradition": "catholic_scholastic",
+  "category": "dualistic",
+  "era": "4-5c",
+  "source": {
+    "type": "gutenberg",
+    "id": "3296",
+    "url": "https://www.gutenberg.org/cache/epub/3296/pg3296.txt"
+  },
+  "license": "pd",
+  "notes": "Christian autobiography & theology; explicitly dualistic Creator-creature theology.",
+  "_fetch": {
+    "fetched_url": "https://www.gutenberg.org/cache/epub/3296/pg3296.txt",
+    "size_bytes": 632170,
+    "format": "txt"
+  }
+}
