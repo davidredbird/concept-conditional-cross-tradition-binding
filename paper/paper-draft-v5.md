@@ -2,6 +2,7 @@
 
 **T. David Kinlaw**
 *Independent Researcher · Redbird Software LLC · david@redbirdsoftwarellc.com*
+*ORCID: [0009-0008-5213-1017](https://orcid.org/0009-0008-5213-1017)*
 
 **Preliminary preprint — Draft 5**
 **Date:** 2026-05-15

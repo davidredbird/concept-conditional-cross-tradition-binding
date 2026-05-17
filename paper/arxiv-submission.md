@@ -19,6 +19,7 @@ arxiv accepts PDF-only submissions for non-physics categories. The markdown sour
 **Single author: T. David Kinlaw**
 - Affiliation: Independent Researcher / Redbird Software LLC
 - Contact: david@redbirdsoftwarellc.com
+- ORCID: [0009-0008-5213-1017](https://orcid.org/0009-0008-5213-1017)
 
 ## Abstract (for the arxiv form)
 
