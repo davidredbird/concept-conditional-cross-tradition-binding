@@ -8,7 +8,7 @@
 **Date:** 2026-05-15
 **Status:** Submission-ready preprint. NLP methodology paper with mysticism convergence as substantive test case. Findings reported as a proof-of-concept and an invitation to extend, replicate, or refute.
 
-**Changes from Draft 4:** Incorporates the pre-registered technical-only-tagger experiment (§6.8). The §6.8 prediction is partially confirmed, partially refuted in informative directions: RECOGNITION dramatically exceeded prediction (+0.110 vs predicted +0.03 to +0.05, with advaita × theravada at 0.531 emerging as the strongest single cross-tradition concept-binding result the project has produced); SUBSTRATE control confirmed exactly (+0.054 unchanged); ULTIMATE failed in the unexpected direction (decreased), revealing a previously unrecognized coverage-asymmetry component of the vocabulary-breadth mechanism; AWARENESS and WORLD became untestable due to insufficient technical-vocabulary coverage in the Phase 1a corpus. The §6.8 mechanism is refined from a single-component "noise floor" claim to a two-component formulation (noise floor + coverage-distribution asymmetry). Adds CCB pseudocode (Algorithm 1) in §4.3. Appendix B robustness matrix gets a technical-only column. §7.1 promotes advaita × theravada RECOGNITION alongside Mahayana × Theravada AWARENESS as the project's two cleanest cross-tradition results.
+**Changes from Draft 4:** Incorporates the pre-specified technical-only-tagger experiment (§6.8). The §6.8 prediction is partially confirmed, partially refuted in informative directions: RECOGNITION dramatically exceeded prediction (+0.110 vs predicted +0.03 to +0.05, with advaita × theravada at 0.531 emerging as the strongest single cross-tradition concept-binding result the project has produced); SUBSTRATE control confirmed exactly (+0.054 unchanged); ULTIMATE failed in the unexpected direction (decreased), revealing a previously unrecognized coverage-asymmetry component of the vocabulary-breadth mechanism; AWARENESS and WORLD became untestable due to insufficient technical-vocabulary coverage in the Phase 1a corpus. The §6.8 mechanism is refined from a single-component "noise floor" claim to a two-component formulation (noise floor + coverage-distribution asymmetry). Adds CCB pseudocode (Algorithm 1) in §4.3. Appendix B robustness matrix gets a technical-only column. §7.1 promotes advaita × theravada RECOGNITION alongside Mahayana × Theravada AWARENESS as the project's two cleanest cross-tradition results.
 
 ---
 
@@ -20,13 +20,13 @@ We stress-test the method on the 65-year-old cross-cultural mysticism convergenc
 
 We apply CCB to two corpora. Phase 0 is a 143-passage curated corpus across 23 traditions, 68% investigator-authored paraphrase, designed for fast iteration. Phase 1a replaces paraphrases with verified primary-source published English translations, sampled from a 20-book / ~2.85M-token / 14,173-sentence whole-book base set, 100% non-paraphrase, 11 traditions.
 
-**Across both corpora, five of seven pre-registered structural concepts (AWARENESS, RECOGNITION, WORLD, ULTIMATE, SUBSTRATE) show statistically significant cross-tradition binding at *p* ≤ 0.0015.** The same five bind across passage and sentence granularity and across both embedding models. Top tradition pairs replicate cross-model.
+**Across both corpora, five of seven pre-specified structural concepts (AWARENESS, RECOGNITION, WORLD, ULTIMATE, SUBSTRATE) show statistically significant cross-tradition binding at *p* ≤ 0.0015.** The same five bind across passage and sentence granularity and across both embedding models. Top tradition pairs replicate cross-model.
 
-The paper's primary methodological finding is the **vocabulary-breadth phenomenon** (§6.8). Effect sizes deflate at passage granularity between corpora when the concept's pattern dictionary contains common English terms (`consciousness`, `God`, `world`), but not when the dictionary is technical-only (`emptiness`, `śūnyatā`, `implicate order`). The pre-registered technical-only-tagger experiment confirms the mechanism but in a more nuanced form than initially predicted: vocabulary breadth has two distinct effects — a *casual-usage noise floor* (where common-English-tagged passages dilute binding signal) and a *coverage-distribution asymmetry* (where the remaining technical vocabulary may concentrate in one tradition category, reducing cross-category coverage). The two effects can dominate in different concepts. RECOGNITION recovered dramatically under technical-only restriction (+0.025 → **+0.110** on Phase 1a, with advaita × theravada at **0.531**); SUBSTRATE was unchanged as predicted (control); ULTIMATE *decreased* (revealing the second mechanism component); AWARENESS and WORLD became untestable due to insufficient technical-vocabulary coverage in the Phase 1a corpus.
+The paper's primary methodological finding is the **vocabulary-breadth phenomenon** (§6.8). Effect sizes deflate at passage granularity between corpora when the concept's pattern dictionary contains common English terms (`consciousness`, `God`, `world`), but not when the dictionary is technical-only (`emptiness`, `śūnyatā`, `implicate order`). The pre-specified technical-only-tagger experiment confirms the mechanism but in a more nuanced form than initially predicted: vocabulary breadth has two distinct effects — a *casual-usage noise floor* (where common-English-tagged passages dilute binding signal) and a *coverage-distribution asymmetry* (where the remaining technical vocabulary may concentrate in one tradition category, reducing cross-category coverage). The two effects can dominate in different concepts. RECOGNITION recovered dramatically under technical-only restriction (+0.025 → **+0.110** on Phase 1a, with advaita × theravada at **0.531**); SUBSTRATE was unchanged as predicted (control); ULTIMATE *decreased* (revealing the second mechanism component); AWARENESS and WORLD became untestable due to insufficient technical-vocabulary coverage in the Phase 1a corpus.
 
 We make no claim about whether the perennialist position in the mysticism debate is correct. We claim that **a class of evidence both sides of the debate have to engage with on the merits is now produceable**, and we have produced an example. The method is concept-agnostic and corpus-agnostic; the field can extend or refute the present application by running CCB on different corpora, different concept dictionaries, different embedding models, or different convergent-claim test cases (Golden Rule, Hero's Journey, mystical death-and-rebirth, eternal recurrence). Multi-translator inclusion, non-English source analysis with multilingual embeddings, adversarial passage selection, and held-out human-validated concept tagging remain unaddressed (§9) and define what a fuller follow-on application requires.
 
-Code, both corpora, complete result tables, and the pre-registered prediction outcomes released MIT.
+Code, both corpora, complete result tables, and the pre-specified prediction outcomes released MIT.
 
 ---
 
@@ -36,13 +36,13 @@ Code, both corpora, complete result tables, and the pre-registered prediction ou
 
 Cross-cultural convergence claims about textual content — claims that authors from unconnected traditions write structurally similar things about reality, mind, perception, or value — are common in religious studies, comparative philosophy, mythology, and elsewhere. They have historically been argued qualitatively. Quantitative tests have been hard to construct: document-level embedding similarity is dominated by register and vocabulary; vocabulary substitution introduces its own biases; and most NLP work on culturally varied corpora has focused on translation or intra-tradition stylometry rather than cross-tradition structural comparison (Hutchinson et al., 2024).
 
-We propose **concept-conditional cross-tradition binding (CCB)**, an embedding-based statistic that operationalizes a sharper version of the convergence claim: *not* "everything converges" but "specific structural axes bind specific traditions when those traditions are discussing those axes." Concretely, for each pre-registered structural concept *C* and each cross-tradition pair of passages, we compare the mean similarity of pairs where both passages mention *C* to the mean similarity of pairs where only one passage mentions *C*. The difference is the *binding* of *C*. A permutation null over concept-tag assignments produces a *p*-value.
+We propose **concept-conditional cross-tradition binding (CCB)**, an embedding-based statistic that operationalizes a sharper version of the convergence claim: *not* "everything converges" but "specific structural axes bind specific traditions when those traditions are discussing those axes." Concretely, for each pre-specified structural concept *C* and each cross-tradition pair of passages, we compare the mean similarity of pairs where both passages mention *C* to the mean similarity of pairs where only one passage mentions *C*. The difference is the *binding* of *C*. A permutation null over concept-tag assignments produces a *p*-value.
 
 The statistic is designed to avoid the failure modes that have made document-level cross-tradition comparison uninformative:
 
 - **Vocabulary substitution failure mode.** Replacing tradition-specific terms with shared placeholders forces token-level similarity across substituted texts, biasing toward apparent convergence. CCB does not substitute; it conditions on mentions.
 - **Register / style failure mode.** Document-level similarity is dominated by author register, sentence structure, citation style, and other features that overwhelm content-level convergence. CCB compares passages that all carry the same concept-tag marker, controlling for the *kind* of content being compared.
-- **Vocabulary breadth as noise floor.** Pattern dictionaries containing common English terms fire on passages that mention the term casually, diluting passage-level binding. The paper documents this empirically (§6.7-6.8), proposes a refined two-component mechanism for it, and pre-registers and tests predictions for a technical-only-tagger variant that probes the mechanism directly.
+- **Vocabulary breadth as noise floor.** Pattern dictionaries containing common English terms fire on passages that mention the term casually, diluting passage-level binding. The paper documents this empirically (§6.7-6.8), proposes a refined two-component mechanism for it, and pre-specifies and tests predictions for a technical-only-tagger variant that probes the mechanism directly.
 
 ### 1.2 The mysticism convergence debate as test case
 
@@ -63,7 +63,7 @@ Nothing in this analysis bears on whether any measured convergence reflects:
 (c) a shared feature of how literate contemplative cultures end up writing about introspection, independent of what they observe;
 (d) a shared feature of how the small set of anglophone scholar-translators who produced our English source texts render contemplative content.
 
-Distinguishing (a)–(d) is downstream of the empirical question the method answers, which is the prior question *"is there any cross-tradition textual signal beyond what shared vocabulary, register, and translator conventions can explain?"* Our affirmative answer to that question, restricted to five specific pre-registered concepts, is necessary but not sufficient for any of (a)–(d), and we make no progress toward (a)–(d) here.
+Distinguishing (a)–(d) is downstream of the empirical question the method answers, which is the prior question *"is there any cross-tradition textual signal beyond what shared vocabulary, register, and translator conventions can explain?"* Our affirmative answer to that question, restricted to five specific pre-specified concepts, is necessary but not sufficient for any of (a)–(d), and we make no progress toward (a)–(d) here.
 
 We will not claim that the perennialist thesis has been settled. We will not claim that the constructivist critique has been refuted; the present results show that vocabulary and register do substantial work in apparent document-level convergence, which is what constructivists predicted. We will claim only that **a method exists for producing evidence the field can engage with on the merits, that we have applied it carefully, and that the result is informative regardless of which interpretation it supports.** We are not the field; we are presenting what we found from a methodologically-defined position. The field is welcome to follow up.
 
@@ -71,9 +71,9 @@ We will not claim that the perennialist thesis has been settled. We will not cla
 
 1. **CCB**, a bias-aware concept-conditional cross-tradition binding statistic with vectorized permutation testing (§4.3, Algorithm 1).
 2. **Cross-model replication architecture** that runs identically against proprietary and open-source embedding stacks, including ONNX-based local inference for environments where torch is blocked.
-3. **Vocabulary-breadth phenomenon** characterizing when passage-level concept tagging dilutes binding signal, with a refined two-component mechanism (noise floor + coverage-distribution asymmetry) supported by a pre-registered prediction test (§6.8).
-4. **A two-corpus stress test** of the method on the mysticism convergence debate: a paraphrase-heavy fast-iteration corpus and a verified-primary-source whole-book corpus, with shared methodology and divergent paraphrase profiles. Five of seven pre-registered concepts bind in both.
-5. **Open-source release** of code, corpora, manifests, results, and pre-registered prediction outcomes for independent replication, extension, and adversarial reuse.
+3. **Vocabulary-breadth phenomenon** characterizing when passage-level concept tagging dilutes binding signal, with a refined two-component mechanism (noise floor + coverage-distribution asymmetry) supported by a pre-specified prediction test (§6.8).
+4. **A two-corpus stress test** of the method on the mysticism convergence debate: a paraphrase-heavy fast-iteration corpus and a verified-primary-source whole-book corpus, with shared methodology and divergent paraphrase profiles. Five of seven pre-specified concepts bind in both.
+5. **Open-source release** of code, corpora, manifests, results, and pre-specified prediction outcomes for independent replication, extension, and adversarial reuse.
 
 ---
 
@@ -94,7 +94,7 @@ We summarize the application's context briefly, citing landmarks rather than reh
 - **Perennialist tradition.** Stace (1960) distinguishes *introvertive* (pure consciousness without content) from *extrovertive* mysticism (unity perceived in the phenomenal world) and argues both forms recur cross-culturally. Forman (1990; 1999) extends with the pure-consciousness-event thesis.
 - **Constructivist tradition.** Katz (1978) argues every mystical experience is mediated by prior conceptual structure; apparent cross-cultural convergence is conceptual contamination through scholarly translation and comparative-religion infrastructure.
 - **Empirical psychology of mysticism.** Hood (1975) introduced the Mysticism Scale (M-Scale), validated cross-culturally (Hood et al., 2001 with US Christian and Iranian Muslim samples; Anthony et al., 2010 in Tamil Nadu; Streib et al., 2020 US/German). The M-Scale measures *contemporary self-reports* of mystical experience and finds cross-cultural similarity. It does not measure historical texts.
-- **Comparative-model recent work.** Trivedi (2025) proposes a tripartite comparative model of mysticism (neurocognitive substrates / phenomenal experiences / noetic accounts) that maps onto pre-registered structural features of the kind CCB tests.
+- **Comparative-model recent work.** Trivedi (2025) proposes a tripartite comparative model of mysticism (neurocognitive substrates / phenomenal experiences / noetic accounts) that maps onto pre-specified structural features of the kind CCB tests.
 
 The Stanford Encyclopedia of Philosophy entry on Mysticism (2025) characterizes the present state of the debate as unresolved on philosophical grounds; the survey lists no computational, NLP, or embedding-based methods applied to mystical literature.
 
@@ -177,15 +177,15 @@ Embeddings are unit-normalized; pairwise similarity is cosine. The two models ag
 
 ### 4.2 Concept tagging
 
-The seven pre-registered structural concepts — ULTIMATE, SUBSTRATE, AWARENESS, WORLD, SELF, RECOGNITION, NONSEP — are tagged on each passage by a manually curated dictionary of case-insensitive regex patterns. The patterns are listed in full in `scripts/concept_analysis.py` and derived from a pre-registered glossary listing tradition-specific terminology for each concept (e.g., AWARENESS includes `consciousness`, `awareness`, `rigpa`, `chit`, `phi`, `nous`; SUBSTRATE includes `emptiness`, `śūnyatā`, `implicate order`, `holographic`, `integrated information`).
+The seven pre-specified structural concepts — ULTIMATE, SUBSTRATE, AWARENESS, WORLD, SELF, RECOGNITION, NONSEP — are tagged on each passage by a manually curated dictionary of case-insensitive regex patterns. The patterns are listed in full in `scripts/concept_analysis.py` and derived from a pre-specified glossary listing tradition-specific terminology for each concept (e.g., AWARENESS includes `consciousness`, `awareness`, `rigpa`, `chit`, `phi`, `nous`; SUBSTRATE includes `emptiness`, `śūnyatā`, `implicate order`, `holographic`, `integrated information`).
 
-The same patterns are applied to both Phase 0 and Phase 1a corpora. Differences in binding strength between phases reflect either (i) genuine differences between paraphrase-style and published-translation text, (ii) differences in casual-vs-technical use of the same vocabulary at scale, or (iii) noise. §6.7-6.8 examines this decomposition empirically via a pre-registered technical-only-tagger experiment.
+The same patterns are applied to both Phase 0 and Phase 1a corpora. Differences in binding strength between phases reflect either (i) genuine differences between paraphrase-style and published-translation text, (ii) differences in casual-vs-technical use of the same vocabulary at scale, or (iii) noise. §6.7-6.8 examines this decomposition empirically via a pre-specified technical-only-tagger experiment.
 
 **Regex tagging is a hidden degree of freedom** that we name prominently. The same investigator built the glossary, the corpus, and the patterns. A pattern set chosen by someone with a different theoretical model of nondualism would tag different passages and could produce different binding scores. CCB is **bias-free of the shared-placeholder substitution artifact** (the artifact it was designed to eliminate), not **bias-free in the absolute sense**. Held-out human-validated tagging on a randomly sampled subset is a follow-on extension (§10).
 
 ### 4.3 The CCB statistic
 
-For each pre-registered concept *C*, restricted to cross-tradition passage pairs only:
+For each pre-specified concept *C*, restricted to cross-tradition passage pairs only:
 
 $$
 \text{CCB}(C) = \overline{\text{sim}}\bigl(\text{pairs where both passages mention } C\bigr) - \overline{\text{sim}}\bigl(\text{pairs where exactly one mentions } C\bigr)
@@ -281,7 +281,7 @@ CCB on cross-tradition passage pairs using unsubstituted embeddings, Phase 0 v0.
 | SELF | 3 | 0.2315 | 0.2890 | −0.0575 | 0.90 (NS) |
 | NONSEP | 0 | n/a | n/a | n/a | not measurable |
 
-Five of seven pre-registered concepts bind significantly. Effect sizes are substantial in cosine terms (≈ +0.05 to +0.11, on a base cross-tradition similarity of ≈ 0.30).
+Five of seven pre-specified concepts bind significantly. Effect sizes are substantial in cosine terms (≈ +0.05 to +0.11, on a base cross-tradition similarity of ≈ 0.30).
 
 SELF and NONSEP are corpus-limited: only 3 passages used explicit SELF markers (`atman`, `jiva`, `the agent`, `Markov blanket`); most passages discuss self in unmarked English the regex tagger does not catch. No passages used explicit NONSEP labels (`nondual`, `advaita`, `wahdat al-wujud`) despite expressing observer-substrate non-separability throughout the nondual category. Both are unmeasured rather than refuted.
 
@@ -352,7 +352,7 @@ Phase 1a sentence-level (4,000 stratified-sampled sentences):
 | SELF | +0.0313 (p=0.006) | NS | +0.0658 | +0.0343 (NS) |
 | SUBSTRATE | +0.0530 (p=0.04) | +0.0514 | +0.0485 (p=0.09, NS sub-sample) | +0.0497 |
 
-**Sentence-level deflation is much milder: 25–30% rather than 3–4×.** §6.8 explains the mechanism via a pre-registered prediction test.
+**Sentence-level deflation is much milder: 25–30% rather than 3–4×.** §6.8 explains the mechanism via a pre-specified prediction test.
 
 SELF becomes significant on Phase 1a sentence-level OpenAI (+0.031, *p*=0.006) where it was non-significant in Phase 0. The larger corpus surfaces enough explicit SELF markers (atman, ego, the empirical self, conscious agent) to estimate the binding; the Phase 0 negative direction at n=3 was a small-sample artifact.
 
@@ -411,13 +411,13 @@ Observed:
 
 The full-pattern survival exceeds the reviewer prior; effect sizes are smaller than Phase 0 suggested. The §7.3 decomposition places genuine concept-level structural binding as the smallest and best-controlled component of the apparent signal. We cite it affirmatively without over-promoting.
 
-### 6.8 Vocabulary breadth: pre-registered prediction test and refined two-component mechanism
+### 6.8 Vocabulary breadth: pre-specified prediction test and refined two-component mechanism
 
 The passage-level Phase 0 → Phase 1a deflation pattern is striking: every binding concept lost 3–4× of its effect size except SUBSTRATE, which lost nothing. The sentence-level pattern is different: every concept retained 70–75% of its effect size, SUBSTRATE included.
 
 Draft 4 §6.8 proposed a single-component mechanical explanation: passage-level concept tagging fires whenever the pattern appears anywhere in the passage, even when the rest of the passage is about something else; pattern dictionaries containing common English terms therefore tag passages that don't engage the concept technically; this casual-usage *noise floor* dilutes passage-level binding for concepts with broad-vocabulary dictionaries. SUBSTRATE's dictionary contains no common English terms and so has no noise floor; AWARENESS / ULTIMATE / WORLD / RECOGNITION dictionaries contain casual English terms and do.
 
-We pre-registered specific quantitative predictions for a technical-only-tagger variant — restricting AWARENESS, ULTIMATE, WORLD, RECOGNITION pattern dictionaries to tradition-specific technical-only vocabulary (dropping `consciousness`/`awareness`/`sentience`, `God`/`the divine`/`lord`, `world`/`the universe`/`cosmos`/`creation`, `enlightenment`/`liberation`/`awakening`/`salvation`). The pre-registration was written into Draft 4 §6.8 before the technical-only-tagger was implemented or run.
+We pre-specified specific quantitative predictions for a technical-only-tagger variant — restricting AWARENESS, ULTIMATE, WORLD, RECOGNITION pattern dictionaries to tradition-specific technical-only vocabulary (dropping `consciousness`/`awareness`/`sentience`, `God`/`the divine`/`lord`, `world`/`the universe`/`cosmos`/`creation`, `enlightenment`/`liberation`/`awakening`/`salvation`). The predictions were written into Draft 4 §6.8 of this paper before the technical-only-tagger was implemented or run. *Pre-specified* here means committed in writing in an earlier paper draft before the test was conducted; it does not mean formally preregistered with an external timestamp on OSF or AsPredicted (see §7.2 and §9 limitation 8 for the implications). Phase 1 follow-on experiments (§10) will be formally OSF-preregistered.
 
 **Predicted outcomes:**
 
@@ -471,7 +471,7 @@ The refined two-component formulation predicts:
 
 This is corpus-dependent: the same statistic and same tagger return different results on different corpora because different corpora have different tradition-coverage distributions of technical terminology. For future users of CCB, this is a property of *applying* the method that should be attended to in corpus design.
 
-The pre-registered single-component formulation was wrong for ULTIMATE in a specific identifiable way; the prediction did not anticipate corpus-coverage-asymmetry effects. We report the refined formulation here as the post-test understanding, and we report the original pre-registered formulation transparently as it was written in Draft 4 §6.8 to preserve the prediction-vs-outcome record. The failure mode is informative rather than just unfortunate: the same vocabulary-breadth phenomenon has different empirical signatures depending on how the tradition-specific technical terminology is distributed in the corpus, and CCB's sensitivity to that distribution is itself a property worth knowing when interpreting concept-binding results.
+The pre-specified single-component formulation was wrong for ULTIMATE in a specific identifiable way; the prediction did not anticipate corpus-coverage-asymmetry effects. We report the refined formulation here as the post-test understanding, and we report the original pre-specified formulation transparently as it was written in Draft 4 §6.8 to preserve the prediction-vs-outcome record. The failure mode is informative rather than just unfortunate: the same vocabulary-breadth phenomenon has different empirical signatures depending on how the tradition-specific technical terminology is distributed in the corpus, and CCB's sensitivity to that distribution is itself a property worth knowing when interpreting concept-binding results.
 
 ---
 
@@ -479,9 +479,9 @@ The pre-registered single-component formulation was wrong for ULTIMATE in a spec
 
 ### 7.1 What we have shown
 
-**A methodological contribution.** CCB is a bias-aware embedding-based statistic that produces interpretable cross-tradition convergence scores conditional on shared concept-tags, replicates across two unrelated embedding stacks, and remains tractable at multi-thousand-sentence scale via vectorized permutation testing. Pattern-dictionary vocabulary breadth determines passage-level signal-to-noise via the two-component mechanism formalized in §6.8; the paper provides a worked example, pre-registered predictions, observed outcomes, and the refined post-test understanding.
+**A methodological contribution.** CCB is a bias-aware embedding-based statistic that produces interpretable cross-tradition convergence scores conditional on shared concept-tags, replicates across two unrelated embedding stacks, and remains tractable at multi-thousand-sentence scale via vectorized permutation testing. Pattern-dictionary vocabulary breadth determines passage-level signal-to-noise via the two-component mechanism formalized in §6.8; the paper provides a worked example, pre-specified predictions, observed outcomes, and the refined post-test understanding.
 
-**An application's result.** Applied to the mysticism convergence debate across two corpora (paraphrase-heavy Phase 0 and verified-primary-source Phase 1a), CCB returns: five of seven pre-registered structural concepts show statistically significant cross-tradition binding at *p* ≤ 0.0015 in both corpora; effect sizes are smaller than Phase 0 suggested but the qualitative result is robust to corpus revision, embedding model, and granularity.
+**An application's result.** Applied to the mysticism convergence debate across two corpora (paraphrase-heavy Phase 0 and verified-primary-source Phase 1a), CCB returns: five of seven pre-specified structural concepts show statistically significant cross-tradition binding at *p* ≤ 0.0015 in both corpora; effect sizes are smaller than Phase 0 suggested but the qualitative result is robust to corpus revision, embedding model, and granularity.
 
 **Two canonical cross-tradition concept-binding results** stand out from the analysis.
 
@@ -507,13 +507,13 @@ We have not independently established the Rovelli–Nagarjuna SUBSTRATE correspo
 
 We have not tested the bridge-thinker → historical-nondual cross-period convergence on verified non-paraphrase text; the Phase 1a corpus lacks the modern wing.
 
-We have not pre-registered formally on OSF. Pre-registered concept categories were specified before analyses, and the §6.8 technical-only-tagger predictions were written into Draft 4 before the test was implemented or run, but corpus composition, statistical tests, and decision rules were not committed to OSF before running.
+We have not pre-registered formally on OSF. Concept categories were pre-specified before analyses were run (committed to the project's `glossary.md`), and the §6.8 technical-only-tagger predictions were written into Draft 4 before the test was implemented or run, but these pre-specifications are not externally timestamped: corpus composition, statistical tests, and decision rules were not committed to OSF or AsPredicted before running.
 
 ### 7.3 The defensible decomposition of "what we measured"
 
 The honest picture decomposes apparent cross-tradition similarity into:
 
-1. **Concept-level structural binding** on five pre-registered axes, detectable at *p* ≤ 0.0015, replicated cross-model, cross-granularity, and across paraphrase-heavy and whole-book non-paraphrase corpora, with the strongest result (advaita × theravada RECOGNITION at 0.531) recovered specifically under the technical-only-tagger restriction that the pre-registered §6.8 mechanism predicted would surface it.
+1. **Concept-level structural binding** on five pre-specified axes, detectable at *p* ≤ 0.0015, replicated cross-model, cross-granularity, and across paraphrase-heavy and whole-book non-paraphrase corpora, with the strongest result (advaita × theravada RECOGNITION at 0.531) recovered specifically under the technical-only-tagger restriction that the pre-specified §6.8 mechanism predicted would surface it.
 2. **Document-level vocabulary effect**, partially closed by substitution (~15–30% of the modern–historical gap, upper-bounded by the shared-placeholder bias).
 3. **Document-level register / style effect** (~50–70% of the modern–historical gap), not closed by current methods.
 4. **Translator-tradition effect** (unbounded in either Phase 0 or Phase 1a; likely material).
@@ -528,7 +528,7 @@ The method is concept-agnostic and corpus-agnostic.
 
 **To extend the present application:** add multi-translator coverage; run on non-English source texts via multilingual embeddings; add modern computational sources on verified text; add adversarial-selection passages from a constructivist scholar; run held-out human-validated concept tagging; formally pre-register on OSF; run sparse-autoencoder probes for interpretable axes that survive vocabulary and register noise.
 
-**To extend the method to other claimed convergent concepts:** the framework runs on any pre-registered concept dictionary on any multi-tradition corpus. Candidate test cases include the Golden Rule across ethical traditions, the Hero's Journey across mythologies (Campbell), non-attachment across contemplative practices, mystical death-and-rebirth across initiatic traditions, eternal recurrence (Stoic-Nietzschean-Hindu-cosmological), the great chain of being (Neoplatonic-Hindu-Western-medieval). The deliverable from running CCB on a suite of candidates is a meta-table — for each tested concept, was convergence detected, with what controls, what survived — which is what would move the comparative-convergence debate forward as a field, not a single positive result.
+**To extend the method to other claimed convergent concepts:** the framework runs on any pre-specified concept dictionary on any multi-tradition corpus. Candidate test cases include the Golden Rule across ethical traditions, the Hero's Journey across mythologies (Campbell), non-attachment across contemplative practices, mystical death-and-rebirth across initiatic traditions, eternal recurrence (Stoic-Nietzschean-Hindu-cosmological), the great chain of being (Neoplatonic-Hindu-Western-medieval). The deliverable from running CCB on a suite of candidates is a meta-table — for each tested concept, was convergence detected, with what controls, what survived — which is what would move the comparative-convergence debate forward as a field, not a single positive result.
 
 We are not the field. We are NLP practitioners who built a method and applied it to a contested philosophical question because the question was textually apt and unaddressed by prior methods. What the present results mean for the perennialist–constructivist debate is for the field that runs the methodology forward. We have produced an instrument; we have not delivered a verdict.
 
@@ -544,7 +544,7 @@ For other researchers applying CCB to a new convergence claim:
 - **Shared-placeholder vocabulary substitution introduces a tautological similarity bias.** If substitution is used at all, prefer per-tradition placeholders or mask-and-compare. Empirically the bias is smaller at whole-book scale than at short-passage scale but is always present.
 - **Paraphrase content inflates document-level effects ~2× relative to verified-translation content.** Curated paraphrases are useful for fast methodology iteration but should not be the canonical evaluation corpus.
 - **PG-ID verification is necessary before fetching at scale.** 10 of 24 initial Project Gutenberg IDs in our Phase 1a manifest returned unrelated books. The `scripts/verify_manifest.py` title-match check is the cheap defense.
-- **Pre-registration of mechanism predictions before running a falsifying test is high-value.** The §6.8 single-component prediction failed for ULTIMATE and was untestable for AWARENESS / WORLD, revealing the corpus-coverage-asymmetry component that informs the refined formulation. Without pre-registration the refinement would read as post-hoc rationalization rather than as a falsifier-driven update.
+- **Pre-specifying mechanism predictions before running a falsifying test is high-value.** The §6.8 single-component prediction failed for ULTIMATE and was untestable for AWARENESS / WORLD, revealing the corpus-coverage-asymmetry component that informs the refined formulation. Without an advance specification the refinement would read as post-hoc rationalization rather than as a falsifier-driven update.
 - **Regex-based concept tagging is reproducible and pre-specifiable but is a hidden degree of freedom.** Held-out human-validated tagging on a randomly sampled subset is the cheap defense.
 
 ---
@@ -582,13 +582,13 @@ If a follow-on researcher were to extend the present application to a paper that
 8. **Sparse-autoencoder probes** for interpretable structural axes that survive vocabulary and register noise.
 9. **Adversarial synthetic-text controls** generated by language models.
 
-We list this here so the present paper does not need to commit to delivering it. We have built the instrument; we present what it found in two test-corpus iterations and one pre-registered mechanism-test; whoever extends it gets the priority list as a starting point.
+We list this here so the present paper does not need to commit to delivering it. We have built the instrument; we present what it found in two test-corpus iterations and one pre-specified mechanism-test; whoever extends it gets the priority list as a starting point.
 
 ---
 
 ## 11. Code and data availability
 
-All code, corpora, results, methodology notes, pre-registered predictions, and revision history are MIT-licensed and version-controlled at:
+All code, corpora, results, methodology notes, pre-specified predictions, and revision history are MIT-licensed and version-controlled at:
 
 **Repository:** https://github.com/davidredbird/concept-conditional-cross-tradition-binding
 
@@ -630,6 +630,14 @@ All code, corpora, results, methodology notes, pre-registered predictions, and r
 - `results/robustness/` — paraphrase-exclusion robustness check outputs.
 
 **Reproducibility.** OpenAI runs require API key (`.openai_key`); ONNX BERT runs are fully local with only `onnxruntime`, `tokenizers`, and `numpy` as external dependencies. Tested on Python 3.14 / Windows with Defender Application Control active.
+
+---
+
+## Acknowledgments
+
+### Use of AI assistance
+
+The author used Claude (Anthropic) extensively throughout this project: for methodology design discussions, prose drafting across multiple paper revisions, and writing code under the author's direction. All research questions, experimental design decisions, methodological commitments, interpretations of results, and claims in this paper are the author's; the AI's role was that of a capable but supervised research assistant.
 
 ---
 
@@ -679,7 +687,7 @@ Wheeler, J. A. (1990). Information, physics, quantum: The search for links. In W
 
 ---
 
-## Appendix A. Pre-registered candidate features and current status
+## Appendix A. Pre-specified candidate features and current status
 
 The seven candidate structural features were specified in `glossary.md` before any analysis. Their concept-tag counterparts are the categories in §4.2.
 
@@ -720,7 +728,7 @@ The feature taxonomy and concept-tag schema are not fully reconciled. A follow-o
 
 The second-reviewer Phase-1 prior (~60% AWARENESS + RECOGNITION survive at *p* ≤ 0.01; ~40% full five-concept pattern survives) was already exceeded in Phase 1a. The technical-only-tagger result strengthens RECOGNITION specifically to the project's highest cross-tradition concept-binding result.
 
-The pre-registered §6.8 predictions were partially confirmed (SUBSTRATE control, RECOGNITION direction-and-magnitude exceeded), partially refuted in informative directions (ULTIMATE went down rather than up, revealing the coverage-asymmetry mechanism), and partially untestable (AWARENESS, WORLD insufficient corpus coverage). The mixed-outcome pre-registered prediction test refines the mechanism rather than disconfirming the paper's broader claim that vocabulary breadth is a significant determinant of passage-level CCB.
+The pre-specified §6.8 predictions were partially confirmed (SUBSTRATE control, RECOGNITION direction-and-magnitude exceeded), partially refuted in informative directions (ULTIMATE went down rather than up, revealing the coverage-asymmetry mechanism), and partially untestable (AWARENESS, WORLD insufficient corpus coverage). The mixed-outcome pre-specified prediction test refines the mechanism rather than disconfirming the paper's broader claim that vocabulary breadth is a significant determinant of passage-level CCB.
 
 ---
 
