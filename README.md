@@ -137,7 +137,7 @@ If you use this corpus, code, or methodology, please cite the Zenodo archive of 
 
 ```
 Kinlaw, T. D. (2026). Concept-Conditional Cross-Tradition Binding in Semantic
-Embedding Space: A Method and an Application to Mysticism (v1.0.1)
+Embedding Space: A Method and an Application to Mysticism (v1.0.1-draft5)
 [Software]. Zenodo. https://doi.org/10.5281/zenodo.20261823
 ```
 
@@ -149,14 +149,14 @@ BibTeX:
   title     = {Concept-Conditional Cross-Tradition Binding in Semantic
                Embedding Space: A Method and an Application to Mysticism},
   year      = {2026},
-  version   = {v1.0.1},
+  version   = {v1.0.1-draft5},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20261823},
   url       = {https://doi.org/10.5281/zenodo.20261823}
 }
 ```
 
-The DOI `10.5281/zenodo.20261823` resolves to this specific release (v1.0.1, adds AI-use disclosure and softens pre-registration terminology to "pre-specified"). The prior release `10.5281/zenodo.20259102` (v1.0-draft5) remains valid. A "concept DOI" that always points to the latest release is available on the Zenodo record page.
+The DOI `10.5281/zenodo.20261823` resolves to this specific release (v1.0.1-draft5, adds AI-use disclosure and softens pre-registration terminology to "pre-specified"). The prior release `10.5281/zenodo.20259102` (v1.0-draft5) remains valid. A "concept DOI" that always points to the latest release is available on the Zenodo record page.
 
 ## License
 
