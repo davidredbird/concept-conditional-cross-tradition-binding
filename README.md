@@ -1,5 +1,7 @@
 # Think Outside the Box
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20259102.svg)](https://doi.org/10.5281/zenodo.20259102)
+
 A research project at the intersection of contemplative traditions, philosophy of mind, and machine learning.
 
 ## The core question
@@ -128,6 +130,33 @@ Additional structural notes:
 - The substitution scheme in `findings/phase0-v0.5-substituted.md` has a known placeholder-sharing bias documented in `methodology-notes.md`. The concept-binding analyses (Phase 0 + Phase 1a) supersede it as the canonical bias-corrected test.
 - Pre-registration is not formal yet. Full Phase 1 needs OSF pre-registration of corpus composition, analysis pipeline, statistical tests, and decision rules before running.
 - Modern computational sources (Bostrom, Tegmark, Kastrup, Bohm, Rovelli, etc.) are Phase 0 only; Phase 1a corpus is Project-Gutenberg-only and so excludes them. Full Phase 1 restores them via arxiv papers and fair-use research excerpts.
+
+## How to cite
+
+If you use this corpus, code, or methodology, please cite the Zenodo archive of this release:
+
+```
+Kinlaw, T. D. (2026). Concept-Conditional Cross-Tradition Binding in Semantic
+Embedding Space: A Method and an Application to Mysticism (v1.0-draft5)
+[Software]. Zenodo. https://doi.org/10.5281/zenodo.20259102
+```
+
+BibTeX:
+
+```bibtex
+@software{kinlaw_ccb_2026,
+  author    = {Kinlaw, T. David},
+  title     = {Concept-Conditional Cross-Tradition Binding in Semantic
+               Embedding Space: A Method and an Application to Mysticism},
+  year      = {2026},
+  version   = {v1.0-draft5},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.20259102},
+  url       = {https://doi.org/10.5281/zenodo.20259102}
+}
+```
+
+The DOI `10.5281/zenodo.20259102` resolves to this specific release. A "concept DOI" that always points to the latest release is available on the Zenodo record page.
 
 ## License
 
