@@ -1,0 +1,30 @@
+{
+  "title": "Concept-Conditional Cross-Tradition Binding in Semantic Embedding Space: A Method and an Application to Mysticism",
+  "description": "<p>An NLP methodology paper introducing concept-conditional cross-tradition binding (CCB), a bias-aware embedding-based statistic for testing whether textual passages from unconnected source traditions are more similar when conditioned on shared structural concepts than when not. Stress-tested on the 65-year-old cross-cultural mysticism convergence debate (Stace 1960; Katz 1978; Forman 1990; Hood 1975).</p><p>This release archives the paper (Draft 5), the corpora (Phase 0: 143 passages across 23 traditions; Phase 1a: 920 chunks sampled from 20 whole books across 11 traditions), the full analysis pipeline (passage- and sentence-level CCB, OpenAI text-embedding-3-large and ONNX MiniLM backends, vocabulary substitution, paraphrase-exclusion robustness, technical-only-tagger variant), and the result tables.</p><p>Released MIT-licensed for replication, extension, adversarial reuse, and application to other convergent-claim test cases.</p>",
+  "creators": [
+    {
+      "name": "Kinlaw, T. David",
+      "affiliation": "Independent Researcher / Redbird Software LLC"
+    }
+  ],
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "natural language processing",
+    "semantic embeddings",
+    "computational humanities",
+    "comparative mysticism",
+    "concept-conditional binding",
+    "cross-cultural convergence",
+    "perennialism",
+    "constructivism",
+    "nondualism",
+    "Stace",
+    "Forman",
+    "Hood Mysticism Scale",
+    "ONNX",
+    "BERT",
+    "OpenAI embeddings"
+  ]
+}
