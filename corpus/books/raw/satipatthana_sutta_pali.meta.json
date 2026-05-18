@@ -1,0 +1,30 @@
+{
+  "id": "satipatthana_sutta_pali",
+  "title": "Satipatthana Sutta (MN 10, Pali)",
+  "author": "Pali Canon / Majjhima Nikaya",
+  "translator": "n/a (original; SuttaCentral edition)",
+  "tradition": "theravada",
+  "category": "dualistic",
+  "era": "3c BCE",
+  "language": "pali",
+  "source_id": "satipatthana",
+  "source": {
+    "type": "suttacentral_api",
+    "id": "mn10",
+    "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+    "segments": [
+      "mn10"
+    ]
+  },
+  "license": "pd",
+  "notes": "Foundations of Mindfulness, shorter version. Phase 1c.2.",
+  "_fetch": {
+    "fetched_url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+    "size_bytes": 26779,
+    "format": "txt",
+    "n_segments_ok": 1,
+    "n_segments_failed": 0,
+    "n_text_chunks": 235,
+    "n_segments_requested": 1
+  }
+}

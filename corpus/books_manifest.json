@@ -807,6 +807,99 @@
       },
       "license": "pd",
       "notes": "GRETIL HTML transformation of Mandukya Upanishad with commentary. Phase 1c.2 Sanskrit Advaita corpus."
+    },
+    {
+      "id": "mundaka_upanisad_sanskrit",
+      "title": "Mundaka Upanisad (Sanskrit, Devanagari)",
+      "author": "Anonymous (Upanisad)",
+      "translator": "n/a (original)",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "7c BCE",
+      "language": "sanskrit",
+      "source": {
+        "type": "web",
+        "id": "wikisource_mundakopanishad",
+        "url": "https://sa.wikisource.org/wiki/%E0%A4%AE%E0%A5%81%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%95%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D"
+      },
+      "license": "pd",
+      "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus."
+    },
+    {
+      "id": "katha_upanisad_sanskrit",
+      "title": "Katha Upanisad (Sanskrit, Devanagari)",
+      "author": "Anonymous (Upanisad)",
+      "translator": "n/a (original)",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "7c BCE",
+      "language": "sanskrit",
+      "source": {
+        "type": "web",
+        "id": "wikisource_kathopanishad",
+        "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%A0%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D"
+      },
+      "license": "pd",
+      "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus."
+    },
+    {
+      "id": "kena_upanisad_sanskrit",
+      "title": "Kena Upanisad (Sanskrit, Devanagari)",
+      "author": "Anonymous (Upanisad)",
+      "translator": "n/a (original)",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "7c BCE",
+      "language": "sanskrit",
+      "source": {
+        "type": "web",
+        "id": "wikisource_kenopanishad",
+        "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A5%87%E0%A4%A8%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D"
+      },
+      "license": "pd",
+      "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus."
+    },
+    {
+      "id": "mahasatipatthana_sutta_pali",
+      "title": "Mahasatipatthana Sutta (DN 22, Pali)",
+      "author": "Pali Canon / Digha Nikaya",
+      "translator": "n/a (original; SuttaCentral edition)",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "3c BCE",
+      "language": "pali",
+      "source_id": "mahasatipatthana",
+      "source": {
+        "type": "suttacentral_api",
+        "id": "dn22",
+        "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+        "segments": [
+          "dn22"
+        ]
+      },
+      "license": "pd",
+      "notes": "The Great Discourse on the Foundations of Mindfulness, full sutta via SuttaCentral. Phase 1c.2."
+    },
+    {
+      "id": "satipatthana_sutta_pali",
+      "title": "Satipatthana Sutta (MN 10, Pali)",
+      "author": "Pali Canon / Majjhima Nikaya",
+      "translator": "n/a (original; SuttaCentral edition)",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "3c BCE",
+      "language": "pali",
+      "source_id": "satipatthana",
+      "source": {
+        "type": "suttacentral_api",
+        "id": "mn10",
+        "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+        "segments": [
+          "mn10"
+        ]
+      },
+      "license": "pd",
+      "notes": "Foundations of Mindfulness, shorter version. Phase 1c.2."
     }
   ]
 }

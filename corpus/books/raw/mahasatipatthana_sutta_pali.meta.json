@@ -1,0 +1,30 @@
+{
+  "id": "mahasatipatthana_sutta_pali",
+  "title": "Mahasatipatthana Sutta (DN 22, Pali)",
+  "author": "Pali Canon / Digha Nikaya",
+  "translator": "n/a (original; SuttaCentral edition)",
+  "tradition": "theravada",
+  "category": "dualistic",
+  "era": "3c BCE",
+  "language": "pali",
+  "source_id": "mahasatipatthana",
+  "source": {
+    "type": "suttacentral_api",
+    "id": "dn22",
+    "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+    "segments": [
+      "dn22"
+    ]
+  },
+  "license": "pd",
+  "notes": "The Great Discourse on the Foundations of Mindfulness, full sutta via SuttaCentral. Phase 1c.2.",
+  "_fetch": {
+    "fetched_url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+    "size_bytes": 40521,
+    "format": "txt",
+    "n_segments_ok": 1,
+    "n_segments_failed": 0,
+    "n_text_chunks": 454,
+    "n_segments_requested": 1
+  }
+}
