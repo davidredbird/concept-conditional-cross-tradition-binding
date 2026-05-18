@@ -1,0 +1,27 @@
+{
+  "id": "katha_upanisad_sanskrit",
+  "title": "Katha Upanisad (Sanskrit, Devanagari)",
+  "author": "Anonymous (Upanisad)",
+  "translator": "n/a (original)",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "7c BCE",
+  "language": "sanskrit",
+  "source": {
+    "type": "web",
+    "id": "wikisource_kathopanishad",
+    "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%A0%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D"
+  },
+  "license": "pd",
+  "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus.",
+  "_fetch": {
+    "fetched_url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%A0%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D",
+    "size_bytes": 64822,
+    "format": "html"
+  },
+  "_clean": {
+    "word_count": 184,
+    "char_count": 1766,
+    "token_estimate": 245
+  }
+}

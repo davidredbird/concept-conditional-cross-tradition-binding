@@ -2,7 +2,7 @@
   "id": "dhammapada_radhakrishnan",
   "title": "The Dhammapada",
   "author": "Pali Canon",
-  "translator": "F. Max M\u00fcller",
+  "translator": "F. Max Müller",
   "tradition": "theravada",
   "category": "dualistic",
   "era": "3c BCE",
@@ -12,7 +12,7 @@
     "url": "https://www.gutenberg.org/cache/epub/2017/pg2017.txt"
   },
   "license": "pd",
-  "notes": "M\u00fcller translation in SBE vol. 10.",
+  "notes": "Müller translation in SBE vol. 10.",
   "_fetch": {
     "fetched_url": "https://www.gutenberg.org/cache/epub/2017/pg2017.txt",
     "size_bytes": 88622,
@@ -22,5 +22,6 @@
     "word_count": 12160,
     "char_count": 66638,
     "token_estimate": 16213
-  }
+  },
+  "language": "english"
 }

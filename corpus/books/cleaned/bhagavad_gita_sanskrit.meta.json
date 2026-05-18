@@ -1,0 +1,28 @@
+{
+  "id": "bhagavad_gita_sanskrit",
+  "title": "Bhagavad-Gita (Sanskrit, Devanagari)",
+  "author": "Vyasa (attributed)",
+  "translator": "n/a (original)",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "2c BCE",
+  "language": "sanskrit",
+  "source_id": "bhagavad_gita",
+  "source": {
+    "type": "web",
+    "id": "gretil_bhagavadgita_comm",
+    "url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_bhagavadgItA-comm.htm"
+  },
+  "license": "pd",
+  "notes": "GRETIL HTML transformation of TEI-encoded Bhagavadgita with commentary. Phase 1c.1/1c.2 addition. Verse-only filtering applied in clean step.",
+  "_fetch": {
+    "fetched_url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_bhagavadgItA-comm.htm",
+    "size_bytes": 680578,
+    "format": "html"
+  },
+  "_clean": {
+    "word_count": 51662,
+    "char_count": 447707,
+    "token_estimate": 68882
+  }
+}

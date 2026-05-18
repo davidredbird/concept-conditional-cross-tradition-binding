@@ -840,7 +840,9 @@
         "url": "https://sa.wikisource.org/wiki/%E0%A4%95%E0%A4%A0%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%8D"
       },
       "license": "pd",
-      "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus."
+      "notes": "Sanskrit Wikisource, Devanagari. Phase 1c.2 Sanskrit Advaita corpus.",
+      "_broken": true,
+      "_broken_reason": "Wikisource page is mostly Sanskrit-language MediaWiki UI navigation (14.7% non-ASCII vs Mundaka 35.6%); actual Upanishad verses not present as transcribed text. Source needs to be replaced with a different Katha Upanishad source (e.g., sanskritdocuments.org HTML or ITX-converted)."
     },
     {
       "id": "kena_upanisad_sanskrit",

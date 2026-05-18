@@ -21,5 +21,6 @@
     "word_count": 42756,
     "char_count": 245652,
     "token_estimate": 57008
-  }
+  },
+  "language": "english"
 }

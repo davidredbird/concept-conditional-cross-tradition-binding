@@ -137,6 +137,7 @@ def chunk_one_book(book_id: str) -> list[dict]:
                 "author": meta["author"],
                 "translator": meta.get("translator"),
                 "era": meta.get("era"),
+                "language": meta.get("language", "english"),
                 "chunk_index": i,
                 "char_start": char_start,
                 "char_end": char_end,

@@ -23,5 +23,6 @@
     "char_count": 120819,
     "token_estimate": 26865
   },
-  "source_id": "bhagavad_gita"
+  "source_id": "bhagavad_gita",
+  "language": "english"
 }

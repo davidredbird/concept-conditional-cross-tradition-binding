@@ -48,6 +48,11 @@ def clean_gutenberg(raw: bytes) -> str:
     # PG transcribers often add an "End of the Project Gutenberg" or "PRODUCED BY"
     # signature outside markers; we already cut at markers so this is usually fine.
 
+    # Strip Phase 1c segment markers added by the suttacentral_api fetcher
+    # (e.g., '<!-- SEGMENT: dhp1-20 (URL: ...) -->' or
+    # '<!-- SEGMENT FETCH FAILED: ... -->'). These are not source content.
+    text = re.sub(r"<!--\s*SEGMENT[^>]*-->", "", text)
+
     # Normalize line endings
     text = text.replace("\r\n", "\n").replace("\r", "\n")
 

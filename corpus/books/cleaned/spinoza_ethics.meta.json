@@ -12,7 +12,7 @@
     "url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt"
   },
   "license": "pd",
-  "notes": "Substance monism \u2014 God-or-Nature. Structurally nondual. New tradition tag.",
+  "notes": "Substance monism — God-or-Nature. Structurally nondual. New tradition tag.",
   "_fetch": {
     "fetched_url": "https://www.gutenberg.org/cache/epub/3800/pg3800.txt",
     "size_bytes": 531670,
@@ -22,5 +22,6 @@
     "word_count": 87955,
     "char_count": 500137,
     "token_estimate": 117273
-  }
+  },
+  "language": "english"
 }

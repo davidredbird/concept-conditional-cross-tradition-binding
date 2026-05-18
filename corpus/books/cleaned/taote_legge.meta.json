@@ -23,5 +23,6 @@
     "char_count": 58384,
     "token_estimate": 14214
   },
-  "source_id": "tao_te_ching"
+  "source_id": "tao_te_ching",
+  "language": "english"
 }
