@@ -1,0 +1,23 @@
+{
+  "id": "taote_chinese",
+  "title": "Tao Te Ching (Classical Chinese)",
+  "author": "Laozi",
+  "translator": "n/a (original)",
+  "tradition": "daoism",
+  "category": "nondual",
+  "era": "6c BCE",
+  "language": "classical_chinese",
+  "source_id": "tao_te_ching",
+  "source": {
+    "type": "web",
+    "id": "ctext_dao_de_jing",
+    "url": "https://ctext.org/dao-de-jing/zh"
+  },
+  "license": "pd",
+  "notes": "Chinese Text Project, full Classical Chinese TTC. Phase 1c.1 addition.",
+  "_fetch": {
+    "fetched_url": "https://ctext.org/dao-de-jing/zh",
+    "size_bytes": 283023,
+    "format": "html"
+  }
+}

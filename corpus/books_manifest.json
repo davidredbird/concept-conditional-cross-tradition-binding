@@ -708,6 +708,105 @@
       },
       "license": "pd",
       "notes": "Suzuki and Carus 1913 translation. Zen-influenced reading style. Phase 1b multi-translator addition."
+    },
+    {
+      "id": "bhagavad_gita_sanskrit",
+      "title": "Bhagavad-Gita (Sanskrit, Devanagari)",
+      "author": "Vyasa (attributed)",
+      "translator": "n/a (original)",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "2c BCE",
+      "language": "sanskrit",
+      "source_id": "bhagavad_gita",
+      "source": {
+        "type": "web",
+        "id": "gretil_bhagavadgita_comm",
+        "url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_bhagavadgItA-comm.htm"
+      },
+      "license": "pd",
+      "notes": "GRETIL HTML transformation of TEI-encoded Bhagavadgita with commentary. Phase 1c.1/1c.2 addition. Verse-only filtering applied in clean step."
+    },
+    {
+      "id": "taote_chinese",
+      "title": "Tao Te Ching (Classical Chinese)",
+      "author": "Laozi",
+      "translator": "n/a (original)",
+      "tradition": "daoism",
+      "category": "nondual",
+      "era": "6c BCE",
+      "language": "classical_chinese",
+      "source_id": "tao_te_ching",
+      "source": {
+        "type": "web",
+        "id": "ctext_dao_de_jing",
+        "url": "https://ctext.org/dao-de-jing/zh"
+      },
+      "license": "pd",
+      "notes": "Chinese Text Project, full Classical Chinese TTC. Phase 1c.1 addition."
+    },
+    {
+      "id": "dhammapada_pali",
+      "title": "Dhammapada (Pali)",
+      "author": "Khuddakanikaya / Pali Canon",
+      "translator": "n/a (original; SuttaCentral edition)",
+      "tradition": "theravada",
+      "category": "dualistic",
+      "era": "3c BCE",
+      "language": "pali",
+      "source_id": "dhammapada",
+      "source": {
+        "type": "suttacentral_api",
+        "id": "dhp",
+        "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+        "segments": [
+          "dhp1-20",
+          "dhp21-32",
+          "dhp33-43",
+          "dhp44-59",
+          "dhp60-75",
+          "dhp76-89",
+          "dhp90-99",
+          "dhp100-115",
+          "dhp116-128",
+          "dhp129-145",
+          "dhp146-156",
+          "dhp157-166",
+          "dhp167-178",
+          "dhp179-196",
+          "dhp197-208",
+          "dhp209-220",
+          "dhp221-234",
+          "dhp235-255",
+          "dhp256-272",
+          "dhp273-289",
+          "dhp290-305",
+          "dhp306-319",
+          "dhp320-333",
+          "dhp334-359",
+          "dhp360-382",
+          "dhp383-423"
+        ]
+      },
+      "license": "pd",
+      "notes": "Pali Dhammapada via SuttaCentral JSON API, all 26 vaggas (423 verses). Phase 1c.2 cross-tradition test corpus."
+    },
+    {
+      "id": "mandukya_upanisad_sanskrit",
+      "title": "Mandukya Upanisad (Sanskrit)",
+      "author": "Anonymous (Upanisad)",
+      "translator": "n/a (original)",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "7c BCE",
+      "language": "sanskrit",
+      "source": {
+        "type": "web",
+        "id": "sa_mANDUkyopaniSad-comm",
+        "url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_mANDUkyopaniSad-comm.htm"
+      },
+      "license": "pd",
+      "notes": "GRETIL HTML transformation of Mandukya Upanishad with commentary. Phase 1c.2 Sanskrit Advaita corpus."
     }
   ]
 }

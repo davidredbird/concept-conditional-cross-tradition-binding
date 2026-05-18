@@ -1,0 +1,22 @@
+{
+  "id": "mandukya_upanisad_sanskrit",
+  "title": "Mandukya Upanisad (Sanskrit)",
+  "author": "Anonymous (Upanisad)",
+  "translator": "n/a (original)",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "7c BCE",
+  "language": "sanskrit",
+  "source": {
+    "type": "web",
+    "id": "sa_mANDUkyopaniSad-comm",
+    "url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_mANDUkyopaniSad-comm.htm"
+  },
+  "license": "pd",
+  "notes": "GRETIL HTML transformation of Mandukya Upanishad with commentary. Phase 1c.2 Sanskrit Advaita corpus.",
+  "_fetch": {
+    "fetched_url": "http://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_mANDUkyopaniSad-comm.htm",
+    "size_bytes": 279383,
+    "format": "html"
+  }
+}

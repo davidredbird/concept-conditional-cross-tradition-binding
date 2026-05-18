@@ -4,12 +4,18 @@ Fetch books listed in corpus/books_manifest.json.
 Supported source types:
   - gutenberg: simple HTTP GET of the .txt URL
   - arxiv: fetches the abstract page and follows to PDF (needs pdf extractor)
-  - web: simple HTTP GET (HTML; needs HTML stripper)
+  - web: simple HTTP GET (HTML; needs HTML stripper). Used for GRETIL and ctext.org
+        single-page sources.
   - archive_org: plaintext from Internet Archive item (uses {id}_djvu.txt by default,
                  or explicit `url` from manifest if provided)
   - sacred_texts: multi-chapter HTML book from sacred-texts.com. Fetches index.htm,
                   extracts chapter links by regex, fetches and concatenates all
                   chapter HTML files.
+  - suttacentral_api: Pali / Sanskrit source text from SuttaCentral's JSON API.
+                  Manifest specifies a list of segment ranges (e.g., dhp1-20,
+                  dhp21-32, ...) and a URL template. Fetcher iterates segments,
+                  extracts `root_text` values in `keys_order`, concatenates as
+                  plain UTF-8 text.
   - manual: skipped — print a note that the user must fetch manually
 
 Output:
@@ -156,12 +162,76 @@ def fetch_sacred_texts(book: dict, out_path: Path) -> dict:
     }
 
 
+def fetch_suttacentral_api(book: dict, out_path: Path) -> dict:
+    """Fetch original-language text from SuttaCentral's JSON API.
+
+    Manifest schema:
+      "source": {
+        "type": "suttacentral_api",
+        "id": "<sutta_uid>",
+        "url": "https://suttacentral.net/api/bilarasuttas/{segment}/pli",
+        "segments": ["dhp1-20", "dhp21-32", ..., "dhp383-423"]
+      }
+
+    Strategy: for each segment, fetch the JSON, extract root_text values in
+    keys_order, concatenate. The result is plain UTF-8 text with whitespace
+    between segments (Pali source text for the configured language).
+    """
+    import json as _json
+    src = book["source"]
+    url_template = src["url"]
+    segments = src["segments"]
+
+    parts: list[str] = []
+    n_segments_ok = 0
+    n_segments_failed = 0
+    n_text_chunks = 0
+
+    for seg in segments:
+        url = url_template.format(segment=seg)
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
+            )
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                data = resp.read()
+            obj = _json.loads(data.decode("utf-8"))
+            keys_order = obj.get("keys_order", [])
+            root_text = obj.get("root_text", {})
+
+            parts.append(f"\n\n<!-- SEGMENT: {seg} (URL: {url}) -->\n")
+            for k in keys_order:
+                text = root_text.get(k, "")
+                if text:
+                    parts.append(text)
+                    n_text_chunks += 1
+            n_segments_ok += 1
+            time.sleep(0.3)
+        except Exception as e:
+            parts.append(f"\n<!-- SEGMENT FETCH FAILED: {seg} ({url}) - {type(e).__name__}: {e} -->\n")
+            n_segments_failed += 1
+
+    combined = "".join(parts)
+    out_path.write_text(combined, encoding="utf-8")
+    return {
+        "fetched_url": url_template,
+        "size_bytes": len(combined.encode("utf-8")),
+        "format": "txt",
+        "n_segments_ok": n_segments_ok,
+        "n_segments_failed": n_segments_failed,
+        "n_text_chunks": n_text_chunks,
+        "n_segments_requested": len(segments),
+    }
+
+
 FETCHERS = {
     "gutenberg": (fetch_gutenberg, "txt"),
     "arxiv": (fetch_arxiv, "pdf"),
     "web": (fetch_web, "html"),
     "archive_org": (fetch_archive_org, "txt"),
     "sacred_texts": (fetch_sacred_texts, "html"),
+    "suttacentral_api": (fetch_suttacentral_api, "txt"),
 }
 
 
@@ -170,7 +240,7 @@ def main() -> None:
     parser.add_argument("--id", default=None, help="Comma-separated book IDs to fetch")
     parser.add_argument(
         "--types",
-        default="gutenberg,arxiv,web,archive_org,sacred_texts",
+        default="gutenberg,arxiv,web,archive_org,sacred_texts,suttacentral_api",
         help="Comma-separated source types to fetch",
     )
     parser.add_argument("--force", action="store_true", help="Re-fetch even if cached")
