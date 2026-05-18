@@ -1,0 +1,116 @@
+[
+  {
+    "model_id": "intfloat/multilingual-e5-large",
+    "script": "devanagari",
+    "n_pairs": 5,
+    "same_verse_mean": 0.8535094261169434,
+    "same_verse_min": 0.842302680015564,
+    "same_verse_max": 0.8614158034324646,
+    "diff_verse_mean": 0.7983100414276123,
+    "diff_verse_min": 0.7599726319313049,
+    "diff_verse_max": 0.8204226493835449,
+    "separation": 0.055199384689331055,
+    "correct_matches": 5,
+    "correct_match_rate": 1.0,
+    "per_verse": [
+      {
+        "verse_id": "bg_2.47",
+        "diag_similarity": 0.8587579131126404,
+        "top1_match_idx": 0,
+        "top1_match_id": "bg_2.47",
+        "top1_match_similarity": 0.8587579131126404,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_4.7",
+        "diag_similarity": 0.842302680015564,
+        "top1_match_idx": 1,
+        "top1_match_id": "bg_4.7",
+        "top1_match_similarity": 0.842302680015564,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_15.7",
+        "diag_similarity": 0.8554227352142334,
+        "top1_match_idx": 2,
+        "top1_match_id": "bg_15.7",
+        "top1_match_similarity": 0.8554227352142334,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_6.30",
+        "diag_similarity": 0.8614158034324646,
+        "top1_match_idx": 3,
+        "top1_match_id": "bg_6.30",
+        "top1_match_similarity": 0.8614158034324646,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_2.22",
+        "diag_similarity": 0.8496478796005249,
+        "top1_match_idx": 4,
+        "top1_match_id": "bg_2.22",
+        "top1_match_similarity": 0.8496478796005249,
+        "correct": true
+      }
+    ],
+    "decision": "PASS"
+  },
+  {
+    "model_id": "sentence-transformers/LaBSE",
+    "script": "devanagari",
+    "n_pairs": 5,
+    "same_verse_mean": 0.3507988452911377,
+    "same_verse_min": 0.2184033989906311,
+    "same_verse_max": 0.41710662841796875,
+    "diff_verse_mean": 0.10354886949062347,
+    "diff_verse_min": -0.04351968690752983,
+    "diff_verse_max": 0.27306458353996277,
+    "separation": 0.24724997580051422,
+    "correct_matches": 5,
+    "correct_match_rate": 1.0,
+    "per_verse": [
+      {
+        "verse_id": "bg_2.47",
+        "diag_similarity": 0.2184033989906311,
+        "top1_match_idx": 0,
+        "top1_match_id": "bg_2.47",
+        "top1_match_similarity": 0.2184033989906311,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_4.7",
+        "diag_similarity": 0.3923777937889099,
+        "top1_match_idx": 1,
+        "top1_match_id": "bg_4.7",
+        "top1_match_similarity": 0.3923777937889099,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_15.7",
+        "diag_similarity": 0.35751932859420776,
+        "top1_match_idx": 2,
+        "top1_match_id": "bg_15.7",
+        "top1_match_similarity": 0.35751932859420776,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_6.30",
+        "diag_similarity": 0.41710662841796875,
+        "top1_match_idx": 3,
+        "top1_match_id": "bg_6.30",
+        "top1_match_similarity": 0.41710662841796875,
+        "correct": true
+      },
+      {
+        "verse_id": "bg_2.22",
+        "diag_similarity": 0.36858704686164856,
+        "top1_match_idx": 4,
+        "top1_match_id": "bg_2.22",
+        "top1_match_similarity": 0.36858704686164856,
+        "correct": true
+      }
+    ],
+    "decision": "PASS"
+  }
+]
