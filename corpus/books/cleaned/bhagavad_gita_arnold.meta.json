@@ -12,7 +12,7 @@
     "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt"
   },
   "license": "pd",
-  "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat \u2014 it's actually a contested case between Advaita and other Vedanta schools.",
+  "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat — it's actually a contested case between Advaita and other Vedanta schools.",
   "_fetch": {
     "fetched_url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt",
     "size_bytes": 147504,
@@ -22,5 +22,6 @@
     "word_count": 20149,
     "char_count": 120819,
     "token_estimate": 26865
-  }
+  },
+  "source_id": "bhagavad_gita"
 }

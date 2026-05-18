@@ -1,0 +1,25 @@
+{
+  "id": "bhagavad_gita_telang",
+  "title": "The Bhagavadg\u00eet\u00e2 (Sacred Books of the East vol. 8)",
+  "author": "Vyasa (attributed)",
+  "translator": "K\u00e2shin\u00e2th Trimbak Telang",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "2c BCE",
+  "source_id": "bhagavad_gita",
+  "source": {
+    "type": "sacred_texts",
+    "id": "hin/sbe08",
+    "url": "https://www.sacred-texts.com/hin/sbe08/index.htm"
+  },
+  "license": "pd",
+  "notes": "Telang 1882 translation in Sacred Books of the East vol. 8 (ed. Max M\u00fcller). Academic Indological style. Phase 1b multi-translator addition.",
+  "_fetch": {
+    "fetched_url": "https://www.sacred-texts.com/hin/sbe08/index.htm",
+    "size_bytes": 1651975,
+    "format": "html",
+    "n_chapters_ok": 64,
+    "n_chapters_failed": 0,
+    "n_chapters_found": 64
+  }
+}

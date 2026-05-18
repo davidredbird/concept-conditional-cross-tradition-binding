@@ -34,7 +34,8 @@
         "url": "https://www.gutenberg.org/cache/epub/216/pg216.txt"
       },
       "license": "pd",
-      "notes": "Sacred Books of the East vol. 39; part 1 of Legge's two-volume Daoist canon translation."
+      "notes": "Sacred Books of the East vol. 39; part 1 of Legge's two-volume Daoist canon translation.",
+      "source_id": "tao_te_ching"
     },
     {
       "id": "zhuangzi_legge",
@@ -82,7 +83,8 @@
         "url": "https://www.gutenberg.org/cache/epub/2388/pg2388.txt"
       },
       "license": "pd",
-      "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat — it's actually a contested case between Advaita and other Vedanta schools."
+      "notes": "Verse translation by Arnold. Marks the Bhagavad Gita as advaita with caveat — it's actually a contested case between Advaita and other Vedanta schools.",
+      "source_id": "bhagavad_gita"
     },
     {
       "id": "rumi_mesnevi_redhouse",
@@ -638,6 +640,74 @@
         "url": null
       },
       "license": "fair_use"
+    },
+    {
+      "id": "bhagavad_gita_telang",
+      "title": "The Bhagavadgîtâ (Sacred Books of the East vol. 8)",
+      "author": "Vyasa (attributed)",
+      "translator": "Kâshinâth Trimbak Telang",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "2c BCE",
+      "source_id": "bhagavad_gita",
+      "source": {
+        "type": "sacred_texts",
+        "id": "hin/sbe08",
+        "url": "https://www.sacred-texts.com/hin/sbe08/index.htm"
+      },
+      "license": "pd",
+      "notes": "Telang 1882 translation in Sacred Books of the East vol. 8 (ed. Max Müller). Academic Indological style. Phase 1b multi-translator addition."
+    },
+    {
+      "id": "bhagavad_gita_swarupananda",
+      "title": "Srimad-Bhagavad-Gita",
+      "author": "Vyasa (attributed)",
+      "translator": "Swami Swarupananda",
+      "tradition": "advaita",
+      "category": "nondual",
+      "era": "2c BCE",
+      "source_id": "bhagavad_gita",
+      "source": {
+        "type": "sacred_texts",
+        "id": "hin/sbg",
+        "url": "https://www.sacred-texts.com/hin/sbg/index.htm"
+      },
+      "license": "pd",
+      "notes": "Swarupananda 1909 translation with Vedantic commentary. Phase 1b multi-translator addition."
+    },
+    {
+      "id": "taote_goddard",
+      "title": "Laotzu's Tao and Wu Wei",
+      "author": "Laozi",
+      "translator": "Dwight Goddard and Henri Borel",
+      "tradition": "daoism",
+      "category": "nondual",
+      "era": "6c BCE",
+      "source_id": "tao_te_ching",
+      "source": {
+        "type": "sacred_texts",
+        "id": "tao/ltw",
+        "url": "https://www.sacred-texts.com/tao/ltw/index.htm"
+      },
+      "license": "pd",
+      "notes": "Goddard and Borel 1919 translation. Contemplative-Western reading style. Phase 1b multi-translator addition."
+    },
+    {
+      "id": "taote_carus",
+      "title": "The Canon of Reason and Virtue (Lao-tsu's Tao-Teh-King)",
+      "author": "Laozi",
+      "translator": "D.T. Suzuki and Paul Carus",
+      "tradition": "daoism",
+      "category": "nondual",
+      "era": "6c BCE",
+      "source_id": "tao_te_ching",
+      "source": {
+        "type": "sacred_texts",
+        "id": "tao/crv",
+        "url": "https://www.sacred-texts.com/tao/crv/index.htm"
+      },
+      "license": "pd",
+      "notes": "Suzuki and Carus 1913 translation. Zen-influenced reading style. Phase 1b multi-translator addition."
     }
   ]
 }

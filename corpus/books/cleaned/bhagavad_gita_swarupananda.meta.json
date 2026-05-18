@@ -1,0 +1,30 @@
+{
+  "id": "bhagavad_gita_swarupananda",
+  "title": "Srimad-Bhagavad-Gita",
+  "author": "Vyasa (attributed)",
+  "translator": "Swami Swarupananda",
+  "tradition": "advaita",
+  "category": "nondual",
+  "era": "2c BCE",
+  "source_id": "bhagavad_gita",
+  "source": {
+    "type": "sacred_texts",
+    "id": "hin/sbg",
+    "url": "https://www.sacred-texts.com/hin/sbg/index.htm"
+  },
+  "license": "pd",
+  "notes": "Swarupananda 1909 translation with Vedantic commentary. Phase 1b multi-translator addition.",
+  "_fetch": {
+    "fetched_url": "https://www.sacred-texts.com/hin/sbg/index.htm",
+    "size_bytes": 593754,
+    "format": "html",
+    "n_chapters_ok": 27,
+    "n_chapters_failed": 0,
+    "n_chapters_found": 27
+  },
+  "_clean": {
+    "word_count": 41934,
+    "char_count": 261704,
+    "token_estimate": 55912
+  }
+}

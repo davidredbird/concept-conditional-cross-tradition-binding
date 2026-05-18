@@ -5,6 +5,11 @@ Supported source types:
   - gutenberg: simple HTTP GET of the .txt URL
   - arxiv: fetches the abstract page and follows to PDF (needs pdf extractor)
   - web: simple HTTP GET (HTML; needs HTML stripper)
+  - archive_org: plaintext from Internet Archive item (uses {id}_djvu.txt by default,
+                 or explicit `url` from manifest if provided)
+  - sacred_texts: multi-chapter HTML book from sacred-texts.com. Fetches index.htm,
+                  extracts chapter links by regex, fetches and concatenates all
+                  chapter HTML files.
   - manual: skipped — print a note that the user must fetch manually
 
 Output:
@@ -12,24 +17,26 @@ Output:
   corpus/books/raw/<book_id>.meta.json        copy of manifest entry + fetch info
 
 Usage:
-  python scripts/fetch_books.py                # fetch all gutenberg books in manifest
+  python scripts/fetch_books.py                # fetch all books in manifest (default types)
   python scripts/fetch_books.py --id plotinus_enneads_mackenna,taote_legge
-  python scripts/fetch_books.py --types gutenberg,arxiv
+  python scripts/fetch_books.py --types gutenberg,arxiv,archive_org,sacred_texts
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import time
 import urllib.request
 from pathlib import Path
+from urllib.parse import urljoin
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "corpus" / "books_manifest.json"
 RAW_DIR = REPO_ROOT / "corpus" / "books" / "raw"
 
-USER_AGENT = "ThinkOutsideTheBox-Research/0.1 (https://github.com/RedbirdSoftwareLLC/thinkoutsidethebox)"
+USER_AGENT = "CCB-Research/0.1 (https://github.com/davidredbird/concept-conditional-cross-tradition-binding)"
 
 
 def http_get(url: str, timeout: int = 60) -> bytes:
@@ -67,10 +74,94 @@ def fetch_web(book: dict, out_path: Path) -> dict:
     return {"fetched_url": url, "size_bytes": len(data), "format": "html"}
 
 
+def fetch_archive_org(book: dict, out_path: Path) -> dict:
+    """Fetch plaintext from an Internet Archive item.
+
+    Manifest schema:
+      "source": {
+        "type": "archive_org",
+        "id": "<archive-org-identifier>",
+        "url": "<optional explicit text URL — overrides default _djvu.txt>"
+      }
+
+    If `url` is provided, fetch it directly. Otherwise construct the standard
+    OCR plaintext URL: https://archive.org/download/{id}/{id}_djvu.txt
+    """
+    src = book["source"]
+    identifier = src["id"]
+    url = src.get("url") or f"https://archive.org/download/{identifier}/{identifier}_djvu.txt"
+    data = http_get(url)
+    out_path.write_bytes(data)
+    return {"fetched_url": url, "size_bytes": len(data), "format": "txt"}
+
+
+_CHAPTER_HREF_RE = re.compile(r'href=["\']([^"\'#?]+\.htm)["\']', re.IGNORECASE)
+
+
+def fetch_sacred_texts(book: dict, out_path: Path) -> dict:
+    """Fetch a multi-chapter book from sacred-texts.com.
+
+    Manifest schema:
+      "source": {
+        "type": "sacred_texts",
+        "id": "<section>/<book>",
+        "url": "https://www.sacred-texts.com/<section>/<book>/index.htm"
+      }
+
+    Strategy: fetch the index page, regex out all .htm links in the same directory,
+    fetch each, concatenate. Saved as a single HTML file with comment markers for
+    chapter boundaries. clean_books.py handles HTML stripping downstream.
+    """
+    src = book["source"]
+    index_url = src["url"]
+    base = index_url.rsplit("/", 1)[0] + "/"
+
+    index_html = http_get(index_url).decode("utf-8", errors="replace")
+
+    seen = set()
+    chapter_urls: list[str] = []
+    for href in _CHAPTER_HREF_RE.findall(index_html):
+        if href.startswith(("http://", "https://", "../", "/")):
+            continue
+        if href.lower() in ("index.htm", "errata.htm"):
+            continue
+        if href in seen:
+            continue
+        seen.add(href)
+        chapter_urls.append(urljoin(base, href))
+
+    parts: list[str] = [f"<!-- INDEX: {index_url} -->\n", index_html]
+    n_ok = 0
+    n_fail = 0
+    for chapter_url in chapter_urls:
+        try:
+            chapter_data = http_get(chapter_url).decode("utf-8", errors="replace")
+            parts.append(f"<!-- CHAPTER: {chapter_url} -->\n")
+            parts.append(chapter_data)
+            n_ok += 1
+            time.sleep(0.5)
+        except Exception as e:
+            parts.append(f"<!-- CHAPTER FETCH FAILED: {chapter_url} - {type(e).__name__}: {e} -->\n")
+            n_fail += 1
+
+    combined = "\n\n".join(parts)
+    out_path.write_text(combined, encoding="utf-8")
+    return {
+        "fetched_url": index_url,
+        "size_bytes": len(combined.encode("utf-8")),
+        "format": "html",
+        "n_chapters_ok": n_ok,
+        "n_chapters_failed": n_fail,
+        "n_chapters_found": len(chapter_urls),
+    }
+
+
 FETCHERS = {
     "gutenberg": (fetch_gutenberg, "txt"),
     "arxiv": (fetch_arxiv, "pdf"),
     "web": (fetch_web, "html"),
+    "archive_org": (fetch_archive_org, "txt"),
+    "sacred_texts": (fetch_sacred_texts, "html"),
 }
 
 
@@ -79,7 +170,7 @@ def main() -> None:
     parser.add_argument("--id", default=None, help="Comma-separated book IDs to fetch")
     parser.add_argument(
         "--types",
-        default="gutenberg,arxiv,web",
+        default="gutenberg,arxiv,web,archive_org,sacred_texts",
         help="Comma-separated source types to fetch",
     )
     parser.add_argument("--force", action="store_true", help="Re-fetch even if cached")

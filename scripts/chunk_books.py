@@ -131,6 +131,7 @@ def chunk_one_book(book_id: str) -> list[dict]:
             {
                 "id": f"{book_id}::{i:04d}",
                 "book_id": book_id,
+                "source_id": meta.get("source_id"),
                 "tradition": meta["tradition"],
                 "category": meta["category"],
                 "author": meta["author"],

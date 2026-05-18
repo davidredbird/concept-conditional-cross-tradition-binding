@@ -1,0 +1,25 @@
+{
+  "id": "taote_carus",
+  "title": "The Canon of Reason and Virtue (Lao-tsu's Tao-Teh-King)",
+  "author": "Laozi",
+  "translator": "D.T. Suzuki and Paul Carus",
+  "tradition": "daoism",
+  "category": "nondual",
+  "era": "6c BCE",
+  "source_id": "tao_te_ching",
+  "source": {
+    "type": "sacred_texts",
+    "id": "tao/crv",
+    "url": "https://www.sacred-texts.com/tao/crv/index.htm"
+  },
+  "license": "pd",
+  "notes": "Suzuki and Carus 1913 translation. Zen-influenced reading style. Phase 1b multi-translator addition.",
+  "_fetch": {
+    "fetched_url": "https://www.sacred-texts.com/tao/crv/index.htm",
+    "size_bytes": 1123331,
+    "format": "html",
+    "n_chapters_ok": 137,
+    "n_chapters_failed": 0,
+    "n_chapters_found": 137
+  }
+}

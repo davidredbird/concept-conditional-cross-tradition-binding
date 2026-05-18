@@ -1,0 +1,30 @@
+{
+  "id": "taote_goddard",
+  "title": "Laotzu's Tao and Wu Wei",
+  "author": "Laozi",
+  "translator": "Dwight Goddard and Henri Borel",
+  "tradition": "daoism",
+  "category": "nondual",
+  "era": "6c BCE",
+  "source_id": "tao_te_ching",
+  "source": {
+    "type": "sacred_texts",
+    "id": "tao/ltw",
+    "url": "https://www.sacred-texts.com/tao/ltw/index.htm"
+  },
+  "license": "pd",
+  "notes": "Goddard and Borel 1919 translation. Contemplative-Western reading style. Phase 1b multi-translator addition.",
+  "_fetch": {
+    "fetched_url": "https://www.sacred-texts.com/tao/ltw/index.htm",
+    "size_bytes": 854061,
+    "format": "html",
+    "n_chapters_ok": 92,
+    "n_chapters_failed": 0,
+    "n_chapters_found": 92
+  },
+  "_clean": {
+    "word_count": 33435,
+    "char_count": 208928,
+    "token_estimate": 44580
+  }
+}
