@@ -34,9 +34,18 @@ The Phase 0 paper Draft 2 noted that **only 1 of 5 binding concepts (ULTIMATE)**
 - **SUBSTRATE binding is essentially unchanged** between phases (+0.0541 Phase 1a vs +0.0526 Phase 0).
 - AWARENESS, RECOGNITION, WORLD, ULTIMATE deflate 3–4× at *passage* granularity but only 25–30% at *sentence* granularity. The differential deflation is mechanistically explained by **vocabulary-breadth-as-noise-floor**: pattern dictionaries containing common English terms (`consciousness`, `God`, `world`) fire on passages that mention the term casually rather than engage the concept technically, diluting passage-level binding; SUBSTRATE's technical-only dictionary (`emptiness`, `śūnyatā`, `implicate order`, `holographic`) has no such noise floor.
 
-Phase 1a is *not* full Phase 1. It addresses one of four pipeline-coupling concerns (paraphrases); translator-as-confound, regex-tagging-bias, adversarial-selection, and non-English source analysis remain unaddressed. See `paper/paper-draft-v5.md` §10 for the full Phase 1 program.
+### Phase 1b — multi-translator within-source variance test (Draft 6)
 
-See `paper/paper-draft-v5.md` for the current paper draft (Draft 5, incorporates Phase 1a + technical-only-tagger experiment). Earlier drafts are preserved unchanged: `paper-draft.md` (Draft 2, Phase-0-only), `paper-draft-v3.md` (Draft 3, first Phase 1a incorporation), `paper-draft-v4.md` (Draft 4, methodology-first reframing). `findings/` has per-run write-ups for both phases.
+Phase 1b addresses §9 limitation 1 (translator-as-confound) with multi-translator coverage of two source families (Bhagavad Gita and Tao Te Ching, three translators each). Externally pre-registered prior to running the analysis (commit-timestamped pre-registration with Zenodo DOI).
+
+- **Variance decomposition**: translator effect ~20%, source-content effect ~39%, tradition effect ~41% of total within/cross-tradition variance.
+- **Translator-as-confound bounded**: pre-registered threshold was 35%; observed 19.5%. Phase 1a's cross-tradition CCB signal is not primarily a translator artifact.
+- **Pre-registered hypothesis H1b.3 informatively refuted**: the permutation-test direction in the prereg was backwards; observed shows highly significant translator effect (z ≈ −17.9) in the opposite direction from predicted. Pre-registration discipline surfaces both post-hoc fitting and researcher confusion about the test's own meaning.
+- **Calibration error**: pre-registered absolute cosine values were systematically too low across all four pair types; ratios and ordering were correct. Methodology lesson added to §8: report CCB in relative terms, not absolute cosines.
+
+The *between-translator* form of translator-as-confound is bounded. The *within-anglophone-scholar-tradition shared-consensus* form (Katz 1978's broader objection) remains unaddressed and is the explicit target of Phase 1c (multilingual source analysis).
+
+See `paper/paper-draft-v6.md` for the current paper draft (Draft 6, incorporates Phase 1a + §6.8 technical-only-tagger experiment + §6.9 Phase 1b variance decomposition). Earlier drafts are preserved unchanged: `paper-draft.md` (Draft 2, Phase-0-only), `paper-draft-v3.md` (Draft 3, first Phase 1a incorporation), `paper-draft-v4.md` (Draft 4, methodology-first reframing), `paper-draft-v5.md` (Draft 5, §6.8 technical-only-tagger experiment). `findings/` has per-run write-ups for all phases.
 
 ## Quick start
 
@@ -77,7 +86,8 @@ The framework is robust to its own failure: either outcome advances knowledge.
 ## Document map
 
 **Paper**
-- [`paper/paper-draft-v5.md`](paper/paper-draft-v5.md) (+ `.pdf`) — **Draft 5, current, submission-ready**. Concept-conditional cross-tradition binding (CCB) statistic with cross-model and cross-granularity replication; pre-registered technical-only-tagger experiment in §6.8 producing the project's strongest cross-tradition concept-binding result (advaita × theravada at 0.531 on RECOGNITION under technical-only vocabulary).
+- [`paper/paper-draft-v6.md`](paper/paper-draft-v6.md) (+ `.pdf`) — **Draft 6, current, submission-ready**. Concept-conditional cross-tradition binding (CCB) statistic with cross-model and cross-granularity replication; §6.8 pre-specified technical-only-tagger experiment with strongest cross-tradition concept-binding result (advaita × theravada at 0.531 on RECOGNITION under technical-only vocabulary); §6.9 Phase 1b multi-translator variance decomposition externally pre-registered prior to analysis.
+- [`paper/paper-draft-v5.md`](paper/paper-draft-v5.md) (+ `.pdf`) — Draft 5, preserved for revision history. Phase 0 + Phase 1a + §6.8 technical-only-tagger only.
 - [`paper/paper-draft.md`](paper/paper-draft.md) (+ `.pdf`) — Draft 2, Phase-0-only preprint with reviewer-pass corrections. Preserved unchanged for revision history.
 - [`paper/paper-draft-v3.md`](paper/paper-draft-v3.md) — Draft 3, first incorporation of Phase 1a whole-book replication.
 - [`paper/paper-draft-v4.md`](paper/paper-draft-v4.md) — Draft 4, reframes as NLP methodology contribution with mysticism as test case.
@@ -96,7 +106,9 @@ The framework is robust to its own failure: either outcome advances knowledge.
 - [`findings/phase0-v0.5-concept-binding.md`](findings/phase0-v0.5-concept-binding.md) — Concept-level cross-tradition binding (bias-free); 5 of 7 concepts bind significantly.
 - [`findings/phase0-v0.5-sentence-level.md`](findings/phase0-v0.5-sentence-level.md) — Sentence-level + cross-model BERT replication; same 5 concepts bind across both models and both granularities.
 - [`findings/phase1-whole-books.md`](findings/phase1-whole-books.md) — **Phase 1a whole-book replication**; all 5 concepts survive *p* ≤ 0.0015 on verified non-paraphrase text; SUBSTRATE binding unchanged; vocabulary-breadth-as-noise-floor mechanism.
-- [`findings/phase1a-technical-only-tagger.md`](findings/phase1a-technical-only-tagger.md) — Pre-registered technical-only-tagger experiment: RECOGNITION recovered to +0.110, SUBSTRATE control confirmed, ULTIMATE failed in informative direction revealing the coverage-asymmetry mechanism component.
+- [`findings/phase1a-technical-only-tagger.md`](findings/phase1a-technical-only-tagger.md) — Pre-specified technical-only-tagger experiment: RECOGNITION recovered to +0.110, SUBSTRATE control confirmed, ULTIMATE failed in informative direction revealing the coverage-asymmetry mechanism component.
+- [`findings/phase1b-preregistration.md`](findings/phase1b-preregistration.md) — **Phase 1b pre-registration** (externally timestamped at commit `d16fc8c` + Zenodo `v1.2-prereg-phase1b`). Hypotheses H1b.1–H1b.3, predicted outcomes, decision rules, anticipated failure modes.
+- [`findings/phase1b-multi-translator.md`](findings/phase1b-multi-translator.md) — **Phase 1b results**: within-source between-translator variance test. Translator effect 19.5% of total variance (bounded); H1b.1 and H1b.2 confirmed; H1b.3 informatively refuted in pre-registered direction; calibration error noted.
 
 **Corpus**
 - [`corpus/passages.jsonl`](corpus/passages.jsonl) — Phase 0 v0.5 (143 passages, 23 traditions).

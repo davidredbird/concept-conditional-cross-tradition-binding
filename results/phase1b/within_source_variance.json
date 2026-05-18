@@ -1,0 +1,124 @@
+{
+  "pair_summary": {
+    "W_S_S_T": {
+      "mean": 0.6683314442634583,
+      "n_pairs": 18822
+    },
+    "W_S_B_T": {
+      "mean": 0.6236330270767212,
+      "n_pairs": 32389
+    },
+    "X_S_W_T": {
+      "mean": 0.5340937972068787,
+      "n_pairs": 2341136
+    },
+    "X_T": {
+      "mean": 0.43927860260009766,
+      "n_pairs": 14291629
+    }
+  },
+  "variance_decomposition": {
+    "translator_effect": 0.04469841718673706,
+    "source_content_effect": 0.08953922986984253,
+    "tradition_effect": 0.094815194606781,
+    "total_variance": 0.2290528416633606,
+    "translator_share_of_total": 0.1951445651673268
+  },
+  "permutation_test_translator_labels": {
+    "observed_W_S_B_T": 0.6236330270767212,
+    "n_pairs_W_S_B_T": 32389,
+    "null_mean": 0.6397326787114144,
+    "null_std": 0.00088202088094318,
+    "p_one_sided": 1.0,
+    "n_perm": 1000
+  },
+  "per_source_breakdown": {
+    "bhagavad_gita": {
+      "n_books": 3,
+      "books": [
+        "bhagavad_gita_arnold",
+        "bhagavad_gita_swarupananda",
+        "bhagavad_gita_telang"
+      ],
+      "same_translator_within_source": [
+        {
+          "translator_book": "bhagavad_gita_arnold",
+          "mean": 0.698990523815155,
+          "n_pairs": 1275
+        },
+        {
+          "translator_book": "bhagavad_gita_swarupananda",
+          "mean": 0.6671527028083801,
+          "n_pairs": 5460
+        },
+        {
+          "translator_book": "bhagavad_gita_telang",
+          "mean": 0.6103500127792358,
+          "n_pairs": 5565
+        }
+      ],
+      "between_translator_within_source": {
+        "bhagavad_gita_arnold__bhagavad_gita_swarupananda": {
+          "mean": 0.6261523365974426,
+          "n_pairs": 5355
+        },
+        "bhagavad_gita_arnold__bhagavad_gita_telang": {
+          "mean": 0.5862059593200684,
+          "n_pairs": 5406
+        },
+        "bhagavad_gita_swarupananda__bhagavad_gita_telang": {
+          "mean": 0.6267242431640625,
+          "n_pairs": 11130
+        }
+      }
+    },
+    "tao_te_ching": {
+      "n_books": 3,
+      "books": [
+        "taote_carus",
+        "taote_goddard",
+        "taote_legge"
+      ],
+      "same_translator_within_source": [
+        {
+          "translator_book": "taote_carus",
+          "mean": 0.7459617257118225,
+          "n_pairs": 2850
+        },
+        {
+          "translator_book": "taote_goddard",
+          "mean": 0.6807724237442017,
+          "n_pairs": 3321
+        },
+        {
+          "translator_book": "taote_legge",
+          "mean": 0.7465315461158752,
+          "n_pairs": 351
+        }
+      ],
+      "between_translator_within_source": {
+        "taote_carus__taote_goddard": {
+          "mean": 0.6489666700363159,
+          "n_pairs": 6232
+        },
+        "taote_carus__taote_legge": {
+          "mean": 0.6213786005973816,
+          "n_pairs": 2052
+        },
+        "taote_goddard__taote_legge": {
+          "mean": 0.6241664886474609,
+          "n_pairs": 2214
+        }
+      }
+    }
+  },
+  "config": {
+    "chunks_path": "C:\\dev\\thinkoutsidethebox\\corpus\\chunks.jsonl",
+    "backend": "onnx",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "n_chunks": 5777,
+    "n_chunks_with_source_id": 447,
+    "n_perm": 1000,
+    "seed": 0
+  }
+}
