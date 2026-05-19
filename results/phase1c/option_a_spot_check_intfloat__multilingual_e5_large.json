@@ -1,0 +1,66 @@
+{
+  "input": "corpus\\chunks_with_multilingual_tags_intfloat__multilingual_e5_large.jsonl",
+  "AWARENESS": {
+    "concept": "AWARENESS",
+    "per_language": {
+      "sanskrit": {
+        "n_chunks": 176,
+        "option_a_tagged": 32,
+        "option_b_tagged": 160,
+        "agree_count": 34,
+        "percent_agreement": 19.318181818181817,
+        "kappa": -0.06114130434782614
+      },
+      "pali": {
+        "n_chunks": 27,
+        "option_a_tagged": 15,
+        "option_b_tagged": 22,
+        "agree_count": 16,
+        "percent_agreement": 59.25925925925925,
+        "kappa": 0.12389380530973443
+      }
+    },
+    "combined": {
+      "n_chunks": 203,
+      "option_a_tagged": 47,
+      "option_b_tagged": 182,
+      "agree_count": 50,
+      "percent_agreement": 24.63054187192118,
+      "kappa": -0.05718370264474619
+    }
+  },
+  "RECOGNITION": {
+    "concept": "RECOGNITION",
+    "per_language": {
+      "sanskrit": {
+        "n_chunks": 176,
+        "option_a_tagged": 11,
+        "option_b_tagged": 167,
+        "agree_count": 20,
+        "percent_agreement": 11.363636363636363,
+        "kappa": 0.007159904534606192
+      },
+      "pali": {
+        "n_chunks": 27,
+        "option_a_tagged": 0,
+        "option_b_tagged": 25,
+        "agree_count": 2,
+        "percent_agreement": 7.4074074074074066,
+        "kappa": 0.0
+      }
+    },
+    "combined": {
+      "n_chunks": 203,
+      "option_a_tagged": 11,
+      "option_b_tagged": 192,
+      "agree_count": 22,
+      "percent_agreement": 10.83743842364532,
+      "kappa": 0.006543193186426895
+    }
+  },
+  "decisions": {
+    "AWARENESS": "FAIL (kappa < 0.5 OR agreement < 70%)",
+    "RECOGNITION": "FAIL (kappa < 0.5 OR agreement < 70%)"
+  },
+  "phase1c2_reporting_mode": "EXPLORATORY"
+}

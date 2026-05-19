@@ -1,0 +1,71 @@
+{
+  "model": "intfloat/multilingual-e5-large",
+  "concepts": [
+    "ULTIMATE",
+    "SUBSTRATE",
+    "AWARENESS",
+    "WORLD",
+    "SELF",
+    "RECOGNITION",
+    "NONSEP"
+  ],
+  "target_rates_english": {
+    "ULTIMATE": 0.636662627661416,
+    "SUBSTRATE": 0.017136922277998963,
+    "AWARENESS": 0.039639951531936994,
+    "WORLD": 0.1651376146788991,
+    "SELF": 0.02388783105418037,
+    "RECOGNITION": 0.05660377358490566,
+    "NONSEP": 0.0012117015752120478
+  },
+  "thresholds": {
+    "ULTIMATE": 0.7905718684196472,
+    "SUBSTRATE": 0.8165080547332764,
+    "AWARENESS": 0.8160054087638855,
+    "WORLD": 0.8058897852897644,
+    "SELF": 0.8223691582679749,
+    "RECOGNITION": 0.805718719959259,
+    "NONSEP": 0.8285194635391235
+  },
+  "prototypes": {
+    "ULTIMATE": "the holy one the one?=) the real ultimate reality the absolute the infinite the divine divine ground divine essence ground of being basic ground groundless ground buddha-nature dharma-body dharmakaya ein sof ha-shem the creator god's gods god allah brahman tao dao suchness tathata divine lord computational substrate mathematical structure mathematical universe holy spirit",
+    "SUBSTRATE": "the implicate order implicate order the holomovement holomovement the quantum vacuum the holographic principle holographic dependent origination dependently arisen basic space integrated information emptiness shunyata sūnyatā svabhava noumenon noumena thing-in-itself",
+    "AWARENESS": "primordial awareness pure consciousness pure awareness bare awareness naked awareness rigpa sat-cit-ananda chit chitta citta nous phi consciousness awareness sentience",
+    "WORLD": "the ten thousand things the manifold of phenomena the simulation ancestor simulation a simulation simulations simulation samsara phenomenal world phenomenal universe phenomenal creation the cosmos cosmos the universe spacetime physical universe physical reality physical objects appearances appearance the ten thousand",
+    "SELF": "atman jiva the ego the empirical self the individual self the apparent self the agent conscious agent markov blanket",
+    "RECOGNITION": "moksha mukti nirvana nibbana enlightenment awakening satori bodhi theosis deification fana baqa gnosis jnana self-realization liberation salvation beatific vision",
+    "NONSEP": "non-duality non-dual advaita wahdat al-wujud unity of being"
+  },
+  "n_chunks": 6009,
+  "n_english_chunks": 5777,
+  "tag_counts_by_language_concept": {
+    "english|ULTIMATE": 3678,
+    "english|WORLD": 954,
+    "english|RECOGNITION": 327,
+    "english|SUBSTRATE": 99,
+    "english|AWARENESS": 229,
+    "english|SELF": 138,
+    "english|NONSEP": 7,
+    "sanskrit|ULTIMATE": 176,
+    "sanskrit|RECOGNITION": 167,
+    "sanskrit|AWARENESS": 160,
+    "sanskrit|WORLD": 134,
+    "sanskrit|SELF": 39,
+    "sanskrit|NONSEP": 16,
+    "sanskrit|SUBSTRATE": 26,
+    "pali|ULTIMATE": 27,
+    "pali|AWARENESS": 22,
+    "pali|WORLD": 11,
+    "pali|RECOGNITION": 25,
+    "pali|SUBSTRATE": 1,
+    "classical_chinese|ULTIMATE": 26,
+    "classical_chinese|WORLD": 13,
+    "classical_chinese|AWARENESS": 6
+  },
+  "language_chunk_counts": {
+    "english": 5777,
+    "sanskrit": 176,
+    "pali": 27,
+    "classical_chinese": 29
+  }
+}

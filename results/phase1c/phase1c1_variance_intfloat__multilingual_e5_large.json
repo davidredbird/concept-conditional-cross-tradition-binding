@@ -1,0 +1,67 @@
+{
+  "input_chunks": "corpus\\chunks_with_multilingual_tags_intfloat__multilingual_e5_large.jsonl",
+  "input_embeddings": "results\\phase1c\\chunk_embeddings_intfloat__multilingual_e5_large.npy",
+  "n_chunks": 6009,
+  "language_counts": {
+    "english": 5777,
+    "sanskrit": 176,
+    "pali": 27,
+    "classical_chinese": 29
+  },
+  "pair_summary": {
+    "W_S_S_T": {
+      "mean": 0.8853771090507507,
+      "n_pairs": 27485
+    },
+    "W_S_B_T_W_L": {
+      "mean": 0.8527407646179199,
+      "n_pairs": 32389
+    },
+    "W_S_B_T_X_L": {
+      "mean": 0.8376538157463074,
+      "n_pairs": 38901
+    },
+    "X_S_W_T": {
+      "mean": 0.8509487509727478,
+      "n_pairs": 2348630
+    },
+    "X_T": {
+      "mean": 0.8214960098266602,
+      "n_pairs": 14291629
+    },
+    "X_S_W_T_X_L": {
+      "mean": 0.8272457718849182,
+      "n_pairs": 29101
+    },
+    "X_T_X_L": {
+      "mean": 0.7961955666542053,
+      "n_pairs": 1282901
+    }
+  },
+  "h1c1a_permutation": {
+    "observed_contrast": -0.01329493522644043,
+    "observed_W_S_B_T_X_L": 0.8376538157463074,
+    "observed_X_S_W_T": 0.8509487509727478,
+    "null_mean": -0.018675058872958436,
+    "null_std": 0.00043538978185301696,
+    "n_perm_used": 200,
+    "p_one_sided": 0.0
+  },
+  "h1c1a_supported": false,
+  "h1c1b_gap": 0.015086948871612549,
+  "h1c1b_total_variance": 0.06388109922409058,
+  "h1c1b_ratio": 0.23617234291301958,
+  "h1c1b_supported": false,
+  "h1c1c_ordering": [
+    0.8853771090507507,
+    0.8527407646179199,
+    0.8376538157463074,
+    0.8509487509727478,
+    0.8214960098266602
+  ],
+  "h1c1c_supported": false,
+  "config": {
+    "n_perm": 200,
+    "seed": 0
+  }
+}
