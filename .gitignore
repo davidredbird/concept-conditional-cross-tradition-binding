@@ -12,6 +12,14 @@ results/**/embeddings.npy
 results/**/similarity.npy
 # (PNG plots, summary.txt, CSVs in results/ are committed)
 
+# FLORES+ — license forbids re-hosting where web crawlers can find it.
+# Keep all FLORES text/derived artifacts local-only; commit only aggregate
+# representation scores (results/**/*.json) and the screen script.
+*flores*
+*FLORES*
+corpus/flores/
+results/**/flores_*
+
 # Secrets / local config
 .openai_key
 .env
