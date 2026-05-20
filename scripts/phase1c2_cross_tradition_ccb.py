@@ -104,6 +104,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tags", type=Path, required=True)
     parser.add_argument("--embeddings", type=Path, required=True)
+    parser.add_argument("--tag-field", default="multilingual_concepts",
+                        help="Chunk field holding concept tags "
+                        "(multilingual_concepts=Option B prototype, "
+                        "option_a_concepts=Option A manual regex)")
     parser.add_argument("--n-perm", type=int, default=1000)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--out", type=Path, default=None)
@@ -151,7 +155,7 @@ def main() -> None:
     print("-" * 92)
     results = []
     for concept in concepts:
-        has_c = np.asarray([concept in (c.get("multilingual_concepts") or []) for c in sub_chunks])
+        has_c = np.asarray([concept in (c.get(args.tag_field) or []) for c in sub_chunks])
         n_with = int(has_c.sum())
         bm, om, diff, n_both, n_only = compute_ccb_vec(sim, has_c, cross_mask)
         obs, null_mn, p_one = permutation_pval(sim, has_c, cross_mask, args.n_perm, args.seed)

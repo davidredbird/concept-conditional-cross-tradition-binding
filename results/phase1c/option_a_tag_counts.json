@@ -1,0 +1,32 @@
+{
+  "concepts": [
+    "ULTIMATE",
+    "SUBSTRATE",
+    "AWARENESS",
+    "WORLD",
+    "SELF",
+    "RECOGNITION",
+    "NONSEP"
+  ],
+  "language_chunk_counts": {
+    "english": 5777,
+    "sanskrit": 176,
+    "pali": 27,
+    "classical_chinese": 29
+  },
+  "tag_counts_by_language_concept": {
+    "sanskrit|ULTIMATE": 135,
+    "sanskrit|SUBSTRATE": 72,
+    "sanskrit|WORLD": 112,
+    "sanskrit|RECOGNITION": 33,
+    "sanskrit|AWARENESS": 70,
+    "sanskrit|SELF": 105,
+    "sanskrit|NONSEP": 28,
+    "pali|ULTIMATE": 3,
+    "pali|AWARENESS": 23,
+    "pali|RECOGNITION": 17,
+    "pali|SELF": 15,
+    "pali|WORLD": 5,
+    "pali|SUBSTRATE": 1
+  }
+}

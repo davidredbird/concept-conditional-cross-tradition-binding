@@ -10,11 +10,14 @@ Wraps multilingual transformer models with two backends, dispatching by model:
       (Devanagari) and Pali. Uses ONNX external-data format.
 
   - sentence-transformers/LaBSE
-      Backend: sentence-transformers (uses torch under the hood).
-      Native LaBSE pipeline: CLS + tanh + dense projection + L2-normalize.
-      Using sentence-transformers directly handles the dense projection
-      correctly, which mean-pool on BERT output does not (mean-pool fallback
-      gives 1/5 correct on validation vs 5/5 canonical).
+      Backend: transformers (AutoModel + torch). LaBSE's sentence embedding
+      is the BERT pooler_output (CLS -> dense -> tanh), L2-normalized. Using
+      transformers AutoModel directly reproduces sentence-transformers LaBSE
+      output exactly (same-verse 0.3508, separation 0.2472, 5/5 on the
+      validation set) while avoiding the sentence-transformers -> pandas
+      import chain, which a refreshed WDAC policy began blocking on this
+      workstation (pandas._libs.window.aggregations DLL). transformers core
+      (AutoModel/AutoTokenizer) does not trip the block.
 
 The two backends produce comparable unit-normalized 768/1024-dim embeddings.
 Cross-model replication on Phase 1c uses both: e5-large via ONNX, LaBSE via
@@ -52,10 +55,10 @@ _KNOWN_MODELS: dict[str, dict] = {
         "notes": "Use 'query: ' prefix for queries, 'passage: ' for documents.",
     },
     "sentence-transformers/LaBSE": {
-        "backend": "sentence_transformers",
+        "backend": "transformers",
         "default_prefix": "",
         "dim": 768,
-        "notes": "Canonical LaBSE pipeline: CLS + tanh + dense + L2norm.",
+        "notes": "LaBSE = BERT pooler_output (CLS+dense+tanh), L2-normalized.",
     },
 }
 
@@ -85,8 +88,8 @@ class MultilingualEmbedder:
 
         if self.backend == "onnx":
             self._init_onnx()
-        elif self.backend == "sentence_transformers":
-            self._init_st()
+        elif self.backend == "transformers":
+            self._init_transformers()
         else:
             raise ValueError(f"Unknown backend {self.backend!r}")
 
@@ -104,9 +107,13 @@ class MultilingualEmbedder:
         )
         self.input_names = {i.name for i in self.session.get_inputs()}
 
-    def _init_st(self) -> None:
-        from sentence_transformers import SentenceTransformer
-        self.st_model = SentenceTransformer(self.model_id)
+    def _init_transformers(self) -> None:
+        import torch
+        from transformers import AutoModel, AutoTokenizer
+        self._torch = torch
+        self.hf_tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+        self.hf_model = AutoModel.from_pretrained(self.model_id)
+        self.hf_model.eval()
 
     def encode(
         self,
@@ -121,7 +128,7 @@ class MultilingualEmbedder:
             texts_list = [eff_prefix + t for t in texts_list]
         if self.backend == "onnx":
             return self._encode_onnx(texts_list, batch_size)
-        return self._encode_st(texts_list, batch_size)
+        return self._encode_transformers(texts_list, batch_size)
 
     def _encode_onnx(self, texts: list[str], batch_size: int) -> np.ndarray:
         out: list[np.ndarray] = []
@@ -150,12 +157,21 @@ class MultilingualEmbedder:
             out.append(pooled.astype(np.float32))
         return np.concatenate(out, axis=0)
 
-    def _encode_st(self, texts: list[str], batch_size: int) -> np.ndarray:
-        vecs = self.st_model.encode(
-            texts, batch_size=batch_size, normalize_embeddings=True,
-            show_progress_bar=False,
-        )
-        return np.asarray(vecs, dtype=np.float32)
+    def _encode_transformers(self, texts: list[str], batch_size: int) -> np.ndarray:
+        torch = self._torch
+        out: list[np.ndarray] = []
+        for start in range(0, len(texts), batch_size):
+            batch = texts[start : start + batch_size]
+            enc = self.hf_tokenizer(
+                batch, return_tensors="pt", padding=True, truncation=True, max_length=512
+            )
+            with torch.no_grad():
+                output = self.hf_model(**enc)
+            # LaBSE sentence embedding = pooler_output (CLS -> dense -> tanh)
+            emb = output.pooler_output
+            emb = torch.nn.functional.normalize(emb, p=2, dim=1)
+            out.append(emb.numpy().astype(np.float32))
+        return np.concatenate(out, axis=0)
 
 
 if __name__ == "__main__":

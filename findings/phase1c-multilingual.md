@@ -150,6 +150,104 @@ The striking number is **source-content-within-language at 0.0018** — in e5-la
 
 For the broad-form constructivist objection (anglophone scholar-tradition shared consensus), Phase 1c does NOT yet deliver a verdict. The exploratory result is encouraging for the perennialist reading, but the tagging failure and embedding compression mean we cannot make the strong claim. A confirmatory Phase 1c.2 (Option A tagging + LaBSE embeddings) is required.
 
+## 7b. Phase 1c.2 second pass: Option A tagging + cross-model (2026-05-20)
+
+Following the Option B validation failure, we ran the more rigorous Option A
+analysis: manual Sanskrit/Pali regex dictionaries (`scripts/multilingual_option_a_tagger.py`,
+all seven concepts, term lists from Monier-Williams and PTS), with cross-tradition
+CCB computed under both embedding models.
+
+**Option A tagging is far more discriminating than Option B** (`results/phase1c/option_a_tag_counts.json`):
+
+| Concept | Sanskrit (Option A) | Pali (Option A) | (Sanskrit Option B for comparison) |
+|---|---|---|---|
+| ULTIMATE | 135/176 | 3/27 | (100%) |
+| SUBSTRATE | 72/176 | 1/27 | (14.8%) |
+| AWARENESS | 70/176 | 23/27 | (90.9%) |
+| WORLD | 112/176 | 5/27 | (76.1%) |
+| SELF | 105/176 | 15/27 | (22.2%) |
+| RECOGNITION | 33/176 | 17/27 | (94.9%) |
+| NONSEP | 28/176 | 0/27 | (9.1%) |
+
+(A regex bug was found and fixed on the first Option A run: trailing `\b` on
+transliterated stems failed on Pali/Sanskrit inflectional endings — "nibbāna" is
+inflected as "nibbānaṁ", "nibbāne", etc. The Pali corpus has 30 "nibb" occurrences
+but `\bnibbāna\b` matched 0. Stem-prefix matching fixed it.)
+
+**A WDAC environment note:** the workstation's Application-Control policy refreshed
+between the first pass (2026-05-18) and this pass (2026-05-20) and began blocking
+a pandas DLL imported transitively by sentence-transformers. LaBSE was re-implemented
+via the transformers `AutoModel` path (pooler_output + L2-normalize), which
+reproduces sentence-transformers LaBSE output exactly (validation: 0.3508 same-verse,
++0.2472 separation, 5/5) and avoids the pandas import chain. `scripts/multilingual_embedder.py`
+now uses the transformers backend for LaBSE.
+
+### Cross-tradition CCB, Option A, both models
+
+`results/phase1c/phase1c2_ccb_optionA_e5large.json`, `..._optionA_labse.json`:
+
+| Concept | e5-large CCB (p) | LaBSE CCB (p) |
+|---|---|---|
+| ULTIMATE | +0.0027 (0.10) | +0.0029 (0.32) |
+| SUBSTRATE | +0.0001 (0.48) | +0.0030 (0.33) |
+| AWARENESS | −0.0044 (0.99) | +0.0066 (0.16) |
+| WORLD | −0.0019 (0.83) | −0.0095 (0.94) |
+| SELF | +0.0029 (0.07) | +0.0060 (0.16) |
+| RECOGNITION | +0.0017 (0.26) | +0.0018 (0.42) |
+| NONSEP | untestable (0 Pali) | untestable (0 Pali) |
+
+**Zero of five Phase 1a-binding concepts bind, under either model.** H1c.2.a and
+H1c.2.b are NOT SUPPORTED with Option A tagging. This reverses the exploratory
+Option B result and confirms that the Option B "binding" was an over-tagging
+artifact (when 90%+ of chunks are tagged, the both-tagged set is nearly all
+cross-tradition pairs and the small only-tagged set is biased).
+
+LaBSE's cross-tradition baseline is 0.57 (vs e5-large's compressed 0.89), so the
+null result is NOT a dynamic-range artifact — LaBSE has resolution to spare and
+still finds nothing. Two independent multilingual models agree.
+
+### Interpretation (stated carefully)
+
+The cross-tradition CCB signal Phase 1a/1b measured on English translations
+(advaita × theravada RECOGNITION at +0.110 technical-only) **does not survive on
+original-language Sanskrit-Pali text under rigorous concept tagging, replicated
+across two embedding models.** This is genuine evidence for the *broad* form of
+the constructivist objection: the English-corpus convergence may be substantially
+mediated by the anglophone scholar-translation tradition.
+
+Three caveats bound this interpretation — it is NOT "constructivism wins":
+
+1. **Tiny, asymmetric corpus.** 176 Sanskrit (Advaita Vedanta — Gita, Upanishads)
+   vs 27 Pali (Dhammapada + two Satipatthana mindfulness-practice suttas, not
+   liberation-theology). The two sides may not be discussing the same content
+   even within shared concept tags. The Pali side is severely underpowered.
+2. **Monolingual vs multilingual embedding mismatch.** Phase 1a used MiniLM
+   (monolingual, wide dynamic range). Phase 1c uses multilingual models with
+   compressed cross-lingual similarity. The disappearance could be the anglophone
+   artifact OR the embedding-model difference; the present data cannot fully
+   separate them. A clean test would re-run Phase 1a English RECOGNITION CCB under
+   the same multilingual models — if it also vanishes, the cause is the model, not
+   the language.
+3. **Post-hoc, not pre-registered.** The prereg's primary tagger was Option B
+   (which failed validation). Option A CCB is more rigorous but is a post-hoc
+   analysis motivated by the Option B failure, reported transparently as such
+   rather than as the pre-registered confirmatory test.
+
+This is the project's first result that cuts *against* the perennialist reading.
+It substantially qualifies the Phase 1a positive finding and is reported in full
+because the project's posture is indifference to which way results go.
+
+### The critical follow-up control
+
+To separate caveat 2 (anglophone artifact vs embedding-model difference): re-run
+the Phase 1a English advaita × theravada RECOGNITION CCB using e5-large and LaBSE
+embeddings (instead of MiniLM). If the English binding ALSO disappears under the
+multilingual models, the Phase 1c.2 null is an embedding-model artifact, not
+evidence about translation tradition. If the English binding SURVIVES under
+multilingual models but the Sanskrit-Pali binding does not, that isolates the
+language/translation effect and strengthens the broad-constructivist reading.
+This is the single most important next analysis.
+
 ## 8. Next steps (Phase 1c second pass)
 
 1. **Option A confirmatory tagging.** Extend the manual Sanskrit/Pali regex dictionaries (currently AWARENESS + RECOGNITION from the spot-check) to all five Phase 1a-binding concepts. Run Phase 1c.2 CCB with Option A tags. This is the confirmatory test the prereg requires.
