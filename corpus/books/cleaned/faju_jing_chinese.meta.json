@@ -1,0 +1,18 @@
+{
+  "id": "faju_jing_chinese",
+  "title": "法句經 (Faju jing / Chinese Dharmapada, T0210)",
+  "author": "法救 (Dharmatrata, attr.)",
+  "translator": "維祇難 et al. (224 CE)",
+  "tradition": "theravada",
+  "category": "dualistic",
+  "era": "3c CE (translated 224 CE)",
+  "language": "classical_chinese",
+  "source_id": "dhammapada",
+  "source": {
+    "type": "cbeta_github",
+    "id": "T04n0210",
+    "url": "https://raw.githubusercontent.com/cbeta-org/xml-p5/master/T/T04/T04n0210.xml"
+  },
+  "license": "pd",
+  "provenance_note": "Ancient pre-Western-contact Chinese translation of the Dharmapada from Sanskrit/Prakrit. Tier-3 anchor (chronologically guaranteed no Western influence)."
+}

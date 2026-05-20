@@ -1,0 +1,81 @@
+{
+  "label": "within-Chinese-Buddhist (e5-large)",
+  "language": "classical_chinese",
+  "tradition": null,
+  "tag_mode": "option_a",
+  "n_chunks": 68,
+  "embeddings": "results\\phase2a\\chinese_faju_jing_chinese_intfloat__multilingual_e5_large.npy",
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 58,
+      "n_both": 1653,
+      "n_only": 580,
+      "both_mean": 0.903085470199585,
+      "only_mean": 0.8965556025505066,
+      "binding": 0.006529867649078369,
+      "p_one_sided": 0.014
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 25,
+      "n_both": 300,
+      "n_only": 1075,
+      "both_mean": 0.9061647653579712,
+      "only_mean": 0.9010947942733765,
+      "binding": 0.0050699710845947266,
+      "p_one_sided": 0.009
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 63,
+      "n_both": 1953,
+      "n_only": 315,
+      "both_mean": 0.9024552702903748,
+      "only_mean": 0.8936901092529297,
+      "binding": 0.008765161037445068,
+      "p_one_sided": 0.0125
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 21,
+      "n_both": 210,
+      "n_only": 987,
+      "both_mean": 0.9083496332168579,
+      "only_mean": 0.9024870991706848,
+      "binding": 0.005862534046173096,
+      "p_one_sided": 0.006
+    },
+    {
+      "concept": "SELF",
+      "n_with": 52,
+      "n_both": 1326,
+      "n_only": 832,
+      "both_mean": 0.9030876159667969,
+      "only_mean": 0.8990122079849243,
+      "binding": 0.004075407981872559,
+      "p_one_sided": 0.0425
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 11,
+      "n_both": 55,
+      "n_only": 627,
+      "both_mean": 0.9083871841430664,
+      "only_mean": 0.902961790561676,
+      "binding": 0.005425393581390381,
+      "p_one_sided": 0.0375
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 0,
+      "n_both": 0,
+      "n_only": 0,
+      "both_mean": NaN,
+      "only_mean": NaN,
+      "binding": NaN,
+      "p_one_sided": NaN
+    }
+  ],
+  "n_significant_binding": 6
+}
