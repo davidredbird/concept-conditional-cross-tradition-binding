@@ -294,14 +294,17 @@ within-language diagnostic should be a mandatory gate for any cross-lingual CCB.
 ## 8. Next steps (Phase 1c second pass / Phase 1d)
 
 The original-language approach is blocked by model resolution. The path forward
-(see `findings/phase1d-design-sketch.md`) is the **high-resource-language
-triangulation** design: translate both traditions into multiple high-resource
-modern languages (English ✓, Hindi, Chinese) whose concept structure the model
-*can* resolve, with independent (non-anglophone) translator communities, and
-compare cross-tradition CCB across them. Convergence surviving across independent
-translation communities is trait variance (real); convergence specific to one is
-method variance (artifact). The within-language resolution diagnostic is a
-mandatory per-language precondition.
+(see `findings/phase2a-design-sketch.md` — promoted from "Phase 1d" to Phase 2a
+because the triangulation design is a methodological level-up, not another corpus
+increment) is the **high-resource-language triangulation** design: translate both
+traditions into multiple high-resource modern languages (English ✓, Hindi, Chinese,
+German) whose concept structure the model *can* resolve, by independent translator
+communities, and compare cross-tradition CCB across them with a variance-components
+structure (≥2 languages per cluster) and translation-chain provenance tiers
+culminating in the pre-Western-contact Classical Chinese canon. Convergence surviving
+across independent translation communities is trait variance (real); convergence
+specific to one is method variance (artifact). The within-language resolution
+diagnostic is a mandatory per-language precondition.
 
 1. **Option A confirmatory tagging.** Extend the manual Sanskrit/Pali regex dictionaries (currently AWARENESS + RECOGNITION from the spot-check) to all five Phase 1a-binding concepts. Run Phase 1c.2 CCB with Option A tags. This is the confirmatory test the prereg requires.
 2. **LaBSE cross-model replication.** Embed the 203 non-English Phase 1c.2 chunks with LaBSE (~1 min) and re-run Phase 1c.2. Embed the full corpus with LaBSE (~2 hrs background) and re-run Phase 1c.1. LaBSE's higher dynamic range may preserve the source/concept distinctions e5-large compresses.
