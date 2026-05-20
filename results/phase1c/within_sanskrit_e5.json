@@ -1,0 +1,81 @@
+{
+  "label": "within-Sanskrit-Advaita (e5-large)",
+  "language": "sanskrit",
+  "tradition": null,
+  "tag_mode": "option_a",
+  "n_chunks": 176,
+  "embeddings": "results\\phase1c\\chunk_embeddings_intfloat__multilingual_e5_large.npy",
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 135,
+      "n_both": 9045,
+      "n_only": 5535,
+      "both_mean": 0.9106053113937378,
+      "only_mean": 0.9118228554725647,
+      "binding": -0.0012175440788269043,
+      "p_one_sided": 0.6435
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 72,
+      "n_both": 2556,
+      "n_only": 7488,
+      "both_mean": 0.916004478931427,
+      "only_mean": 0.9119879603385925,
+      "binding": 0.004016518592834473,
+      "p_one_sided": 0.0625
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 70,
+      "n_both": 2415,
+      "n_only": 7420,
+      "both_mean": 0.9058051109313965,
+      "only_mean": 0.9095644354820251,
+      "binding": -0.003759324550628662,
+      "p_one_sided": 0.9445
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 112,
+      "n_both": 6216,
+      "n_only": 7168,
+      "both_mean": 0.9101431369781494,
+      "only_mean": 0.9115176796913147,
+      "binding": -0.0013745427131652832,
+      "p_one_sided": 0.7155
+    },
+    {
+      "concept": "SELF",
+      "n_with": 105,
+      "n_both": 5460,
+      "n_only": 7455,
+      "both_mean": 0.9164875149726868,
+      "only_mean": 0.909919798374176,
+      "binding": 0.006567716598510742,
+      "p_one_sided": 0.006
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 33,
+      "n_both": 528,
+      "n_only": 4719,
+      "both_mean": 0.9168176651000977,
+      "only_mean": 0.9131177067756653,
+      "binding": 0.003699958324432373,
+      "p_one_sided": 0.1445
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 28,
+      "n_both": 378,
+      "n_only": 4144,
+      "both_mean": 0.9260014295578003,
+      "only_mean": 0.9089909791946411,
+      "binding": 0.01701045036315918,
+      "p_one_sided": 0.0
+    }
+  ],
+  "n_significant_binding": 2
+}

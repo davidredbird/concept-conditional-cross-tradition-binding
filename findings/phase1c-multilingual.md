@@ -248,7 +248,60 @@ multilingual models but the Sanskrit-Pali binding does not, that isolates the
 language/translation effect and strengthens the broad-constructivist reading.
 This is the single most important next analysis.
 
-## 8. Next steps (Phase 1c second pass)
+## 7c. Within-language resolution diagnostic: the Phase 1c.2 null is a model artifact (2026-05-20)
+
+The Option A cross-tradition null (§7b) has three confounded explanations:
+(1) translation-tradition artifact, (2) model resolution poor but language-symmetric,
+(3) model resolution language-ASYMMETRIC (fine in English, coarse in Sanskrit/Pali —
+English is ~40% of multilingual training data, Sanskrit/Pali <<1%). To separate
+them, we ran a within-language concept-binding diagnostic
+(`scripts/within_language_concept_binding.py`): can the model detect that
+same-concept-tagged passages cluster more tightly than one-concept-tagged passages,
+*within a single language and tradition* (no cross-tradition comparison, no
+translation)?
+
+| Concept | within-English-Advaita (e5-large) | within-Sanskrit (e5-large) | within-Sanskrit (LaBSE) |
+|---|---|---|---|
+| ULTIMATE | +0.0129 *** | −0.0012 (ns) | +0.0186 (p=0.06) |
+| AWARENESS | +0.0130 *** | −0.0038 (ns) | −0.0118 (ns) |
+| WORLD | +0.0051 * | −0.0014 (ns) | +0.0041 (ns) |
+| RECOGNITION | +0.0072 ** | +0.0037 (ns) | +0.0194 (p=0.07) |
+| SELF | +0.0094 *** | +0.0066 ** | +0.0252 ** |
+| NONSEP | +0.0402 *** | +0.0170 *** | +0.0657 *** |
+| **concepts resolved** | **6/7** | **2/7** | **2/7** |
+
+(SUBSTRATE untestable in English-Advaita: 0 tags in that subset.)
+
+**The model resolves concept structure in English (6/7) but not in Sanskrit (2/7),
+and fails specifically on AWARENESS and RECOGNITION in Sanskrit** — the two concepts
+that headline Phase 1a. Both multilingual models show the same 2/7 Sanskrit pattern;
+only SELF and NONSEP resolve (the most lexically distinctive Sanskrit markers — आत्मन्
+and अद्वैत). LaBSE's higher dynamic range pushes RECOGNITION/ULTIMATE to the edge of
+significance but neither crosses, and AWARENESS is actually negative.
+
+**Decisive conclusion: the Phase 1c.2 cross-tradition null is a model-resolution
+artifact, not evidence about the traditions.** The model cannot detect AWARENESS
+concept structure even *within* Sanskrit, so its failure to find *cross-tradition*
+AWARENESS binding is uninformative about whether the traditions converge. Possibility
+(3) is confirmed; the original-language approach with current multilingual models
+cannot answer the constructivism question for classical low-resource languages.
+
+This is itself a methodology contribution: **CCB across languages requires an
+embedding model that resolves concept structure within each language, and current
+multilingual models fail this prerequisite for classical Sanskrit/Pali.** The
+within-language diagnostic should be a mandatory gate for any cross-lingual CCB.
+
+## 8. Next steps (Phase 1c second pass / Phase 1d)
+
+The original-language approach is blocked by model resolution. The path forward
+(see `findings/phase1d-design-sketch.md`) is the **high-resource-language
+triangulation** design: translate both traditions into multiple high-resource
+modern languages (English ✓, Hindi, Chinese) whose concept structure the model
+*can* resolve, with independent (non-anglophone) translator communities, and
+compare cross-tradition CCB across them. Convergence surviving across independent
+translation communities is trait variance (real); convergence specific to one is
+method variance (artifact). The within-language resolution diagnostic is a
+mandatory per-language precondition.
 
 1. **Option A confirmatory tagging.** Extend the manual Sanskrit/Pali regex dictionaries (currently AWARENESS + RECOGNITION from the spot-check) to all five Phase 1a-binding concepts. Run Phase 1c.2 CCB with Option A tags. This is the confirmatory test the prereg requires.
 2. **LaBSE cross-model replication.** Embed the 203 non-English Phase 1c.2 chunks with LaBSE (~1 min) and re-run Phase 1c.2. Embed the full corpus with LaBSE (~2 hrs background) and re-run Phase 1c.1. LaBSE's higher dynamic range may preserve the source/concept distinctions e5-large compresses.

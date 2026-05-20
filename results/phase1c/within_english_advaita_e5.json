@@ -1,0 +1,81 @@
+{
+  "label": "within-English-Advaita (e5-large)",
+  "language": "english",
+  "tradition": "advaita",
+  "tag_mode": "regex",
+  "n_chunks": 305,
+  "embeddings": "results\\phase1c\\chunk_embeddings_intfloat__multilingual_e5_large.npy",
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 238,
+      "n_both": 28203,
+      "n_only": 15946,
+      "both_mean": 0.8569934964179993,
+      "only_mean": 0.844111442565918,
+      "binding": 0.012882053852081299,
+      "p_one_sided": 0.0
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 0,
+      "n_both": 0,
+      "n_only": 0,
+      "both_mean": NaN,
+      "only_mean": NaN,
+      "binding": NaN,
+      "p_one_sided": NaN
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 33,
+      "n_both": 528,
+      "n_only": 8976,
+      "both_mean": 0.8666027188301086,
+      "only_mean": 0.8535966277122498,
+      "binding": 0.013006091117858887,
+      "p_one_sided": 0.0
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 51,
+      "n_both": 1275,
+      "n_only": 12954,
+      "both_mean": 0.8585255146026611,
+      "only_mean": 0.8534684181213379,
+      "binding": 0.005057096481323242,
+      "p_one_sided": 0.0175
+    },
+    {
+      "concept": "SELF",
+      "n_with": 38,
+      "n_both": 703,
+      "n_only": 10146,
+      "both_mean": 0.8612691164016724,
+      "only_mean": 0.8518964052200317,
+      "binding": 0.009372711181640625,
+      "p_one_sided": 0.0005
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 36,
+      "n_both": 630,
+      "n_only": 9684,
+      "both_mean": 0.8621341586112976,
+      "only_mean": 0.8549472093582153,
+      "binding": 0.007186949253082275,
+      "p_one_sided": 0.0085
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 7,
+      "n_both": 21,
+      "n_only": 2086,
+      "both_mean": 0.8899995684623718,
+      "only_mean": 0.8498172163963318,
+      "binding": 0.04018235206604004,
+      "p_one_sided": 0.0
+    }
+  ],
+  "n_significant_binding": 6
+}

@@ -1,0 +1,81 @@
+{
+  "label": "within-Sanskrit-Advaita (LaBSE)",
+  "language": "sanskrit",
+  "tradition": null,
+  "tag_mode": "option_a",
+  "n_chunks": 176,
+  "embeddings": "results\\phase1c\\chunk_embeddings_phase1c2_labse.npy",
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 135,
+      "n_both": 9045,
+      "n_only": 5535,
+      "both_mean": 0.7258545160293579,
+      "only_mean": 0.7072485685348511,
+      "binding": 0.018605947494506836,
+      "p_one_sided": 0.063
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 72,
+      "n_both": 2556,
+      "n_only": 7488,
+      "both_mean": 0.7294999361038208,
+      "only_mean": 0.7196884751319885,
+      "binding": 0.009811460971832275,
+      "p_one_sided": 0.1845
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 70,
+      "n_both": 2415,
+      "n_only": 7420,
+      "both_mean": 0.6992864012718201,
+      "only_mean": 0.7111287117004395,
+      "binding": -0.011842310428619385,
+      "p_one_sided": 0.9015
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 112,
+      "n_both": 6216,
+      "n_only": 7168,
+      "both_mean": 0.7205299139022827,
+      "only_mean": 0.7163807153701782,
+      "binding": 0.004149198532104492,
+      "p_one_sided": 0.3695
+    },
+    {
+      "concept": "SELF",
+      "n_with": 105,
+      "n_both": 5460,
+      "n_only": 7455,
+      "both_mean": 0.7374797463417053,
+      "only_mean": 0.7123246192932129,
+      "binding": 0.02515512704849243,
+      "p_one_sided": 0.01
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 33,
+      "n_both": 528,
+      "n_only": 4719,
+      "both_mean": 0.7503234148025513,
+      "only_mean": 0.7309415340423584,
+      "binding": 0.01938188076019287,
+      "p_one_sided": 0.0705
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 28,
+      "n_both": 378,
+      "n_only": 4144,
+      "both_mean": 0.7502970099449158,
+      "only_mean": 0.684617817401886,
+      "binding": 0.06567919254302979,
+      "p_one_sided": 0.0
+    }
+  ],
+  "n_significant_binding": 2
+}
