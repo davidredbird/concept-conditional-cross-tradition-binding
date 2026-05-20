@@ -185,6 +185,45 @@ The ancient canon (Tier 3) has no neutral-content counterpart (only scripture
 survives), so its score stays anchored at ≈0 by chronology, not by this empirical
 calibration; the calibration governs the modern texts where the regression slope lives.
 
+### 3b.6 Score granularity: the (translator, language-era-chain) tuple
+
+The score unit is **(final translator/community, sequence of (language, era) steps)**.
+Any text sharing both gets the same score. This granularity is forced by the
+calibration method: the chain must be characterized by *generalizable* properties
+that neutral material also possesses, so it can be calibrated on matched off-topic
+text. Specifying exact intermediary *editions* would make the score text-specific
+(tied to one translation lineage), which neutral material does not share — breaking
+calibration. So the chain is coarsened to (language, era) per step, not specific
+editions:
+
+- Generic enough to calibrate (neutral 19th-c. colonial English translations exist
+  to calibrate the "English(19c colonial)" step).
+- Specific enough to capture real variation (colonial-English vs modern-academic-
+  English Indology carry different westernization; era distinguishes them).
+
+Example chain-types: Sanskrit(ancient) → English(19c colonial) → Chinese(modern) is
+one; Sanskrit(ancient) → Chinese(ancient canon) is another; Sanskrit(ancient) →
+Hindi(modern, pandit) is another.
+
+**Composition: max-step.** The chain inherits the westernization of the *most-Western
+step it passed through*, because westernization is sticky — once content is rendered
+through colonial English, later non-Western steps do not scrub it out. Max-step
+reproduces the §3b.5 known-groups orderings automatically (Sanskrit→English→Chinese
+scores high via its English step; Sanskrit→ancient-Chinese scores ≈0, no Western
+step). Additive/weighted compositions are alternatives; max-step is the defensible
+default and easiest to validate. Pre-register the choice.
+
+**Consequence:** texts sharing a tuple are *replicates at one westernization level* —
+they pin down the mean convergence at that level (reducing noise); spread *across*
+tuples gives the regression its slope leverage. No need for a unique score per text,
+just per tuple.
+
+Two assumptions to flag explicitly in the pre-registration: (i) westernization is
+roughly constant within a translator's rendering of a text (intro/commentary vs literal
+verses may differ — a simplification, not exact); (ii) where a translator's individual
+neutral output is unavailable, the unit degrades to (language-community, chain),
+noisier but the same logic.
+
 ## 4. Mandatory per-language resolution gate
 
 The Phase 1c lesson, built in as a precondition: **before any language's cross-tradition CCB result counts, that language must pass the within-language concept-binding diagnostic** (`scripts/within_language_concept_binding.py`) — the model must resolve concept structure within that language (target: significant within-language binding for AWARENESS and RECOGNITION at minimum). A language that fails the gate is excluded from the triangulation, reported transparently. This also controls the resolution-gradient confound: if the model resolves English > Hindi > Chinese by training-data volume, CCB differences could be resolution artifacts; reporting each language's within-language resolution alongside its CCB guards against this.
