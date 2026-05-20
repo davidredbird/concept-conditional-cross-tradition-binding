@@ -133,6 +133,58 @@ the CCB results** (code all texts' westernization first, then run CCB, then
 correlate). Otherwise the score can be unconsciously tuned to produce a desired
 correlation.
 
+### 3b.4 Empirical calibration on neutral (off-topic) material
+
+Rather than hand-code the score, calibrate it empirically on material **unrelated to
+mysticism**, so no convergence signal can leak into the score. Two components:
+
+1. **Translator fingerprint** — measure each translator's (or, as a noisier proxy,
+   each language community's) westernization features on their *neutral* output
+   (cooking, travel, technical, news — nothing philosophical/religious/consciousness-
+   adjacent, or the "neutral" baseline leaks the target signal). Features:
+   European-loanword density, syntactic calques from European languages,
+   Western-conceptual framing. Content-independent — a translator's loanword habit on
+   a cooking text predicts it on the Gita. Holds modernity/fluency constant (same
+   translator), isolating translation tradition from the §3b.3(2) confound.
+2. **Text-specific path** — the provenance chain of *this* text, read from its output
+   features (an English-intermediated text carries European calques the canon-derived
+   one does not). A single modern translator may render one text from English and
+   another from the ancient canon: same fingerprint, different path.
+
+**Avoid the language-dominates-the-axis trap:** raw cross-lingual embedding difference
+captures *language identity*, not westernization (a Hindi cooking text vs an English
+cooking text differ mostly because one is Hindi). Westernization is a *within-language*
+axis too (Western-trained-Hindi vs traditional-pandit-Hindi differ at fixed language).
+So define the axis either feature-based (component 1) or via within-language
+Western-vs-traditional contrast on neutral content — not via raw between-language
+distance.
+
+### 3b.5 Known-groups validation of the metric
+
+Validate the calibrated metric by **construct validity / known-groups**: pre-register
+an uncontroversial expected ordering and check the metric reproduces it.
+
+- French (Western Indology) → high. Modern Chinese → lower. Etc.
+- **Key criterion (same-language, different-path):** Sanskrit→English→modern-Chinese
+  must score *higher* than ancient-Chinese→modern-Chinese, though both end in modern
+  Chinese. This directly tests whether the metric captures translation tradition vs
+  surface language. If both score equally, the metric is detecting only "Chinese" and
+  has failed; if the English-intermediated one scores higher, it captures the chain.
+
+Discipline to keep this from becoming circular (tuning to priors):
+1. **Pre-register the expected orderings** as validation targets before computing scores.
+2. **Held-out validation, then freeze.** Develop/tune the metric on validation texts
+   with known orderings; freeze; *then* apply to analysis texts (train/validate/test).
+3. **Validate against westernization expectations only — NEVER against convergence.**
+   Orderings must be about the covariate, using uncontroversial cases. Tuning the
+   metric to produce a convergence result contaminates the whole decomposition.
+   Westernization-ordering validation is legitimate construct validation; convergence-
+   outcome validation is forbidden.
+
+The ancient canon (Tier 3) has no neutral-content counterpart (only scripture
+survives), so its score stays anchored at ≈0 by chronology, not by this empirical
+calibration; the calibration governs the modern texts where the regression slope lives.
+
 ## 4. Mandatory per-language resolution gate
 
 The Phase 1c lesson, built in as a precondition: **before any language's cross-tradition CCB result counts, that language must pass the within-language concept-binding diagnostic** (`scripts/within_language_concept_binding.py`) — the model must resolve concept structure within that language (target: significant within-language binding for AWARENESS and RECOGNITION at minimum). A language that fails the gate is excluded from the triangulation, reported transparently. This also controls the resolution-gradient confound: if the model resolves English > Hindi > Chinese by training-data volume, CCB differences could be resolution artifacts; reporting each language's within-language resolution alongside its CCB guards against this.
