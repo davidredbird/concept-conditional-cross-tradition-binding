@@ -59,6 +59,80 @@ The Classical Chinese Buddhist canon itself (法句經 = Chinese Dhammapada, ~22
 
 **The falsification logic:** if cross-tradition convergence appears in a *provably non-Western-chain* text — Hindi-via-pandits, or especially the ancient Chinese canon — the "convergence is a Western-Indology artifact" hypothesis is **dead**, because there was no Western tradition in the chain to project it. This is the single strongest result the project could produce. The ancient canon is the only chain where contamination is *impossible* rather than merely *undocumented* — at the cost of resolution risk (classical Chinese is medium-resource and differs from modern Chinese; the gate decides).
 
+## 3b. Westernization score: from categorical triangulation to continuous decomposition
+
+The discrete provenance tiers (§3) are coarse. A **continuous westernization score
+per text** generalizes them and unlocks a far stronger analysis: covariate
+adjustment / variance decomposition, turning the binary perennialist-constructivist
+question into a quantitative partition.
+
+### 3b.1 The score
+
+A pre-registered weighted composite, leaning on objective measurable components:
+
+*Measurable (computed from text — preferred, not investigator-subjective):*
+- European/English loanword density
+- Western-philosophical-vocabulary rendering rate (e.g., "Brahman"→"the Absolute"
+  [Hegelian], "moksha"→"salvation" [Christian-inflected] vs transliterated technical
+  terms) — countable
+- Apparatus-style markers (critical-edition footnoting vs traditional commentary)
+
+*Coded (per-text judgment, defensible rules, blind to CCB results):*
+- Source of the translation (from original language = low; via English = high)
+- Translator training (traditional/native institution vs Western university)
+- Date relative to Western contact (ancient canon = 0; modern academic = max)
+- Publisher tradition (devotional/traditional vs Western academic press)
+
+The tiers (§3) become validation anchors: ancient canon should score ≈0,
+English-academic ≈max. If the score does not reproduce that ordering, it is
+miscalibrated.
+
+### 3b.2 The decomposition (the payoff)
+
+Regress convergence on westernization across texts/pairs:
+
+    CCB = β₀ + β₁·westernization + ε
+
+- **β₁ (slope)** — dose-response: how much westernization inflates apparent
+  convergence (the "translation-tradition caused THIS" magnitude). A positive
+  monotone slope is the constructivist signature; a flat slope supports
+  source-content convergence.
+- **β₀ (intercept at westernization = 0)** — the convergence predicted for a
+  perfectly non-Western chain: the **residual convergence not attributable to
+  westernization**.
+- Partition: (observed − β₀)/observed = fraction attributable to translation
+  tradition; β₀/observed = residual worth quantifying.
+
+The deliverable is not a verdict but a partition (e.g., "≈X% of observed
+cross-tradition convergence tracks translation westernization; ≈Y% survives
+adjustment"). This is the heritability-style reframing of the 65-year debate:
+not "real or artifact" but "what fraction is attributable to each."
+
+### 3b.3 Three constraints (must pre-register)
+
+1. **The ancient canon (Tier 3) is the anchor for β₀.** β₀ is convergence at
+   westernization = 0. Without a near-zero-westernization text, β₀ is an
+   extrapolation beyond the data and unreliable. The pre-Western Classical Chinese
+   canon (~0, chronologically guaranteed) turns β₀ from extrapolation into
+   interpolation. The decomposition makes Tier 3 the linchpin, not a nice-to-have.
+2. **The covariate is partly confounded.** Westernization correlates with modernity
+   and fluency (modern academic = high-West AND standardized; ancient = low-West AND
+   archaic). Adjustment removes westernization *plus* entangled nuisance. Mitigated
+   by weighting the measurable westernization-specific components; pre-register as a
+   limitation.
+3. **"Survives adjustment" ≠ "proven source content."** Residual β₀ is convergence
+   not explained by the *measured westernization axis*. It could reflect other shared
+   artifacts (common target-language structures, embedding-model biases). The honest
+   claim is "residual not attributable to translation westernization" — a ceiling on
+   the artifact-free signal, not a proof of it.
+
+**Hidden-degree-of-freedom guard:** the score definition, components, weights, and
+all per-text codings must be pre-registered and committed **before** the
+cross-tradition CCB is run. Per-text westernization codings should be done **blind to
+the CCB results** (code all texts' westernization first, then run CCB, then
+correlate). Otherwise the score can be unconsciously tuned to produce a desired
+correlation.
+
 ## 4. Mandatory per-language resolution gate
 
 The Phase 1c lesson, built in as a precondition: **before any language's cross-tradition CCB result counts, that language must pass the within-language concept-binding diagnostic** (`scripts/within_language_concept_binding.py`) — the model must resolve concept structure within that language (target: significant within-language binding for AWARENESS and RECOGNITION at minimum). A language that fails the gate is excluded from the triangulation, reported transparently. This also controls the resolution-gradient confound: if the model resolves English > Hindi > Chinese by training-data volume, CCB differences could be resolution artifacts; reporting each language's within-language resolution alongside its CCB guards against this.
