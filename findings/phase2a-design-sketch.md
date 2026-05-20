@@ -224,6 +224,54 @@ verses may differ — a simplification, not exact); (ii) where a translator's in
 neutral output is unavailable, the unit degrades to (language-community, chain),
 noisier but the same logic.
 
+### 3b.7 Calibration feasibility: bucket-level corpora + dual-route cross-check
+
+The practical crux: empirically calibrating the score seems to require matched neutral
+material for every distinct tuple ("did Gita Press ever translate a cookbook?"), which
+is intractable. The resolution: **calibrate one level down, at the (language, era)
+bucket, not the tuple.** Because the chain score composes from its (language, era)
+steps, you only need representative neutral material for each distinct *bucket* across
+all chains (~5–8: English-19c, English-modern, Hindi-modern, Chinese-modern, …), NOT
+per tuple (dozens). Bucket corpora are findable (neutral modern Hindi, 19c English
+academic prose, modern Chinese — news/technical/literary/historical archives). The
+intractable "specific translator's off-topic output through the same lineage" is never
+needed.
+
+**Two independent routes to the chain score, both needing only bucket corpora, that
+cross-check each other:**
+1. **Compositional (a priori):** compose the (language, era) bucket values (calibrated
+   on bucket neutral corpora). Needs bucket corpora only.
+2. **Direct (a posteriori):** measure westernization features on the *actual output
+   text*, relative to the *target-language-era neutral baseline* (detect calque/framing
+   excess beyond what is normal for that language-era). A Sanskrit→English→Chinese text
+   should show European-calque density above the modern-Chinese-neutral baseline; a
+   canon-derived Chinese text should not. Needs only the target-language-era corpus.
+
+Agreement between routes gives confidence; divergence is informative. The direct route
+guards the key risk in the compositional route: max-step assumes the most-Western
+step's westernization fully propagates, but a final non-Western translator may
+*re-naturalize* it, so max-step can overestimate — the direct measurement catches
+exactly that case (re-naturalized text won't show the excess).
+
+### 3b.8 Composition as pre-registered model selection
+
+The step-composition function (§3b.6) is chosen by **model selection from a small
+pre-specified candidate set**, each encoding a different theory of how westernization
+propagates through a chain:
+- **max-step** — fully sticky (most-Western step dominates)
+- **mean** — dilutes across steps
+- **injecting-step-weighted** — the moment of Western contact dominates
+- **exponential decay** — recent steps weighted more
+
+**Selection criterion (load-bearing anti-circularity guard):** the winning composition
+is the one that best reproduces the **pre-registered known-groups WESTERNIZATION
+orderings (§3b.5) on held-out validation data — NEVER the one that produces a desired
+CONVERGENCE result.** Judging composition by the convergence outcome contaminates the
+entire decomposition. Select on westernization-construct-validity, freeze, then run the
+convergence analysis (train/validate/test). Limit to the ~4 pre-specified candidates to
+avoid overfitting the validation set. The winning composition is itself a reportable
+finding — it characterizes how westernization propagates through translation chains.
+
 ## 4. Mandatory per-language resolution gate
 
 The Phase 1c lesson, built in as a precondition: **before any language's cross-tradition CCB result counts, that language must pass the within-language concept-binding diagnostic** (`scripts/within_language_concept_binding.py`) — the model must resolve concept structure within that language (target: significant within-language binding for AWARENESS and RECOGNITION at minimum). A language that fails the gate is excluded from the triangulation, reported transparently. This also controls the resolution-gradient confound: if the model resolves English > Hindi > Chinese by training-data volume, CCB differences could be resolution artifacts; reporting each language's within-language resolution alongside its CCB guards against this.
