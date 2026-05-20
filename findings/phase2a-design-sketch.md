@@ -272,6 +272,64 @@ convergence analysis (train/validate/test). Limit to the ~4 pre-specified candid
 avoid overfitting the validation set. The winning composition is itself a reportable
 finding — it characterizes how westernization propagates through translation chains.
 
+## 3c. Language-representation-quality: tracked metric and second covariate
+
+**Why this is necessary, not optional:** westernization and language-representation-
+quality are *correlated*. English is both highly Western AND the best-represented
+language in the model; Sanskrit is both non-Western AND barely represented (the Phase
+1c finding: 2/7 concepts resolve in Sanskrit vs 6/7 in English/Chinese). If convergence
+is regressed on westernization alone, the slope conflates "this translation tradition is
+Western" with "the model represents this language well." Representation-quality must be
+measured independently and entered as a **second covariate**:
+
+    convergence = β₀ + β₁·westernization + β₂·representation_quality + ε
+
+so β₁ (westernization) is adjusted for representation. Without β₂, β₁ is contaminated.
+
+### 3c.1 Metrics (prefer independent / non-circular)
+
+- **Cross-lingual retrieval accuracy on a NEUTRAL multi-parallel corpus** (primary).
+  Embed language-L sentences and English sentences from a parallel neutral corpus
+  (UDHR or FLORES-200 — both cover all candidates); measure whether L-sentence-i
+  retrieves English-sentence-i. This is the standard multilingual-representation metric
+  (xsim / retrieval accuracy). Neutral content → no mysticism leakage. Generalizes the
+  Sanskrit-English verse validation (5/5) to neutral content per language.
+- **Tokenizer fertility** (secondary) — tokens per character/word. Over-fragmentation
+  (many subword tokens) signals poor representation. Purely a tokenizer property,
+  concept-independent, trivial to compute.
+- **Embedding isotropy / within-language spread** on neutral text — low-resource
+  languages collapse into a narrow anisotropic cone (e5-large compressed Sanskrit to
+  ~0.89 ± tiny). Spread is a representation proxy.
+- **Documented training-data proportion** if published (LaBSE/e5 language coverage).
+- **NOT the concept-binding gate result** as the covariate — it is circular (uses the
+  same concept structure the main analysis studies). The gate is validation that
+  representation-quality predicts resolution, not the regression covariate itself.
+
+### 3c.2 The 2D (westernization × representation) disentanglement
+
+Separating β₁ from β₂ requires spread in the 2D plane, not collinearity. Gate-passers
+provide it: English (high-West, high-rep), modern Chinese (low-West, high-rep),
+classical Chinese / 法句經 (low-West, *medium*-rep — measured 6/7), Hindi if it passes
+(medium-West, medium-rep). The off-diagonal points — especially the ancient Chinese
+canon (low-West but decently-represented) — break the westernization↔representation
+collinearity. Sanskrit would be the low-low corner but it fails the gate and cannot
+contribute convergence data; the gate-passers still span the plane.
+
+### 3c.3 Two-stage eligibility (this subsumes the binary gate)
+
+1. **Representation screen (cheap, all candidates at once):** retrieval accuracy +
+   tokenizer fertility on a neutral multi-parallel corpus. No concept dictionaries, no
+   tradition sourcing. Ranks all candidates; flags which clear the representation bar
+   (calibrated against known cases: English/Chinese pass, Sanskrit-level fails).
+2. **Full concept-binding gate (expensive, survivors only):** within-language concept
+   binding (`scripts/within_language_concept_binding.py`) only for languages that pass
+   the screen AND have source coverage. Don't build a per-language concept dictionary
+   for a language that can't clear the representation bar.
+
+The continuous representation score is strictly more informative than a binary gate: a
+language has a *position* on the representation axis that the regression adjusts for,
+not just pass/fail.
+
 ## 4. Mandatory per-language resolution gate
 
 The Phase 1c lesson, built in as a precondition: **before any language's cross-tradition CCB result counts, that language must pass the within-language concept-binding diagnostic** (`scripts/within_language_concept_binding.py`) — the model must resolve concept structure within that language (target: significant within-language binding for AWARENESS and RECOGNITION at minimum). A language that fails the gate is excluded from the triangulation, reported transparently. This also controls the resolution-gradient confound: if the model resolves English > Hindi > Chinese by training-data volume, CCB differences could be resolution artifacts; reporting each language's within-language resolution alongside its CCB guards against this.
