@@ -1,4 +1,4 @@
-# Think Outside the Box
+# Concept-Conditional Cross-Tradition Binding
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20261823.svg)](https://doi.org/10.5281/zenodo.20261823)
 
