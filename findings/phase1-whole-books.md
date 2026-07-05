@@ -1,6 +1,6 @@
 # Phase 1a — Whole-Book Corpus Replication
 
-> **Naming note:** this is **Phase 1a**, not full Phase 1. The whole-book corpus replication addresses one of the four pipeline-coupling concerns from the second-reviewer pass (the paraphrase confound) but does *not* address translator-as-confound, regex-tagging-as-hidden-degree-of-freedom, adversarial-passage-selection, or non-English source analysis. The full Phase 1 program is described in `paper/paper-draft-v5.md` §10.
+> **Naming note:** this is **Phase 1a**, not full Phase 1. The whole-book corpus replication addresses one of the four pipeline-coupling concerns from the second-reviewer pass (the paraphrase confound) but does *not* address translator-as-confound, regex-tagging-as-hidden-degree-of-freedom, adversarial-passage-selection, or non-English source analysis. The full Phase 1 program is described in `next-steps.md` and `paper/paper-draft-v3.md` §10.
 
 ---
 
@@ -140,7 +140,7 @@ SUBSTRATE has the smallest sample in both phases (~15 passages, ~5-90 cross-trad
 
 **Evidence against (c):** if SUBSTRATE were noisy, we'd expect deflation OR inflation, not the exact same number. The persistence is at least consistent with stable signal.
 
-**The most parsimonious reading:** explanation (a) is doing most of the work. SUBSTRATE didn't "fail to deflate" — it never had a casual-usage noise floor in the first place. This is directly testable by restricting AWARENESS/ULTIMATE/WORLD patterns to their *technical-only* terms and re-running concept_analysis. Predictions are written before testing (see end of this doc).
+**My honest read:** explanation (a) is doing most of the work. SUBSTRATE didn't "fail to deflate" — it never had a casual-usage noise floor in the first place. We can test this directly by restricting AWARENESS/ULTIMATE/WORLD patterns to their *technical-only* terms and re-running concept_analysis. Predictions written before testing (see end of this doc).
 
 This does NOT rule out explanation (b) — there may still be a real structural narrowness to substrate-talk on top of the vocabulary effect. But (a) is the more parsimonious primary cause.
 

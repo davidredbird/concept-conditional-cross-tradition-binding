@@ -1,0 +1,68 @@
+{
+  "english": {
+    "AWARENESS": [
+      -0.0013,
+      0.6238
+    ],
+    "SUBSTRATE": [
+      "nan",
+      1.0
+    ],
+    "ULTIMATE": [
+      0.0144,
+      0.0075
+    ],
+    "WORLD": [
+      0.0325,
+      0.0
+    ],
+    "RECOGNITION": [
+      -0.0235,
+      0.8144
+    ]
+  },
+  "german": {
+    "AWARENESS": [
+      0.0027,
+      0.3175
+    ],
+    "SUBSTRATE": [
+      "nan",
+      1.0
+    ],
+    "ULTIMATE": [
+      0.021,
+      0.0
+    ],
+    "WORLD": [
+      0.0211,
+      0.0
+    ],
+    "RECOGNITION": [
+      -0.0094,
+      0.6274
+    ]
+  },
+  "vietnamese": {
+    "AWARENESS": [
+      -0.001,
+      0.57
+    ],
+    "SUBSTRATE": [
+      "nan",
+      1.0
+    ],
+    "ULTIMATE": [
+      -0.02,
+      1.0
+    ],
+    "WORLD": [
+      -0.0022,
+      0.685
+    ],
+    "RECOGNITION": [
+      0.0025,
+      0.4374
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "input_tags": "corpus\\chunks_dh_john_french.jsonl",
+  "input_embeddings": "results\\phase2b\\dh_john_french_sentence_transformers__LaBSE.npy",
+  "n_total_chunks": 268,
+  "n_filtered_chunks": 268,
+  "n_cross_tradition_pairs": 17731,
+  "by_tradition": {
+    "theravada": 119,
+    "christian": 149
+  },
+  "n_perm": 2000,
+  "seed": 0,
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 105,
+      "n_both": 2250,
+      "n_only": 8895,
+      "both_mean": 0.3614771068096161,
+      "only_one_mean": 0.3725099563598633,
+      "CCB": -0.011032849550247192,
+      "null_mean": -0.0003090447634458542,
+      "p_one_sided": 0.978,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 7,
+      "n_both": 0,
+      "n_only": 1043,
+      "both_mean": NaN,
+      "only_one_mean": NaN,
+      "CCB": NaN,
+      "null_mean": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 2000
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 48,
+      "n_both": 575,
+      "n_only": 5252,
+      "both_mean": 0.3981225788593292,
+      "only_one_mean": 0.37890246510505676,
+      "CCB": 0.01922011375427246,
+      "null_mean": 1.3694256544113159e-05,
+      "p_one_sided": 0.0055,
+      "n_perm": 2000
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 79,
+      "n_both": 1554,
+      "n_only": 7403,
+      "both_mean": 0.4126361012458801,
+      "only_one_mean": 0.38035672903060913,
+      "CCB": 0.032279372215270996,
+      "null_mean": -0.00012166470289230346,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SELF",
+      "n_with": 17,
+      "n_both": 42,
+      "n_only": 2359,
+      "both_mean": 0.38403525948524475,
+      "only_one_mean": 0.37697634100914,
+      "CCB": 0.007058918476104736,
+      "null_mean": -9.085272252559662e-05,
+      "p_one_sided": 0.2805,
+      "n_perm": 2000
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 7,
+      "n_both": 10,
+      "n_only": 963,
+      "both_mean": 0.29993289709091187,
+      "only_one_mean": 0.3502312898635864,
+      "CCB": -0.05029839277267456,
+      "null_mean": -0.0006553025217844955,
+      "p_one_sided": 0.9771689497716894,
+      "n_perm": 2000
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 12,
+      "n_both": 36,
+      "n_only": 1536,
+      "both_mean": 0.3458918631076813,
+      "only_one_mean": 0.3558556139469147,
+      "CCB": -0.009963750839233398,
+      "null_mean": -0.000423023839274007,
+      "p_one_sided": 0.7389779559118237,
+      "n_perm": 2000
+    }
+  ],
+  "phase1a_binding_concepts_that_bind_here": 2,
+  "phase1a_binding_decisions": {
+    "ULTIMATE": "no (p=0.978)",
+    "SUBSTRATE": "untestable (no cross-tradition both-tagged pairs)",
+    "AWARENESS": "BIND p<0.05",
+    "WORLD": "BIND p<0.05",
+    "RECOGNITION": "no (p=0.977)"
+  }
+}

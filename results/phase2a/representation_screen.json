@@ -1,0 +1,269 @@
+{
+  "_note": "Aggregate FLORES+ representation scores only. No FLORES text. Fertility = contamination-immune primary; retrieval = caveated secondary.",
+  "fertility": {
+    "e5-large": {
+      "english": {
+        "tokens_per_sentence": 29.08224674022066,
+        "chars_per_token": 4.317778927401276,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.0
+      },
+      "modern_chinese": {
+        "tokens_per_sentence": 28.542627883650955,
+        "chars_per_token": 1.4822012158695577,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 0.9814450767373686
+      },
+      "hindi": {
+        "tokens_per_sentence": 36.74924774322969,
+        "chars_per_token": 3.4216545211386773,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2636316606311433
+      },
+      "japanese": {
+        "tokens_per_sentence": 32.358074222668,
+        "chars_per_token": 1.6942438238120332,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1126401103638557
+      },
+      "french": {
+        "tokens_per_sentence": 37.55767301905717,
+        "chars_per_token": 3.9735345172920282,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2914295568201413
+      },
+      "spanish": {
+        "tokens_per_sentence": 34.87963891675025,
+        "chars_per_token": 4.2900647016534865,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1993447146059666
+      },
+      "german": {
+        "tokens_per_sentence": 33.90772316950853,
+        "chars_per_token": 4.335265929125008,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1659251595102604
+      },
+      "korean": {
+        "tokens_per_sentence": 33.66900702106319,
+        "chars_per_token": 1.8771151096282173,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1577168477323676
+      },
+      "hebrew": {
+        "tokens_per_sentence": 32.841524573721166,
+        "chars_per_token": 2.9777662401123903,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1292636661493363
+      },
+      "arabic": {
+        "tokens_per_sentence": 34.29588766298897,
+        "chars_per_token": 3.23381978767584,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1792722883255735
+      },
+      "persian": {
+        "tokens_per_sentence": 32.38415245737212,
+        "chars_per_token": 3.686220460247158,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1135368166925332
+      },
+      "sanskrit": {
+        "tokens_per_sentence": 41.7382146439318,
+        "chars_per_token": 2.9715233220387858,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.435178479048112
+      }
+    },
+    "LaBSE": {
+      "english": {
+        "tokens_per_sentence": 25.994984954864595,
+        "chars_per_token": 4.830574526372651,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.0
+      },
+      "modern_chinese": {
+        "tokens_per_sentence": 39.00100300902708,
+        "chars_per_token": 1.0847392243596339,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.5003279700582628
+      },
+      "hindi": {
+        "tokens_per_sentence": 34.041123370110334,
+        "chars_per_token": 3.6938625180470845,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.3095265655747192
+      },
+      "japanese": {
+        "tokens_per_sentence": 39.6579739217653,
+        "chars_per_token": 1.3823819519967626,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.525600956900876
+      },
+      "french": {
+        "tokens_per_sentence": 33.61183550651956,
+        "chars_per_token": 4.44000477455164,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2930123085233631
+      },
+      "spanish": {
+        "tokens_per_sentence": 32.1925777331996,
+        "chars_per_token": 4.648149302093719,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2384149400007716
+      },
+      "german": {
+        "tokens_per_sentence": 31.375125376128384,
+        "chars_per_token": 4.685208273392794,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2069683991202684
+      },
+      "korean": {
+        "tokens_per_sentence": 30.038114343029086,
+        "chars_per_token": 2.104013623614265,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1555349770420957
+      },
+      "hebrew": {
+        "tokens_per_sentence": 30.028084252758276,
+        "chars_per_token": 3.2567639788897056,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1551491299147278
+      },
+      "arabic": {
+        "tokens_per_sentence": 31.625877632898696,
+        "chars_per_token": 3.5068345437823094,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.2166145773044719
+      },
+      "persian": {
+        "tokens_per_sentence": 30.157472417251757,
+        "chars_per_token": 3.958392922473143,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.1601265578577769
+      },
+      "sanskrit": {
+        "tokens_per_sentence": 46.22567703109328,
+        "chars_per_token": 2.6830559593811705,
+        "n_sentences": 997,
+        "fertility_ratio_vs_english": 1.7782536559015316
+      }
+    }
+  },
+  "retrieval": {
+    "intfloat/multilingual-e5-large": {
+      "modern_chinese": {
+        "p_at_1": 0.9949849548645938,
+        "mrr": 0.9971342599226249,
+        "n": 997
+      },
+      "hindi": {
+        "p_at_1": 0.9979939819458375,
+        "mrr": 0.9989969909729187,
+        "n": 997
+      },
+      "japanese": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "french": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "spanish": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "german": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "korean": {
+        "p_at_1": 0.9979939819458375,
+        "mrr": 0.9989969909729187,
+        "n": 997
+      },
+      "hebrew": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "arabic": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "persian": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "sanskrit": {
+        "p_at_1": 0.9438314944834504,
+        "mrr": 0.9610187784827519,
+        "n": 997
+      }
+    },
+    "sentence-transformers/LaBSE": {
+      "modern_chinese": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "hindi": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "japanese": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "french": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "spanish": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "german": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "korean": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "hebrew": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "arabic": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "persian": {
+        "p_at_1": 1.0,
+        "mrr": 1.0,
+        "n": 997
+      },
+      "sanskrit": {
+        "p_at_1": 0.9889669007021064,
+        "mrr": 0.9923470270289664,
+        "n": 997
+      }
+    }
+  }
+}

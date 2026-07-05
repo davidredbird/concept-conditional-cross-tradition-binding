@@ -1,0 +1,107 @@
+{
+  "input_tags": "corpus\\chunks_chinese_chan_dao.jsonl",
+  "input_embeddings": "results\\phase2a\\chinese_chan_dao_sentence_transformers__LaBSE.npy",
+  "n_total_chunks": 139,
+  "n_filtered_chunks": 139,
+  "n_cross_tradition_pairs": 3498,
+  "by_tradition": {
+    "chan": 106,
+    "daoism": 33
+  },
+  "n_perm": 2000,
+  "seed": 0,
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 113,
+      "n_both": 2592,
+      "n_only": 881,
+      "both_mean": 0.5667918920516968,
+      "only_one_mean": 0.5193620920181274,
+      "CCB": 0.047429800033569336,
+      "null_mean": -6.201672554016114e-05,
+      "p_one_sided": 0.014,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 43,
+      "n_both": 252,
+      "n_only": 1426,
+      "both_mean": 0.6045251488685608,
+      "only_one_mean": 0.5622844696044922,
+      "CCB": 0.042240679264068604,
+      "null_mean": -0.00023511645197868346,
+      "p_one_sided": 0.0045,
+      "n_perm": 2000
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 110,
+      "n_both": 1504,
+      "n_only": 1790,
+      "both_mean": 0.5575568079948425,
+      "only_one_mean": 0.5580040812492371,
+      "CCB": -0.00044727325439453125,
+      "null_mean": -0.0002979995906352997,
+      "p_one_sided": 0.471,
+      "n_perm": 2000
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 29,
+      "n_both": 204,
+      "n_only": 1425,
+      "both_mean": 0.6157019734382629,
+      "only_one_mean": 0.5763498544692993,
+      "CCB": 0.03935211896896362,
+      "null_mean": -0.001157800018787384,
+      "p_one_sided": 0.015,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SELF",
+      "n_with": 73,
+      "n_both": 780,
+      "n_only": 1798,
+      "both_mean": 0.5908647775650024,
+      "only_one_mean": 0.5492761731147766,
+      "CCB": 0.04158860445022583,
+      "null_mean": -0.00023655778169631958,
+      "p_one_sided": 0.005,
+      "n_perm": 2000
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 47,
+      "n_both": 0,
+      "n_only": 1551,
+      "both_mean": NaN,
+      "only_one_mean": NaN,
+      "CCB": NaN,
+      "null_mean": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 2000
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 9,
+      "n_both": 0,
+      "n_only": 297,
+      "both_mean": NaN,
+      "only_one_mean": NaN,
+      "CCB": NaN,
+      "null_mean": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 2000
+    }
+  ],
+  "phase1a_binding_concepts_that_bind_here": 3,
+  "phase1a_binding_decisions": {
+    "ULTIMATE": "BIND p<0.05",
+    "SUBSTRATE": "BIND p<0.05",
+    "AWARENESS": "no (p=0.471)",
+    "WORLD": "BIND p<0.05",
+    "RECOGNITION": "untestable (no cross-tradition both-tagged pairs)"
+  }
+}

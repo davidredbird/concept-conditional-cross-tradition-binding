@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "date": "2026-07-05",
+    "corpus": "corpus\\passages_phase1.jsonl",
+    "embeddings": "results\\phase1\\document_level\\text-embedding-3-large\\embeddings.npy",
+    "n_passages": 920,
+    "n_cross_tradition_pairs": 379468,
+    "seed": 1908,
+    "n_perm": 2000
+  },
+  "real_ccb_reference": {
+    "ULTIMATE": {
+      "n_with": 562,
+      "observed": 0.014115199593027261,
+      "null_mean": 1.5445980258660256e-05,
+      "null_std": 0.00275159154101057,
+      "p_one_sided": 0.0,
+      "n_perm": 2000,
+      "n_both": 140325,
+      "n_only": 186644
+    },
+    "SUBSTRATE": {
+      "n_with": 15,
+      "observed": 0.054130461528084595,
+      "null_mean": 1.0206126575150297e-05,
+      "null_std": 0.013137927129873722,
+      "p_one_sided": 0.0,
+      "n_perm": 2000,
+      "n_both": 88,
+      "n_only": 12169
+    },
+    "AWARENESS": {
+      "n_with": 52,
+      "observed": 0.025764848436892918,
+      "null_mean": 0.00021612790797460985,
+      "null_std": 0.006102401650205331,
+      "p_one_sided": 0.0,
+      "n_perm": 2000,
+      "n_both": 1052,
+      "n_only": 40548
+    },
+    "WORLD": {
+      "n_with": 170,
+      "observed": 0.021603681717472678,
+      "null_mean": 0.00011501574124588914,
+      "null_std": 0.003418800198150982,
+      "p_one_sided": 0.0,
+      "n_perm": 2000,
+      "n_both": 12161,
+      "n_only": 114093
+    },
+    "SELF": {
+      "n_with": 27,
+      "observed": -0.01235101525257154,
+      "null_mean": -0.00012650508030928207,
+      "null_std": 0.009110912451512168,
+      "p_one_sided": 0.9175,
+      "n_perm": 2000,
+      "n_both": 151,
+      "n_only": 21978
+    },
+    "RECOGNITION": {
+      "n_with": 51,
+      "observed": 0.024672904206599344,
+      "null_mean": 0.00022159036819444463,
+      "null_std": 0.006158195435358297,
+      "p_one_sided": 0.0,
+      "n_perm": 2000,
+      "n_both": 1061,
+      "n_only": 41357
+    },
+    "NONSEP": {
+      "n_with": 0,
+      "observed": NaN,
+      "null_mean": NaN,
+      "null_std": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 0,
+      "n_both": 0,
+      "n_only": 0
+    }
+  },
+  "published_phase1a_ccb": {
+    "AWARENESS": 0.026,
+    "ULTIMATE": 0.014,
+    "WORLD": 0.022,
+    "RECOGNITION": 0.025,
+    "SUBSTRATE": 0.054
+  },
+  "control_1_random_word": {
+    "ULTIMATE": {
+      "n_c": 562,
+      "window": [
+        505,
+        619
+      ],
+      "real_ccb": 0.014115199593027261,
+      "real_p_one_sided": 0.0,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 22,
+      "pseudo_ccb_mean": 0.0048303707060397974,
+      "pseudo_ccb_sd": 0.005033227149455134,
+      "pseudo_ccb_min": -0.011124678500572582,
+      "pseudo_ccb_max": 0.01852593044164741,
+      "real_percentile_in_pseudo_dist": 98.0,
+      "pseudo_tagged_counts_mean": 467.9
+    },
+    "SUBSTRATE": {
+      "n_c": 15,
+      "window": [
+        13,
+        17
+      ],
+      "real_ccb": 0.054130461528084595,
+      "real_p_one_sided": 0.0,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 50,
+      "pseudo_ccb_mean": 0.020822992042458174,
+      "pseudo_ccb_sd": 0.026321400493020994,
+      "pseudo_ccb_min": -0.022106178107555885,
+      "pseudo_ccb_max": 0.07979009391692982,
+      "real_percentile_in_pseudo_dist": 86.0,
+      "pseudo_tagged_counts_mean": 14.76
+    },
+    "AWARENESS": {
+      "n_c": 52,
+      "window": [
+        46,
+        58
+      ],
+      "real_ccb": 0.025764848436892918,
+      "real_p_one_sided": 0.0,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 50,
+      "pseudo_ccb_mean": 0.006938876474105322,
+      "pseudo_ccb_sd": 0.014436137270425095,
+      "pseudo_ccb_min": -0.014042213838052042,
+      "pseudo_ccb_max": 0.054145243178220115,
+      "real_percentile_in_pseudo_dist": 88.0,
+      "pseudo_tagged_counts_mean": 51.2
+    },
+    "WORLD": {
+      "n_c": 170,
+      "window": [
+        153,
+        188
+      ],
+      "real_ccb": 0.021603681717472678,
+      "real_p_one_sided": 0.0,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 50,
+      "pseudo_ccb_mean": 0.004277845481152946,
+      "pseudo_ccb_sd": 0.0063973987784322174,
+      "pseudo_ccb_min": -0.007221055416991695,
+      "pseudo_ccb_max": 0.020539851761932293,
+      "real_percentile_in_pseudo_dist": 100.0,
+      "pseudo_tagged_counts_mean": 162.48
+    },
+    "SELF": {
+      "n_c": 27,
+      "window": [
+        24,
+        30
+      ],
+      "real_ccb": -0.01235101525257154,
+      "real_p_one_sided": 0.9175,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 50,
+      "pseudo_ccb_mean": 0.012016932253478642,
+      "pseudo_ccb_sd": 0.017124118533616207,
+      "pseudo_ccb_min": -0.013756045489256297,
+      "pseudo_ccb_max": 0.05320227697085678,
+      "real_percentile_in_pseudo_dist": 4.0,
+      "pseudo_tagged_counts_mean": 26.36
+    },
+    "RECOGNITION": {
+      "n_c": 51,
+      "window": [
+        45,
+        57
+      ],
+      "real_ccb": 0.024672904206599344,
+      "real_p_one_sided": 0.0,
+      "n_pseudo": 50,
+      "n_pseudo_reached_window": 50,
+      "pseudo_ccb_mean": 0.011430011193217644,
+      "pseudo_ccb_sd": 0.016912550616795974,
+      "pseudo_ccb_min": -0.011930454402181045,
+      "pseudo_ccb_max": 0.06616694559462055,
+      "real_percentile_in_pseudo_dist": 84.0,
+      "pseudo_tagged_counts_mean": 49.18
+    },
+    "NONSEP": {
+      "n_c": 0,
+      "real_ccb": NaN,
+      "status": "skipped_no_tagged_passages"
+    }
+  },
+  "control_2_bow_tfidf": {
+    "per_concept": {
+      "ULTIMATE": {
+        "n_with": 562,
+        "embedding_ccb": 0.014115199593027261,
+        "embedding_p": 0.0,
+        "tfidf_ccb": 0.009408748358126606,
+        "tfidf_p": 0.0
+      },
+      "SUBSTRATE": {
+        "n_with": 15,
+        "embedding_ccb": 0.054130461528084595,
+        "embedding_p": 0.0,
+        "tfidf_ccb": 0.03268056552289375,
+        "tfidf_p": 0.0025
+      },
+      "AWARENESS": {
+        "n_with": 52,
+        "embedding_ccb": 0.025764848436892918,
+        "embedding_p": 0.0,
+        "tfidf_ccb": 0.03322785486388763,
+        "tfidf_p": 0.0
+      },
+      "WORLD": {
+        "n_with": 170,
+        "embedding_ccb": 0.021603681717472678,
+        "embedding_p": 0.0,
+        "tfidf_ccb": 0.016110115041053585,
+        "tfidf_p": 0.0
+      },
+      "SELF": {
+        "n_with": 27,
+        "embedding_ccb": -0.01235101525257154,
+        "embedding_p": 0.9175,
+        "tfidf_ccb": 0.04629769844953252,
+        "tfidf_p": 0.0
+      },
+      "RECOGNITION": {
+        "n_with": 51,
+        "embedding_ccb": 0.024672904206599344,
+        "embedding_p": 0.0,
+        "tfidf_ccb": 0.006308955332169769,
+        "tfidf_p": 0.142
+      },
+      "NONSEP": {
+        "n_with": 0,
+        "embedding_ccb": NaN,
+        "embedding_p": NaN,
+        "tfidf_ccb": NaN,
+        "tfidf_p": NaN
+      }
+    },
+    "tfidf_vocab_size": 17685,
+    "correlation_embedding_vs_tfidf_ccb": -0.2256362235908985,
+    "n_concepts_in_correlation": 6
+  },
+  "control_3_tag_masking": {
+    "ULTIMATE": {
+      "n_with": 562,
+      "original_ccb": 0.014115199593027261,
+      "original_p": 0.0,
+      "masked_ccb": 0.008966556235202205,
+      "masked_p": 0.0015,
+      "retention_fraction": 0.6352411934459344
+    },
+    "SUBSTRATE": {
+      "n_with": 15,
+      "original_ccb": 0.054130461528084595,
+      "original_p": 0.0,
+      "masked_ccb": 0.045594919817808055,
+      "masked_p": 0.003,
+      "retention_fraction": 0.8423153716166261
+    },
+    "AWARENESS": {
+      "n_with": 52,
+      "original_ccb": 0.025764848436892918,
+      "original_p": 0.0,
+      "masked_ccb": 0.023136483458306878,
+      "masked_p": 0.0,
+      "retention_fraction": 0.8979863985994786
+    },
+    "WORLD": {
+      "n_with": 170,
+      "original_ccb": 0.021603681717472678,
+      "original_p": 0.0,
+      "masked_ccb": 0.01705608469493991,
+      "masked_p": 0.0,
+      "retention_fraction": 0.789498980682781
+    },
+    "SELF": {
+      "n_with": 27,
+      "original_ccb": -0.01235101525257154,
+      "original_p": 0.9175,
+      "masked_ccb": -0.008542362503227652,
+      "masked_p": 0.831,
+      "retention_fraction": 0.6916324147076971
+    },
+    "RECOGNITION": {
+      "n_with": 51,
+      "original_ccb": 0.024672904206599344,
+      "original_p": 0.0,
+      "masked_ccb": 0.02102754285359143,
+      "masked_p": 0.0005,
+      "retention_fraction": 0.8522524416873115
+    },
+    "NONSEP": {
+      "n_with": 0,
+      "status": "skipped_no_tagged_passages"
+    }
+  }
+}

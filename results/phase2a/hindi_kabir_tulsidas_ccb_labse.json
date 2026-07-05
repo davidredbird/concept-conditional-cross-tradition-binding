@@ -1,0 +1,107 @@
+{
+  "input_tags": "corpus\\chunks_hindi_kabir_tulsidas.jsonl",
+  "input_embeddings": "results\\phase2a\\hindi_kabir_tulsidas_sentence_transformers__LaBSE.npy",
+  "n_total_chunks": 427,
+  "n_filtered_chunks": 427,
+  "n_cross_tradition_pairs": 39102,
+  "by_tradition": {
+    "sant": 294,
+    "bhakti": 133
+  },
+  "n_perm": 2000,
+  "seed": 0,
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 339,
+      "n_both": 25974,
+      "n_only": 11976,
+      "both_mean": 0.4739362895488739,
+      "only_one_mean": 0.4540412724018097,
+      "CCB": 0.01989501714706421,
+      "null_mean": -5.52588552236557e-05,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 115,
+      "n_both": 1050,
+      "n_only": 14805,
+      "both_mean": 0.50054931640625,
+      "only_one_mean": 0.4706881642341614,
+      "CCB": 0.029861152172088623,
+      "null_mean": -0.00019451001286506652,
+      "p_one_sided": 0.0,
+      "n_perm": 2000
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 310,
+      "n_both": 21000,
+      "n_only": 15330,
+      "both_mean": 0.4718942642211914,
+      "only_one_mean": 0.462289422750473,
+      "CCB": 0.009604841470718384,
+      "null_mean": -7.455120980739593e-05,
+      "p_one_sided": 0.005,
+      "n_perm": 2000
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 218,
+      "n_both": 10360,
+      "n_only": 19544,
+      "both_mean": 0.47460854053497314,
+      "only_one_mean": 0.4650627672672272,
+      "CCB": 0.009545773267745972,
+      "null_mean": -4.282528162002564e-05,
+      "p_one_sided": 0.004,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SELF",
+      "n_with": 179,
+      "n_both": 4588,
+      "n_only": 19622,
+      "both_mean": 0.46785101294517517,
+      "only_one_mean": 0.4662284255027771,
+      "CCB": 0.0016225874423980713,
+      "null_mean": -2.6837244629859925e-05,
+      "p_one_sided": 0.325,
+      "n_perm": 2000
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 142,
+      "n_both": 3441,
+      "n_only": 16995,
+      "both_mean": 0.4775092303752899,
+      "only_one_mean": 0.46843504905700684,
+      "CCB": 0.009074181318283081,
+      "null_mean": -0.00010060003399848939,
+      "p_one_sided": 0.0085,
+      "n_perm": 2000
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 36,
+      "n_both": 243,
+      "n_only": 5751,
+      "both_mean": 0.49724143743515015,
+      "only_one_mean": 0.47578680515289307,
+      "CCB": 0.02145463228225708,
+      "null_mean": -0.00046478235721588134,
+      "p_one_sided": 0.003,
+      "n_perm": 2000
+    }
+  ],
+  "phase1a_binding_concepts_that_bind_here": 5,
+  "phase1a_binding_decisions": {
+    "ULTIMATE": "BIND p<0.05",
+    "SUBSTRATE": "BIND p<0.05",
+    "AWARENESS": "BIND p<0.05",
+    "WORLD": "BIND p<0.05",
+    "RECOGNITION": "BIND p<0.05"
+  }
+}

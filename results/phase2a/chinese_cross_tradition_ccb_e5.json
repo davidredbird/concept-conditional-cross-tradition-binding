@@ -1,0 +1,107 @@
+{
+  "input_tags": "corpus\\chunks_chinese_combined.jsonl",
+  "input_embeddings": "results\\phase2a\\chinese_combined_intfloat__multilingual_e5_large.npy",
+  "n_total_chunks": 101,
+  "n_filtered_chunks": 101,
+  "n_cross_tradition_pairs": 2244,
+  "by_tradition": {
+    "theravada": 68,
+    "daoism": 33
+  },
+  "n_perm": 2000,
+  "seed": 0,
+  "per_concept": [
+    {
+      "concept": "ULTIMATE",
+      "n_with": 90,
+      "n_both": 1856,
+      "n_only": 378,
+      "both_mean": 0.8485898375511169,
+      "only_one_mean": 0.849043607711792,
+      "CCB": -0.00045377016067504883,
+      "null_mean": 0.00013304319977760316,
+      "p_one_sided": 0.564,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SUBSTRATE",
+      "n_with": 32,
+      "n_both": 175,
+      "n_only": 951,
+      "both_mean": 0.8492942452430725,
+      "only_one_mean": 0.8487499952316284,
+      "CCB": 0.0005442500114440918,
+      "null_mean": -3.711599111557007e-05,
+      "p_one_sided": 0.41,
+      "n_perm": 2000
+    },
+    {
+      "concept": "AWARENESS",
+      "n_with": 79,
+      "n_both": 1008,
+      "n_only": 1151,
+      "both_mean": 0.8498530983924866,
+      "only_one_mean": 0.848055362701416,
+      "CCB": 0.0017977356910705566,
+      "null_mean": 0.00011473765969276428,
+      "p_one_sided": 0.2635,
+      "n_perm": 2000
+    },
+    {
+      "concept": "WORLD",
+      "n_with": 33,
+      "n_both": 252,
+      "n_only": 1005,
+      "both_mean": 0.8452907800674438,
+      "only_one_mean": 0.8473718762397766,
+      "CCB": -0.0020810961723327637,
+      "null_mean": -3.705546259880066e-05,
+      "p_one_sided": 0.7925,
+      "n_perm": 2000
+    },
+    {
+      "concept": "SELF",
+      "n_with": 65,
+      "n_both": 676,
+      "n_only": 1248,
+      "both_mean": 0.8483335971832275,
+      "only_one_mean": 0.8492962718009949,
+      "CCB": -0.000962674617767334,
+      "null_mean": 4.9196481704711914e-05,
+      "p_one_sided": 0.66,
+      "n_perm": 2000
+    },
+    {
+      "concept": "RECOGNITION",
+      "n_with": 11,
+      "n_both": 0,
+      "n_only": 363,
+      "both_mean": NaN,
+      "only_one_mean": NaN,
+      "CCB": NaN,
+      "null_mean": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 2000
+    },
+    {
+      "concept": "NONSEP",
+      "n_with": 0,
+      "n_both": 0,
+      "n_only": 0,
+      "both_mean": NaN,
+      "only_one_mean": NaN,
+      "CCB": NaN,
+      "null_mean": NaN,
+      "p_one_sided": NaN,
+      "n_perm": 2000
+    }
+  ],
+  "phase1a_binding_concepts_that_bind_here": 0,
+  "phase1a_binding_decisions": {
+    "ULTIMATE": "no (p=0.564)",
+    "SUBSTRATE": "no (p=0.410)",
+    "AWARENESS": "no (p=0.264)",
+    "WORLD": "no (p=0.792)",
+    "RECOGNITION": "untestable (no cross-tradition both-tagged pairs)"
+  }
+}

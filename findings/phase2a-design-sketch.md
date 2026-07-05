@@ -288,15 +288,23 @@ so β₁ (westernization) is adjusted for representation. Without β₂, β₁ i
 
 ### 3c.1 Metrics (prefer independent / non-circular)
 
-- **Cross-lingual retrieval accuracy on a NEUTRAL multi-parallel corpus** (primary).
-  Embed language-L sentences and English sentences from a parallel neutral corpus
-  (UDHR or FLORES-200 — both cover all candidates); measure whether L-sentence-i
-  retrieves English-sentence-i. This is the standard multilingual-representation metric
-  (xsim / retrieval accuracy). Neutral content → no mysticism leakage. Generalizes the
-  Sanskrit-English verse validation (5/5) to neutral content per language.
-- **Tokenizer fertility** (secondary) — tokens per character/word. Over-fragmentation
-  (many subword tokens) signals poor representation. Purely a tokenizer property,
-  concept-independent, trivial to compute.
+**Empirically revised after Stage-1 (2026-05-20, FLORES+ dev, 997 parallel sentences;
+see `phase2a-stage1-representation-screen.md`). The original primary/secondary
+designations were swapped by the data — recorded here as found.**
+
+- **Tokenizer fertility = β₂ covariate (PRIMARY, contamination-immune).** Mean subword
+  tokens per parallel sentence per model tokenizer. Depends only on the learned
+  vocabulary, never on whether the model saw the eval set → immune to contamination,
+  which is why it is the covariate of record. Used as ratio-vs-English (relative only;
+  cross-script absolute fertility is not comparable — French 1.29 > Chinese 0.98 in e5
+  is wordiness, not coverage). Correctly floors the known-fail anchor: Sanskrit worst in
+  both models (e5 1.44, LaBSE 1.78).
+- **Cross-lingual retrieval accuracy (DEMOTED to reported diagnostic, NOT the covariate).**
+  Intended as primary, but Stage-1 showed it is **ceiling-saturated**: all 11 modern
+  candidates 0.995–1.000 (e5) / 1.000 (LaBSE); Sanskrit only barely below at 0.944 /
+  0.989. No usable dynamic range, and for LaBSE bitext retrieval *is* the training
+  objective so P@1≈1.0 is guaranteed by construction. Also contamination-susceptible.
+  Reported for completeness; too saturated to serve as a continuous regressor.
 - **Embedding isotropy / within-language spread** on neutral text — low-resource
   languages collapse into a narrow anisotropic cone (e5-large compressed Sanskrit to
   ~0.89 ± tiny). Spread is a representation proxy.
@@ -315,20 +323,27 @@ canon (low-West but decently-represented) — break the westernization↔represe
 collinearity. Sanskrit would be the low-low corner but it fails the gate and cannot
 contribute convergence data; the gate-passers still span the plane.
 
-### 3c.3 Two-stage eligibility (this subsumes the binary gate)
+### 3c.3 Two-stage eligibility (REVISED after Stage-1: screen rules OUT, not IN)
 
-1. **Representation screen (cheap, all candidates at once):** retrieval accuracy +
-   tokenizer fertility on a neutral multi-parallel corpus. No concept dictionaries, no
-   tradition sourcing. Ranks all candidates; flags which clear the representation bar
-   (calibrated against known cases: English/Chinese pass, Sanskrit-level fails).
-2. **Full concept-binding gate (expensive, survivors only):** within-language concept
-   binding (`scripts/within_language_concept_binding.py`) only for languages that pass
-   the screen AND have source coverage. Don't build a per-language concept dictionary
-   for a language that can't clear the representation bar.
+1. **Representation screen (cheap, all candidates at once):** tokenizer fertility (+
+   retrieval as a saturated diagnostic) on FLORES+. Ranks all candidates against the
+   calibration anchors (English/Chinese pass the concept gate, Sanskrit fails 2/7).
+2. **Full concept-binding gate (expensive):** within-language concept binding
+   (`scripts/within_language_concept_binding.py`) for each language we actually use.
 
-The continuous representation score is strictly more informative than a binary gate: a
-language has a *position* on the representation axis that the regression adjusts for,
-not just pass/fail.
+**Stage-1 finding that changes the logic:** the cheap proxies are
+*necessary-but-not-sufficient*. Sanskrit posts 0.944 retrieval and only
+moderately-bad fertility yet fails the concept gate 2/7; modern Chinese has the
+worst LaBSE fertility (1.50) yet passes 6/7. So the screen can **rule a language
+OUT** (fails the floors → hopeless) but **cannot rule one IN** — concept resolution
+is not implied by tokenizer coverage or sentence-matching. The gate is irreducible,
+not shortcuttable. In this run *no* modern candidate is ruled out (all 11 clear the
+Sanskrit floor on both metrics), so eligibility falls entirely to the gate, run
+per-language on whatever we can source.
+
+The continuous fertility score still earns its keep as the **β₂ covariate**: each
+language has a *position* on the (contamination-immune) representation axis that the
+regression adjusts for — even though that position does not by itself decide eligibility.
 
 ## 4. Mandatory per-language resolution gate
 
