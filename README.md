@@ -1,6 +1,6 @@
 # Concept-Conditional Cross-Tradition Binding
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20261823.svg)](https://doi.org/10.5281/zenodo.20261823)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21210421.svg)](https://doi.org/10.5281/zenodo.21210421)
 
 A research project at the intersection of contemplative traditions, philosophy of mind, and machine learning.
 
@@ -179,8 +179,8 @@ If you use this corpus, code, or methodology, please cite the Zenodo archive of 
 
 ```
 Kinlaw, T. D. (2026). Concept-Conditional Cross-Tradition Binding in Semantic
-Embedding Space: A Method and an Application to Mysticism (v1.0.1-draft5)
-[Software]. Zenodo. https://doi.org/10.5281/zenodo.20261823
+Embedding Space: A Method and an Application to Mysticism (v2.0-prereg-phase3a)
+[Software]. Zenodo. https://doi.org/10.5281/zenodo.21210421
 ```
 
 BibTeX:
@@ -191,14 +191,14 @@ BibTeX:
   title     = {Concept-Conditional Cross-Tradition Binding in Semantic
                Embedding Space: A Method and an Application to Mysticism},
   year      = {2026},
-  version   = {v1.0.1-draft5},
+  version   = {v2.0-prereg-phase3a},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20261823},
-  url       = {https://doi.org/10.5281/zenodo.20261823}
+  doi       = {10.5281/zenodo.21210421},
+  url       = {https://doi.org/10.5281/zenodo.21210421}
 }
 ```
 
-The DOI `10.5281/zenodo.20261823` resolves to this specific release (v1.0.1-draft5, adds AI-use disclosure and softens pre-registration terminology to "pre-specified"). The prior release `10.5281/zenodo.20259102` (v1.0-draft5) remains valid. A "concept DOI" that always points to the latest release is available on the Zenodo record page.
+The DOI `10.5281/zenodo.21210421` resolves to this specific release (v2.0-prereg-phase3a: Draft 8, the full Phase 2 record, the review-driven control battery, and **the formal Phase 3a pre-registration** — this DOI is the immutable timestamp of record for `findings/phase3a-preregistration.md`). Prior release DOIs remain valid: `10.5281/zenodo.20261823` (v1.0.1-draft5), `10.5281/zenodo.20259102` (v1.0-draft5). A "concept DOI" that always points to the latest release is available on the Zenodo record page.
 
 ## License
 
