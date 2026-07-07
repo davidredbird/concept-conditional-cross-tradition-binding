@@ -4,8 +4,8 @@
 *Independent Researcher · Redbird Software LLC · david@redbirdsoftwarellc.com*
 *ORCID: [0009-0008-5213-1017](https://orcid.org/0009-0008-5213-1017)*
 
-**Working preprint — Draft 8 (public release)**
-**Date:** 2026-07-05
+**Working preprint — Draft 8.1 (public release)**
+**Date:** 2026-07-05 (rev. 2026-07-07: restores the AI-use disclosure inadvertently dropped from Draft 8)
 **Status:** Public working draft accompanying the formal Phase 3a pre-registration
 (`findings/phase3a-preregistration.md`, registered by the public commit and Zenodo DOI of
 this release). Phases 0–2 are exploratory and complete; Phase 3a is confirmatory,
@@ -794,6 +794,16 @@ pre-registration at commit `d16fc8c` / Zenodo `v1.2-prereg-phase1b`.
   note: `findings/phase1b-preregistration.md` and `findings/phase1b-multi-translator.md`.
 - **Appendix D** — The Phase 3a pre-registration: `findings/phase3a-preregistration.md`,
   public as of this release.
+
+---
+
+## Acknowledgments
+
+### Use of AI assistance
+
+The author used Claude (Anthropic) extensively throughout this project: for methodology design discussions, prose drafting across multiple paper revisions, and writing code under the author's direction. All research questions, experimental design decisions, methodological commitments, interpretations of results, and claims in this paper are the author's; the AI's role was that of a capable but supervised research assistant.
+
+---
 
 ## References
 
